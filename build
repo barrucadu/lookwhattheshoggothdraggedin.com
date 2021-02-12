@@ -70,7 +70,7 @@ PLACEHOLDER_POSTS = [
 dir_util.copy_tree("static", OUT_DIR)
 
 with open(os.path.join(OUT_DIR, "index.html"), "w") as f:
-    rendered = JINJA2_ENV.get_template("placeholder.html").render(
+    rendered = JINJA2_ENV.get_template("index.html").render(
         permalink = f"{BASE_HREF}/index.html",
         title = "Under Construction",
         base_href = BASE_HREF,

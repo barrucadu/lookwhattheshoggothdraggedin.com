@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block main %}
+  <h1 class="visually-hidden">Recent Posts</h1>
+  {%- for post in recent_posts %}
+
+  <section class="summary">
+    <div class="summary__main">
+      <h2 class="heading"><a class="link link--heading" href="post/{{ post.slug }}.html">{{ post.title }}</a></h2>
+
+      <blockquote class="excerpt">
+        <p>{{ post.excerpt }}</p>
+      </blockquote>
+    </div>
+
+    <dl class="summary__metadata">
+      <dt class="metadata-label">Posted</dt>
+      <dd class="metadata-value">{{ post.month }} {{ post.day }}, <a class="link" href="archive/{{ post.year }}.html">{{ post.year }}</a></dd>
+  {%- if post.system %}
+      <dt class="metadata-label">System</dt>
+      <dd class="metadata-value"><a class="link" href="system/{{ post.system }}.html">{{ system_names[post.system] }}</a></dd>
+  {%- endif %}
+      <dt class="metadata-label">Topic</dt>
+      <dd class="metadata-value"><a class="link" href="topic/{{ post.topic }}.html">{{ topic_names[post.topic] }}</a></dd>
+    </dl>
+  </section>
+  {%- endfor %}
+{% endblock %}
+{% block pagination %}
+  <a class="link link--pagination" href="all.html">All Posts</a>
+{% endblock %}
