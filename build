@@ -17,6 +17,7 @@ import jinja2
 import json
 import os
 import sys
+import yaml
 
 from distutils import dir_util
 from docopt import docopt
@@ -41,17 +42,28 @@ SYSTEMS = {
     "troika": "Troika!",
 }
 
-PLACEHOLDER_PAGES = [
-    {
-        "slug": "comments",
-        "title": "About comments",
-        "text": "Comments may be left anonymously; by creating an account with an email address and password; by linking to a Google account; or by linking to a Twitter account.  Unless anonymous, the author of a comment is displayed publicly.  Email addresses are not shared.",
-    }
-]
 
-for page in PLACEHOLDER_PAGES:
-    page["permalink"] = f"{BASE_HREF}{page['slug']}.html"
-    page["body"] = markdown(page["text"], output_format="html5")
+def read_files_from(fdir, permalink_base_href=BASE_HREF):
+    out = []
+    for fname in os.listdir(fdir):
+        fpath = os.path.join(fdir, fname)
+        if not os.path.isfile(fpath):
+            continue
+
+        with open(fpath, "r") as f:
+            lines = f.readlines()
+            idx = lines[1:].index("---\n") + 1
+            metadata = yaml.load("".join(lines[1:idx]), Loader=yaml.SafeLoader)
+            metadata["text"] = "".join(lines[idx + 1:])
+            metadata["body"] = markdown(metadata["text"], output_format="html5")
+            if "slug" not in metadata:
+                metadata["slug"], _ = os.path.splitext(fname)
+            metadata["permalink"] = f"{permalink_base_href}{metadata['slug']}.html"
+            out.append(metadata)
+    return out
+
+
+ALL_PAGES = read_files_from("pages")
 
 PLACEHOLDER_POSTS = [
     {
@@ -203,7 +215,7 @@ for post in PLACEHOLDER_POSTS:
         post=post
     )
 
-for page in PLACEHOLDER_PAGES:
+for page in ALL_PAGES:
     render(
         f"{page['slug']}.html",
         "page.html",
