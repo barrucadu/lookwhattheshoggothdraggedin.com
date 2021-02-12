@@ -29,13 +29,13 @@ NUM_RECENT = 5
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
 
-TOPIC_NAMES = {
+TOPICS = {
     "gm-advice": "GM Advice",
     "mechanics": "Mechanics",
     "review": "Review",
 }
 
-SYSTEM_NAMES = {
+SYSTEMS = {
     "call-of-cthulhu": "Call of Cthulhu",
     "troika": "Troika!",
 }
@@ -67,10 +67,10 @@ PLACEHOLDER_POSTS = [
 ]
 
 for post in PLACEHOLDER_POSTS:
-    if post.get("topic") not in TOPIC_NAMES:
+    if post.get("topic") not in TOPICS:
         print(f"{post.slug} has invalid topic.")
         sys.exit(1)
-    if post.get("system") is not None and post["system"] not in SYSTEM_NAMES:
+    if post.get("system") is not None and post["system"] not in SYSTEMS:
         print(f"{post.slug} has invalid system.")
         sys.exit(1)
 
@@ -95,8 +95,8 @@ def render(link, template, **metadata):
     with open(os.path.join(OUT_DIR, link), "w") as f:
         rendered = JINJA2_ENV.get_template(template).render(
             base_href=BASE_HREF,
-            topic_names=TOPIC_NAMES,
-            system_names=SYSTEM_NAMES,
+            topics=TOPICS,
+            systems=SYSTEMS,
             years=YEARS,
             permalink=permalink,
             link_to_all_posts=link_to_all_posts,
@@ -162,7 +162,7 @@ render(
 
 render_feeds_for("feed", "Recent Posts", PLACEHOLDER_POSTS)
 
-for field, entries in [("topic", TOPIC_NAMES), ("system", SYSTEM_NAMES), ("year", YEARS)]:
+for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
     for slug, name in entries.items():
         matching_posts = [post for post in PLACEHOLDER_POSTS if post.get(field) == slug]
 

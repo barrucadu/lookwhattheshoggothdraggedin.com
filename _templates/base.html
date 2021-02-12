@@ -22,13 +22,13 @@
 
     <link rel="alternate" type="application/atom+xml" href="feed.xml" title="Atom feed for Recent Posts" />
     <link rel="alternate" type="application/feed+json" href="feed.json" title="JSON feed for Recent Posts" />
-{%- for slug in topic_names %}
-    <link rel="alternate" type="application/atom+xml" href="topic/{{ slug }}.xml" title="Atom feed for {{ topic_names[slug] }}" />
-    <link rel="alternate" type="application/feed+json" href="topic/{{ slug }}.json" title="JSON feed for {{ topic_names[slug] }}" />
+{%- for slug in topics %}
+    <link rel="alternate" type="application/atom+xml" href="topic/{{ slug }}.xml" title="Atom feed for {{ topics[slug] }}" />
+    <link rel="alternate" type="application/feed+json" href="topic/{{ slug }}.json" title="JSON feed for {{ topics[slug] }}" />
 {%- endfor %}
-{%- for slug in system_names %}
-    <link rel="alternate" type="application/atom+xml" href="system/{{ slug }}.xml" title="Atom feed for {{ system_names[slug] }}" />
-    <link rel="alternate" type="application/feed+json" href="system/{{ slug }}.json" title="JSON feed for {{ system_names[slug] }}" />
+{%- for slug in systems %}
+    <link rel="alternate" type="application/atom+xml" href="system/{{ slug }}.xml" title="Atom feed for {{ systems[slug] }}" />
+    <link rel="alternate" type="application/feed+json" href="system/{{ slug }}.json" title="JSON feed for {{ systems[slug] }}" />
 {%- endfor %}
 {%- for year in years %}
     <link rel="alternate" type="application/atom+xml" href="year/{{ year }}.xml" title="Atom feed for {{ year }}" />

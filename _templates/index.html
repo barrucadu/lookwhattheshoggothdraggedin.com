@@ -14,10 +14,10 @@
       <dt class="metadata-label">Posted</dt>
       <dd class="metadata-value">{{ post.month }} {{ post.day }}, <a class="link" href="year/{{ post.year }}.html">{{ post.year }}</a></dd>
       <dt class="metadata-label">Topic</dt>
-      <dd class="metadata-value"><a class="link" href="topic/{{ post.topic }}.html">{{ topic_names[post.topic] }}</a></dd>
+      <dd class="metadata-value"><a class="link" href="topic/{{ post.topic }}.html">{{ topics[post.topic] }}</a></dd>
   {%- if post.system %}
       <dt class="metadata-label">System</dt>
-      <dd class="metadata-value"><a class="link" href="system/{{ post.system }}.html">{{ system_names[post.system] }}</a></dd>
+      <dd class="metadata-value"><a class="link" href="system/{{ post.system }}.html">{{ systems[post.system] }}</a></dd>
   {%- endif %}
     </dl>
   </section>
