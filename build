@@ -74,65 +74,56 @@ dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
 dir_util.mkpath(os.path.join(OUT_DIR, "system"))
 dir_util.mkpath(os.path.join(OUT_DIR, "archive"))
 
-with open(os.path.join(OUT_DIR, "index.html"), "w") as f:
-    rendered = JINJA2_ENV.get_template("index.html").render(
-        permalink = f"{BASE_HREF}/index.html",
-        title = "Recent Posts",
-        base_href = BASE_HREF,
-        topic_names = TOPIC_NAMES,
-        system_names = SYSTEM_NAMES,
-        posts = PLACEHOLDER_POSTS,
-        link_to_all_posts = True,
-    )
-    print(rendered, file=f)
 
-with open(os.path.join(OUT_DIR, "all.html"), "w") as f:
-    rendered = JINJA2_ENV.get_template("archive.html").render(
-        permalink = f"{BASE_HREF}/all.html",
-        title = "All Posts",
-        base_href = BASE_HREF,
-        topic_names = TOPIC_NAMES,
-        system_names = SYSTEM_NAMES,
-        posts = PLACEHOLDER_POSTS,
-        link_to_all_posts = False,
-    )
-    print(rendered, file=f)
+def render(link, template, **metadata):
+    permalink = f"{BASE_HREF}/{link}"
+    link_to_all_posts = link != "all.html"
+
+    with open(os.path.join(OUT_DIR, link), "w") as f:
+        rendered = JINJA2_ENV.get_template(template).render(
+            base_href=BASE_HREF,
+            topic_names=TOPIC_NAMES,
+            system_names=SYSTEM_NAMES,
+            permalink=permalink,
+            link_to_all_posts=link_to_all_posts,
+            **metadata,
+        )
+        print(rendered, file=f)
+
+render(
+    "index.html",
+    "index.html",
+    title="Recent Posts",
+    posts=PLACEHOLDER_POSTS[:5],
+)
+
+render(
+    "all.html",
+    "archive.html",
+    title="All Posts",
+    posts=PLACEHOLDER_POSTS,
+)
 
 for slug, name in TOPIC_NAMES.items():
-    with open(os.path.join(OUT_DIR, f"topic/{slug}.html"), "w") as f:
-        rendered = JINJA2_ENV.get_template("archive.html").render(
-            permalink = f"{BASE_HREF}/topic/{slug}.html",
-            title = name,
-            base_href = BASE_HREF,
-            topic_names = TOPIC_NAMES,
-            system_names = SYSTEM_NAMES,
-            posts = [post for post in PLACEHOLDER_POSTS if post.get("topic") == slug],
-            link_to_all_posts = True,
-        )
-        print(rendered, file=f)
+    render(
+        f"topic/{slug}.html",
+        "archive.html",
+        title=name,
+        posts=[post for post in PLACEHOLDER_POSTS if post.get("topic") == slug],
+    )
 
 for slug, name in SYSTEM_NAMES.items():
-    with open(os.path.join(OUT_DIR, f"system/{slug}.html"), "w") as f:
-        rendered = JINJA2_ENV.get_template("archive.html").render(
-            permalink = f"{BASE_HREF}/system/{slug}.html",
-            title = name,
-            base_href = BASE_HREF,
-            topic_names = TOPIC_NAMES,
-            system_names = SYSTEM_NAMES,
-            posts = [post for post in PLACEHOLDER_POSTS if post.get("system") == slug],
-            link_to_all_posts = True,
-        )
-        print(rendered, file=f)
+    render(
+        f"system/{slug}.html",
+        "archive.html",
+        title=name,
+        posts=[post for post in PLACEHOLDER_POSTS if post.get("system") == slug],
+    )
 
 for year in YEARS:
-    with open(os.path.join(OUT_DIR, f"archive/{year}.html"), "w") as f:
-        rendered = JINJA2_ENV.get_template("archive.html").render(
-            permalink = f"{BASE_HREF}/archive/{year}.html",
-            title = year,
-            base_href = BASE_HREF,
-            topic_names = TOPIC_NAMES,
-            system_names = SYSTEM_NAMES,
-            posts = [post for post in PLACEHOLDER_POSTS if post.get("year") == year],
-            link_to_all_posts = True,
-        )
-        print(rendered, file=f)
+    render(
+        f"archive/{year}.html",
+        "archive.html",
+        title=year,
+        posts=[post for post in PLACEHOLDER_POSTS if post.get("year") == year],
+    )
