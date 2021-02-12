@@ -85,7 +85,7 @@ YEARS = { post["year"]: post["year"] for post in PLACEHOLDER_POSTS }
 dir_util.copy_tree("static", OUT_DIR)
 dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
 dir_util.mkpath(os.path.join(OUT_DIR, "system"))
-dir_util.mkpath(os.path.join(OUT_DIR, "archive"))
+dir_util.mkpath(os.path.join(OUT_DIR, "year"))
 
 
 def render(link, template, **metadata):
@@ -162,15 +162,15 @@ render(
 
 render_feeds_for("feed", "Recent Posts", PLACEHOLDER_POSTS)
 
-for field, path, entries in [("topic", "topic", TOPIC_NAMES), ("system", "system", SYSTEM_NAMES), ("year", "archive", YEARS)]:
+for field, entries in [("topic", TOPIC_NAMES), ("system", SYSTEM_NAMES), ("year", YEARS)]:
     for slug, name in entries.items():
         matching_posts = [post for post in PLACEHOLDER_POSTS if post.get(field) == slug]
 
         render(
-            f"{path}/{slug}.html",
+            f"{field}/{slug}.html",
             "archive.html",
             title=name,
             posts=matching_posts,
         )
 
-        render_feeds_for(f"{path}/{slug}", name, matching_posts)
+        render_feeds_for(f"{field}/{slug}", name, matching_posts)

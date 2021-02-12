@@ -6,7 +6,7 @@
 
     <dl class="summary__metadata">
       <dt class="metadata-label">Posted</dt>
-      <dd class="metadata-value">{{ post.month }} {{ post.day }}, <a class="link" href="archive/{{ post.year }}.html">{{ post.year }}</a></dd>
+      <dd class="metadata-value">{{ post.month }} {{ post.day }}, <a class="link" href="year/{{ post.year }}.html">{{ post.year }}</a></dd>
       <dt class="metadata-label">Topic</dt>
       <dd class="metadata-value"><a class="link" href="topic/{{ post.topic }}.html">{{ topic_names[post.topic] }}</a></dd>
   {%- if post.system %}

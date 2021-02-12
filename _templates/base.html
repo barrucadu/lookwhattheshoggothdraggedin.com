@@ -31,8 +31,8 @@
     <link rel="alternate" type="application/feed+json" href="system/{{ slug }}.json" title="JSON feed for {{ system_names[slug] }}" />
 {%- endfor %}
 {%- for year in years %}
-    <link rel="alternate" type="application/atom+xml" href="archive/{{ year }}.xml" title="Atom feed for {{ year }}" />
-    <link rel="alternate" type="application/feed+json" href="archive/{{ year }}.json" title="JSON feed for {{ year }}" />
+    <link rel="alternate" type="application/atom+xml" href="year/{{ year }}.xml" title="Atom feed for {{ year }}" />
+    <link rel="alternate" type="application/feed+json" href="year/{{ year }}.json" title="JSON feed for {{ year }}" />
 {%- endfor %}
 
     <title>{{ title }}</title>
