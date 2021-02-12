@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+"""build
+
+Usage:
+  build [--out=<dir>] [--root=<url>]
+  build (-h | --help)
+
+Options:
+  -h --help       Show this screen.
+  --out=<dir>     Directory to generate site in [default: _site]
+  --root=<url>    Root of the website [default: https://www.lookwhattheshoggothdraggedin.com/]
+"""
+
+import jinja2
+import os
+
+from distutils import dir_util
+from docopt import docopt
+
+args = docopt(__doc__)
+OUT_DIR = args["--out"]
+BASE_HREF = args["--root"]
+
+JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
+
+dir_util.copy_tree("static", OUT_DIR)
+
+with open(os.path.join(OUT_DIR, "index.html"), "w") as f:
+    rendered = JINJA2_ENV.get_template("placeholder.html").render(
+        permalink = f"{BASE_HREF}/index.html",
+        title = "Under Construction",
+        base_href = BASE_HREF
+    )
+    print(rendered, file=f)
