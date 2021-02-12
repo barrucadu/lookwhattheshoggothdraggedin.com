@@ -14,6 +14,7 @@ Options:
 
 import datetime
 import jinja2
+import json
 import os
 import sys
 
@@ -73,7 +74,7 @@ for post in PLACEHOLDER_POSTS:
         print(f"{post.slug} has invalid system.")
         sys.exit(1)
 
-    post["permalink"] = f"post/{post['slug']}.html"
+    post["permalink"] = f"{BASE_HREF}post/{post['slug']}.html"
     post["year"] = post["date"].strftime("%Y")
     post["month"] = post["date"].strftime("%b")
     post["day"] = post["date"].strftime("%-d")
@@ -88,7 +89,7 @@ dir_util.mkpath(os.path.join(OUT_DIR, "archive"))
 
 
 def render(link, template, **metadata):
-    permalink = f"{BASE_HREF}/{link}"
+    permalink = f"{BASE_HREF}{link}"
     link_to_all_posts = link != "all.html"
 
     with open(os.path.join(OUT_DIR, link), "w") as f:
@@ -103,6 +104,33 @@ def render(link, template, **metadata):
         )
         print(rendered, file=f)
 
+
+def render_json_feed(link, title, posts):
+    with open(os.path.join(OUT_DIR, link), "w") as f:
+        feed = {
+            "version": "https://jsonfeed.org/version/1.1",
+            "title": title,
+            "home_page_url": BASE_HREF,
+            "feed_url": f"{BASE_HREF}{link}",
+            "authors": [
+                {
+                    "name": "Michael Walker",
+                    "email": "mike@barrucadu.co.uk",
+                },
+            ],
+            "items": [
+                {
+                    "id": post["permalink"],
+                    "url": post["permalink"],
+                    "content_text": post["excerpt"],
+                    "date_published": post["date"].strftime("%Y-%m-%dT%H:%M:%S%z"),
+                }
+                for post in posts
+            ]
+        }
+
+        json.dump(feed, f)
+
 render(
     "index.html",
     "index.html",
@@ -113,6 +141,12 @@ render(
 render(
     "feed.xml",
     "atom.xml",
+    title="Recent Posts",
+    posts=PLACEHOLDER_POSTS[:NUM_RECENT],
+)
+
+render_json_feed(
+    "feed.json",
     title="Recent Posts",
     posts=PLACEHOLDER_POSTS[:NUM_RECENT],
 )
@@ -141,6 +175,12 @@ for slug, name in TOPIC_NAMES.items():
         posts=matching_posts[:NUM_RECENT],
     )
 
+    render_json_feed(
+        f"topic/{slug}.json",
+        title=name,
+        posts=matching_posts[:NUM_RECENT],
+    )
+
 for slug, name in SYSTEM_NAMES.items():
     matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("system") == slug]
 
@@ -158,6 +198,12 @@ for slug, name in SYSTEM_NAMES.items():
         posts=matching_posts[:NUM_RECENT],
     )
 
+    render_json_feed(
+        f"system/{slug}.json",
+        title=name,
+        posts=matching_posts[:NUM_RECENT],
+    )
+
 for year in YEARS:
     matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("year") == year]
 
@@ -171,6 +217,12 @@ for year in YEARS:
     render(
         f"archive/{year}.xml",
         "atom.xml",
+        title=year,
+        posts=matching_posts[:NUM_RECENT],
+    )
+
+    render_json_feed(
+        f"archive/{year}.json",
         title=year,
         posts=matching_posts[:NUM_RECENT],
     )
