@@ -1,9 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Suez+One&display=swap');
+
+:root {
+    --text: #0b0c0c;
+    --text-alt: #505a5f;
+    --link: #003078;
+    --link-alt: #1d70b8;
+    --border: #b1b4b6;
+}
+
 * {
     box-sizing: border-box;
+    max-width: 100%;
+    object-fit: scale-down;
     margin: 0;
     padding: 0;
 }
 
-.main-header {
-    margin: 64px;
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Noto Sans", sans-serif;
+    color: var(--text);
+}
+
+p {
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 64px auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}
+
+.box {
+    margin-bottom: 48px;
+}
+
+.heading {
+    font-family: "Bungee", cursive;
+    font-size: 2rem;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    gap: 16px;
+    grid-template-areas:
+        "metadata main";
+}
+
+.summary__main {
+    grid-area: main;
+}
+
+.summary__metadata {
+    grid-area: metadata;
+}
+
+.summary + .summary {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+}
+
+.excerpt {
+    border-left: 5px solid var(--border);
+    padding: 0 0 0 16px;
+    margin: 16px 16px 0 0;
+}
+
+.metadata-label {
+    font-weight: bold;
+}
+
+.metadata-value + .metadata-label {
+    margin-top: 8px;
+}
+
+.link {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+.link--heading {
+    text-decoration: none;
+}
+
+.link--pagination {
+    font-family: "Bungee", cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.link:hover {
+    color: var(--link-alt);
+    text-decoration: none;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.footer {
+    color: var(--text-alt);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+    font-size: 0.8rem;
+    padding: 8px;
 }
