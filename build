@@ -131,22 +131,24 @@ def render_json_feed(link, title, posts):
 
         json.dump(feed, f)
 
+
+def render_feeds_for(link_without_format, title, posts):
+    render(
+        link_without_format + ".xml",
+        "atom.xml",
+        title=title,
+        posts=posts[:NUM_RECENT],
+    )
+    render_json_feed(
+        link_without_format + ".json",
+        title=title,
+        posts=posts[:NUM_RECENT],
+    )
+
+
 render(
     "index.html",
     "index.html",
-    title="Recent Posts",
-    posts=PLACEHOLDER_POSTS[:NUM_RECENT],
-)
-
-render(
-    "feed.xml",
-    "atom.xml",
-    title="Recent Posts",
-    posts=PLACEHOLDER_POSTS[:NUM_RECENT],
-)
-
-render_json_feed(
-    "feed.json",
     title="Recent Posts",
     posts=PLACEHOLDER_POSTS[:NUM_RECENT],
 )
@@ -157,6 +159,8 @@ render(
     title="All Posts",
     posts=PLACEHOLDER_POSTS,
 )
+
+render_feeds_for("feed", "Recent Posts", PLACEHOLDER_POSTS)
 
 for field, path, entries in [("topic", "topic", TOPIC_NAMES), ("system", "system", SYSTEM_NAMES), ("year", "archive", YEARS)]:
     for slug, name in entries.items():
@@ -169,15 +173,4 @@ for field, path, entries in [("topic", "topic", TOPIC_NAMES), ("system", "system
             posts=matching_posts,
         )
 
-        render(
-            f"{path}/{slug}.xml",
-            "atom.xml",
-            title=name,
-            posts=matching_posts[:NUM_RECENT],
-        )
-
-        render_json_feed(
-            f"{path}/{slug}.json",
-            title=name,
-            posts=matching_posts[:NUM_RECENT],
-        )
+        render_feeds_for(f"{path}/{slug}", name, matching_posts)
