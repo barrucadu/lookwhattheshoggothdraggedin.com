@@ -1,16 +1,10 @@
 {% extends "base.html" %}
 {% block main %}
   {%- for post in posts %}
-  <section class="summary-with-excerpt">
-    <div class="summary-with-excerpt__main">
-      <h2 class="heading"><a class="link link--heading" href="post/{{ post.slug }}.html">{{ post.title }}</a></h2>
+  <section class="summary">
+    <h2 class="heading"><a class="link link--heading" href="post/{{ post.slug }}.html">{{ post.title }}</a></h2>
 
-      <blockquote class="excerpt">
-        <p>{{ post.excerpt }}</p>
-      </blockquote>
-    </div>
-
-    <dl class="summary-with-excerpt__metadata">
+    <dl class="summary__metadata">
       <dt class="metadata-label">Posted</dt>
       <dd class="metadata-value">{{ post.month }} {{ post.day }}, <a class="link" href="archive/{{ post.year }}.html">{{ post.year }}</a></dd>
       <dt class="metadata-label">Topic</dt>

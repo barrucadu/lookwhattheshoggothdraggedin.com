@@ -29,12 +29,16 @@
       </header>
 
       <main class="box">
+        <h1 class="heading heading--main">{{ title }}</h1>
+
         {% block main %}{% endblock %}
       </main>
+{%- if link_to_all_posts %}
 
       <nav class="pagination box">
-        {% block pagination %}{% endblock %}
+        <a class="link link--pagination" href="all.html">All Posts</a>
       </nav>
+{%- endif %}
     </div>
 
     <footer class="footer">

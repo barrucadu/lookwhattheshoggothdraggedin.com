@@ -34,15 +34,6 @@ p {
     margin: 64px auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  left:     -10000px;
-  top:      auto;
-  width:    1px;
-  height:   1px;
-  overflow: hidden;
-}
-
 .box {
     margin-bottom: 48px;
 }
@@ -52,7 +43,14 @@ p {
     font-size: 2rem;
 }
 
-.summary {
+.heading--main {
+    font-size: 3rem;
+    text-align: right;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-with-excerpt {
     display: grid;
     grid-template-columns: 8rem auto;
     gap: 16px;
@@ -60,18 +58,25 @@ p {
         "metadata main";
 }
 
-.summary__main {
+.summary-with-excerpt__main {
     grid-area: main;
 }
 
-.summary__metadata {
+.summary-with-excerpt__metadata {
     grid-area: metadata;
 }
 
-.summary + .summary {
+.summary-with-excerpt + .summary-with-excerpt, .summary + .summary {
     margin-top: 24px;
     padding-top: 8px;
     border-top: 1px solid var(--border);
+}
+
+.summary__metadata {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    grid-template-rows: min-content min-content;
 }
 
 .excerpt {
