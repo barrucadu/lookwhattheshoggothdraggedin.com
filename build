@@ -20,6 +20,7 @@ import sys
 
 from distutils import dir_util
 from docopt import docopt
+from markdown import markdown
 
 args = docopt(__doc__)
 OUT_DIR = args["--out"]
@@ -47,6 +48,7 @@ PLACEHOLDER_POSTS = [
         "excerpt": "Characters get better over time, whether that be by hitting milestones or by gathering experience points.  But when they reach an advancement point, make it feel more meaningful by giving a justification in the fiction for the bonuses they get.",
         "date": datetime.datetime(2021, 2, 12),
         "topic": "gm-advice",
+        "text": "**bold** *italic*",
     },
     {
         "slug": "first-impressions-of-troika",
@@ -55,6 +57,7 @@ PLACEHOLDER_POSTS = [
         "date": datetime.datetime(2021, 1, 7),
         "system": "troika",
         "topic": "review",
+        "text": "**bold** *italic*",
     },
     {
         "slug": "dice-rolls-in-call-of-cthulhu",
@@ -63,6 +66,7 @@ PLACEHOLDER_POSTS = [
         "date": datetime.datetime(2020, 12, 28),
         "system": "call-of-cthulhu",
         "topic": "mechanics",
+        "text": "**bold** *italic*",
     },
 ]
 
@@ -79,12 +83,14 @@ for post in PLACEHOLDER_POSTS:
     post["month"] = post["date"].strftime("%b")
     post["day"] = post["date"].strftime("%-d")
     post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
+    post["body"] = markdown(post["text"], output_format="html5")
 
 YEARS = { post["year"]: post["year"] for post in PLACEHOLDER_POSTS }
 
 dir_util.copy_tree("static", OUT_DIR)
-dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
+dir_util.mkpath(os.path.join(OUT_DIR, "post"))
 dir_util.mkpath(os.path.join(OUT_DIR, "system"))
+dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
 dir_util.mkpath(os.path.join(OUT_DIR, "year"))
 
 
@@ -174,3 +180,11 @@ for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
         )
 
         render_feeds_for(f"{field}/{slug}", name, matching_posts)
+
+for post in PLACEHOLDER_POSTS:
+    render(
+        f"post/{post['slug']}.html",
+        "post.html",
+        title=post["title"],
+        post=post
+    )

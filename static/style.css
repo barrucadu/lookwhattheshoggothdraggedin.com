@@ -72,11 +72,17 @@ p {
     border-top: 1px solid var(--border);
 }
 
-.summary__metadata {
+.summary__metadata, .post__metadata {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 33%;
     grid-template-rows: min-content min-content;
+}
+
+.post__metadata, #commento {
+    padding-top: 8px;
+    margin-top: 24px;
+    border-top: 1px solid var(--border);
 }
 
 .excerpt {
