@@ -80,7 +80,7 @@ for post in PLACEHOLDER_POSTS:
     post["day"] = post["date"].strftime("%-d")
     post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
 
-YEARS = list(set(post["year"] for post in PLACEHOLDER_POSTS))
+YEARS = { post["year"]: post["year"] for post in PLACEHOLDER_POSTS }
 
 dir_util.copy_tree("static", OUT_DIR)
 dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
@@ -158,71 +158,26 @@ render(
     posts=PLACEHOLDER_POSTS,
 )
 
-for slug, name in TOPIC_NAMES.items():
-    matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("topic") == slug]
+for field, path, entries in [("topic", "topic", TOPIC_NAMES), ("system", "system", SYSTEM_NAMES), ("year", "archive", YEARS)]:
+    for slug, name in entries.items():
+        matching_posts = [post for post in PLACEHOLDER_POSTS if post.get(field) == slug]
 
-    render(
-        f"topic/{slug}.html",
-        "archive.html",
-        title=name,
-        posts=matching_posts,
-    )
+        render(
+            f"{path}/{slug}.html",
+            "archive.html",
+            title=name,
+            posts=matching_posts,
+        )
 
-    render(
-        f"topic/{slug}.xml",
-        "atom.xml",
-        title=name,
-        posts=matching_posts[:NUM_RECENT],
-    )
+        render(
+            f"{path}/{slug}.xml",
+            "atom.xml",
+            title=name,
+            posts=matching_posts[:NUM_RECENT],
+        )
 
-    render_json_feed(
-        f"topic/{slug}.json",
-        title=name,
-        posts=matching_posts[:NUM_RECENT],
-    )
-
-for slug, name in SYSTEM_NAMES.items():
-    matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("system") == slug]
-
-    render(
-        f"system/{slug}.html",
-        "archive.html",
-        title=name,
-        posts=matching_posts,
-    )
-
-    render(
-        f"system/{slug}.xml",
-        "atom.xml",
-        title=name,
-        posts=matching_posts[:NUM_RECENT],
-    )
-
-    render_json_feed(
-        f"system/{slug}.json",
-        title=name,
-        posts=matching_posts[:NUM_RECENT],
-    )
-
-for year in YEARS:
-    matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("year") == year]
-
-    render(
-        f"archive/{year}.html",
-        "archive.html",
-        title=year,
-        posts=matching_posts,
-    )
-
-    render(
-        f"archive/{year}.xml",
-        "atom.xml",
-        title=year,
-        posts=matching_posts[:NUM_RECENT],
-    )
-
-    render_json_feed(
-        f"archive/{year}.json",
-        title=year,
-        posts=matching_posts[:NUM_RECENT],
-    )
+        render_json_feed(
+            f"{path}/{slug}.json",
+            title=name,
+            posts=matching_posts[:NUM_RECENT],
+        )
