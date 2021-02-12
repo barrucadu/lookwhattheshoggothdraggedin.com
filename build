@@ -65,36 +65,13 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF):
 
 ALL_PAGES = read_files_from("pages")
 
-PLACEHOLDER_POSTS = [
-    {
-        "slug": "diegetic-character-advancement",
-        "title": "Diegetic character advancement",
-        "excerpt": "Characters get better over time, whether that be by hitting milestones or by gathering experience points.  But when they reach an advancement point, make it feel more meaningful by giving a justification in the fiction for the bonuses they get.",
-        "date": datetime.datetime(2021, 2, 12),
-        "topic": "gm-advice",
-        "text": "**bold** *italic*",
-    },
-    {
-        "slug": "first-impressions-of-troika",
-        "title": "First impressions of Troika!",
-        "excerpt": "words words words",
-        "date": datetime.datetime(2021, 1, 7),
-        "system": "troika",
-        "topic": "review",
-        "text": "**bold** *italic*",
-    },
-    {
-        "slug": "dice-rolls-in-call-of-cthulhu",
-        "title": "Dice rolls in Call of Cthulhu",
-        "excerpt": "words words words",
-        "date": datetime.datetime(2020, 12, 28),
-        "system": "call-of-cthulhu",
-        "topic": "mechanics",
-        "text": "**bold** *italic*",
-    },
-]
+ALL_POSTS = sorted(
+    read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/"),
+    key=lambda post: post["date"],
+    reverse=True
+)
 
-for post in PLACEHOLDER_POSTS:
+for post in ALL_POSTS:
     if post.get("topic") not in TOPICS:
         print(f"{post.slug} has invalid topic.")
         sys.exit(1)
@@ -102,14 +79,12 @@ for post in PLACEHOLDER_POSTS:
         print(f"{post.slug} has invalid system.")
         sys.exit(1)
 
-    post["permalink"] = f"{BASE_HREF}post/{post['slug']}.html"
     post["year"] = post["date"].strftime("%Y")
     post["month"] = post["date"].strftime("%b")
     post["day"] = post["date"].strftime("%-d")
     post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
-    post["body"] = markdown(post["text"], output_format="html5")
 
-YEARS = { post["year"]: post["year"] for post in PLACEHOLDER_POSTS }
+YEARS = { post["year"]: post["year"] for post in ALL_POSTS }
 
 dir_util.copy_tree("static", OUT_DIR)
 dir_util.mkpath(os.path.join(OUT_DIR, "post"))
@@ -182,21 +157,21 @@ render(
     "index.html",
     "index.html",
     title="Recent Posts",
-    posts=PLACEHOLDER_POSTS[:NUM_RECENT],
+    posts=ALL_POSTS[:NUM_RECENT],
 )
 
 render(
     "all.html",
     "archive.html",
     title="All Posts",
-    posts=PLACEHOLDER_POSTS,
+    posts=ALL_POSTS,
 )
 
-render_feeds_for("feed", "Recent Posts", PLACEHOLDER_POSTS)
+render_feeds_for("feed", "Recent Posts", ALL_POSTS)
 
 for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
     for slug, name in entries.items():
-        matching_posts = [post for post in PLACEHOLDER_POSTS if post.get(field) == slug]
+        matching_posts = [post for post in ALL_POSTS if post.get(field) == slug]
 
         render(
             f"{field}/{slug}.html",
@@ -207,7 +182,7 @@ for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
 
         render_feeds_for(f"{field}/{slug}", name, matching_posts)
 
-for post in PLACEHOLDER_POSTS:
+for post in ALL_POSTS:
     render(
         f"post/{post['slug']}.html",
         "post.html",
