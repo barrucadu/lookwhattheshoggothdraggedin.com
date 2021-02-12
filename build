@@ -24,12 +24,58 @@ BASE_HREF = args["--root"]
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
 
+TOPIC_NAMES = {
+    "gm-advice": "GM Advice",
+    "mechanics": "Mechanics",
+    "review": "Review",
+}
+
+SYSTEM_NAMES = {
+    "call-of-cthulhu": "Call of Cthulhu",
+    "troika": "Troika!",
+}
+
+PLACEHOLDER_POSTS = [
+    {
+        "slug": "diegetic-character-advancement",
+        "title": "Diegetic character advancement",
+        "excerpt": "Characters get better over time, whether that be by hitting milestones or by gathering experience points.  But when they reach an advancement point, make it feel more meaningful by giving a justification in the fiction for the bonuses they get.",
+        "day": 12,
+        "month": "Feb",
+        "year": 2021,
+        "topic": "gm-advice",
+    },
+    {
+        "slug": "first-impressions-of-troika",
+        "title": "First impressions of Troika!",
+        "excerpt": "words words words",
+        "day": 7,
+        "month": "Jan",
+        "year": 2021,
+        "system": "troika",
+        "topic": "review",
+    },
+    {
+        "slug": "dice-rolls-in-call-of-cthulhu",
+        "title": "Dice rolls in Call of Cthulhu",
+        "excerpt": "words words words",
+        "day": 28,
+        "month": "Dec",
+        "year": 2020,
+        "system": "call-of-cthulhu",
+        "topic": "mechanics",
+    },
+]
+
 dir_util.copy_tree("static", OUT_DIR)
 
 with open(os.path.join(OUT_DIR, "index.html"), "w") as f:
     rendered = JINJA2_ENV.get_template("placeholder.html").render(
         permalink = f"{BASE_HREF}/index.html",
         title = "Under Construction",
-        base_href = BASE_HREF
+        base_href = BASE_HREF,
+        topic_names = TOPIC_NAMES,
+        system_names = SYSTEM_NAMES,
+        recent_posts = PLACEHOLDER_POSTS,
     )
     print(rendered, file=f)

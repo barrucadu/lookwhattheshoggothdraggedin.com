@@ -29,71 +29,29 @@
 
       <main class="box">
         <h1 class="visually-hidden">Recent Posts</h1>
+{%- for post in recent_posts %}
 
         <section class="summary">
           <div class="summary__main">
-            <h2 class="heading"><a class="link link--heading" href="post/diegetic-character-advancement.html">Diegetic character advancement</a></h2>
+            <h2 class="heading"><a class="link link--heading" href="post/{{ post.slug }}.html">{{ post.title }}</a></h2>
 
             <blockquote class="excerpt">
-              <p>
-                Characters get better over time, whether that be by
-                hitting milestones or by gathering experience points.
-                But when they reach an advancement point, make it feel
-                more meaningful by giving a justification in the
-                fiction for the bonuses they get.
-              </p>
+              <p>{{ post.excerpt }}</p>
             </blockquote>
           </div>
 
           <dl class="summary__metadata">
             <dt class="metadata-label">Posted</dt>
-            <dd class="metadata-value">Feb 12, <a class="link" href="archive/2021.html">2021</a></dd>
-            <dt class="metadata-label">Topic</dt>
-            <dd class="metadata-value"><a class="link" href="topic/gm-advice.html">GM Advice</a></dd>
-          </dl>
-        </section>
-
-        <section class="summary">
-          <div class="summary__main">
-            <h2 class="heading"><a class="link link--heading" href="post/first-impressions-of-troika.html">First impressions of Troika!</a></h2>
-
-            <blockquote class="excerpt">
-              <p>
-                words words words
-              </p>
-            </blockquote>
-          </div>
-
-          <dl class="summary__metadata">
-            <dt class="metadata-label">Posted</dt>
-            <dd class="metadata-value">Jan 7, <a class="link" href="archive/2021.html">2021</a></dd>
+            <dd class="metadata-value">{{ post.month }} {{ post.day }}, <a class="link" href="archive/{{ post.year }}.html">{{ post.year }}</a></dd>
+{%- if post.system %}
             <dt class="metadata-label">System</dt>
-            <dd class="metadata-value"><a class="link" href="system/troika.html">Troika!</a></dd>
+            <dd class="metadata-value"><a class="link" href="system/{{ post.system }}.html">{{ system_names[post.system] }}</a></dd>
+{%- endif %}
             <dt class="metadata-label">Topic</dt>
-            <dd class="metadata-value"><a class="link" href="topic/review.html">Review</a></dd>
+            <dd class="metadata-value"><a class="link" href="topic/{{ post.topic }}.html">{{ topic_names[post.topic] }}</a></dd>
           </dl>
         </section>
-
-        <section class="summary">
-          <div class="summary__main">
-            <h2 class="heading"><a class="link link--heading" href="post/dice-rolls-in-call-of-cthulhu.html">Dice rolls in Call of Cthulhu</a></h2>
-
-            <blockquote class="excerpt">
-              <p>
-                words words words
-              </p>
-            </blockquote>
-          </div>
-
-          <dl class="summary__metadata">
-            <dt class="metadata-label">Posted</dt>
-            <dd class="metadata-value">Dec 28, <a class="link" href="archive/2020.html">2020</a></dd>
-            <dt class="metadata-label">System</dt>
-            <dd class="metadata-value"><a class="link" href="system/call-of-cthulhu.html">Call of Cthulhu</a></dd>
-            <dt class="metadata-label">Topic</dt>
-            <dd class="metadata-value"><a class="link" href="topic/mechanics.html">Mechanics</a></dd>
-          </dl>
-        </section>
+{%- endfor %}
       </main>
 
       <nav class="pagination box">
