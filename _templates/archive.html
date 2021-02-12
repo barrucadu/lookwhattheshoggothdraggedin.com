@@ -2,7 +2,7 @@
 {% block main %}
   {%- for post in posts %}
   <section class="summary">
-    <h2 class="heading"><a class="link link--heading" href="post/{{ post.slug }}.html">{{ post.title }}</a></h2>
+    <h2 class="heading"><a class="link link--heading" href="{{ post.permalink }}">{{ post.title }}</a></h2>
 
     <dl class="summary__metadata">
       <dt class="metadata-label">Posted</dt>

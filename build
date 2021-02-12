@@ -12,8 +12,10 @@ Options:
   --root=<url>    Root of the website [default: https://www.lookwhattheshoggothdraggedin.com/]
 """
 
+import datetime
 import jinja2
 import os
+import sys
 
 from distutils import dir_util
 from docopt import docopt
@@ -21,6 +23,8 @@ from docopt import docopt
 args = docopt(__doc__)
 OUT_DIR = args["--out"]
 BASE_HREF = args["--root"]
+
+NUM_RECENT = 5
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
 
@@ -40,18 +44,14 @@ PLACEHOLDER_POSTS = [
         "slug": "diegetic-character-advancement",
         "title": "Diegetic character advancement",
         "excerpt": "Characters get better over time, whether that be by hitting milestones or by gathering experience points.  But when they reach an advancement point, make it feel more meaningful by giving a justification in the fiction for the bonuses they get.",
-        "day": 12,
-        "month": "Feb",
-        "year": 2021,
+        "date": datetime.datetime(2021, 2, 12),
         "topic": "gm-advice",
     },
     {
         "slug": "first-impressions-of-troika",
         "title": "First impressions of Troika!",
         "excerpt": "words words words",
-        "day": 7,
-        "month": "Jan",
-        "year": 2021,
+        "date": datetime.datetime(2021, 1, 7),
         "system": "troika",
         "topic": "review",
     },
@@ -59,13 +59,25 @@ PLACEHOLDER_POSTS = [
         "slug": "dice-rolls-in-call-of-cthulhu",
         "title": "Dice rolls in Call of Cthulhu",
         "excerpt": "words words words",
-        "day": 28,
-        "month": "Dec",
-        "year": 2020,
+        "date": datetime.datetime(2020, 12, 28),
         "system": "call-of-cthulhu",
         "topic": "mechanics",
     },
 ]
+
+for post in PLACEHOLDER_POSTS:
+    if post.get("topic") not in TOPIC_NAMES:
+        print(f"{post.slug} has invalid topic.")
+        sys.exit(1)
+    if post.get("system") is not None and post["system"] not in SYSTEM_NAMES:
+        print(f"{post.slug} has invalid system.")
+        sys.exit(1)
+
+    post["permalink"] = f"post/{post['slug']}.html"
+    post["year"] = post["date"].strftime("%Y")
+    post["month"] = post["date"].strftime("%b")
+    post["day"] = post["date"].strftime("%-d")
+    post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
 
 YEARS = list(set(post["year"] for post in PLACEHOLDER_POSTS))
 
@@ -84,6 +96,7 @@ def render(link, template, **metadata):
             base_href=BASE_HREF,
             topic_names=TOPIC_NAMES,
             system_names=SYSTEM_NAMES,
+            years=YEARS,
             permalink=permalink,
             link_to_all_posts=link_to_all_posts,
             **metadata,
@@ -94,7 +107,14 @@ render(
     "index.html",
     "index.html",
     title="Recent Posts",
-    posts=PLACEHOLDER_POSTS[:5],
+    posts=PLACEHOLDER_POSTS[:NUM_RECENT],
+)
+
+render(
+    "feed.xml",
+    "atom.xml",
+    title="Recent Posts",
+    posts=PLACEHOLDER_POSTS[:NUM_RECENT],
 )
 
 render(
@@ -105,25 +125,52 @@ render(
 )
 
 for slug, name in TOPIC_NAMES.items():
+    matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("topic") == slug]
+
     render(
         f"topic/{slug}.html",
         "archive.html",
         title=name,
-        posts=[post for post in PLACEHOLDER_POSTS if post.get("topic") == slug],
+        posts=matching_posts,
+    )
+
+    render(
+        f"topic/{slug}.xml",
+        "atom.xml",
+        title=name,
+        posts=matching_posts[:NUM_RECENT],
     )
 
 for slug, name in SYSTEM_NAMES.items():
+    matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("system") == slug]
+
     render(
         f"system/{slug}.html",
         "archive.html",
         title=name,
-        posts=[post for post in PLACEHOLDER_POSTS if post.get("system") == slug],
+        posts=matching_posts,
+    )
+
+    render(
+        f"system/{slug}.xml",
+        "atom.xml",
+        title=name,
+        posts=matching_posts[:NUM_RECENT],
     )
 
 for year in YEARS:
+    matching_posts = [post for post in PLACEHOLDER_POSTS if post.get("year") == year]
+
     render(
         f"archive/{year}.html",
         "archive.html",
         title=year,
-        posts=[post for post in PLACEHOLDER_POSTS if post.get("year") == year],
+        posts=matching_posts,
+    )
+
+    render(
+        f"archive/{year}.xml",
+        "atom.xml",
+        title=year,
+        posts=matching_posts[:NUM_RECENT],
     )

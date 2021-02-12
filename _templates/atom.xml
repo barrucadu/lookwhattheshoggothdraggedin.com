@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ title }}</title>
+  <link href="{{ permalink }}" rel="self" />
+  <link href="{{ base_href }}" />
+  <id>{{ permalink }}</id>
+  <author>
+    <name>Michael Walker</name>
+    <email>mike@barrucadu.co.uk</email>
+  </author>
+  <updated>{{ posts[0].atom_date }}</updated>
+{%- for post in posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ post.permalink }}" />
+    <id>{{ post.permalink }}</id>
+    <published>{{ post.atom_date }}</published>
+    <summary>
+      {{ post.excerpt }}
+    </summary>
+  </entry>
+{%- endfor %}
+</feed>

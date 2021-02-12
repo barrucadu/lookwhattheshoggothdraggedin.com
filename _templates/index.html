@@ -3,7 +3,7 @@
   {%- for post in posts %}
   <section class="summary-with-excerpt">
     <div class="summary-with-excerpt__main">
-      <h2 class="heading"><a class="link link--heading" href="post/{{ post.slug }}.html">{{ post.title }}</a></h2>
+      <h2 class="heading"><a class="link link--heading" href="{{ post.permalink }}">{{ post.title }}</a></h2>
 
       <blockquote class="excerpt">
         <p>{{ post.excerpt }}</p>
