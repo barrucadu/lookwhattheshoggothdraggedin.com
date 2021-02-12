@@ -41,6 +41,18 @@ SYSTEMS = {
     "troika": "Troika!",
 }
 
+PLACEHOLDER_PAGES = [
+    {
+        "slug": "comments",
+        "title": "About comments",
+        "text": "Comments may be left anonymously; by creating an account with an email address and password; by linking to a Google account; or by linking to a Twitter account.  Unless anonymous, the author of a comment is displayed publicly.  Email addresses are not shared.",
+    }
+]
+
+for page in PLACEHOLDER_PAGES:
+    page["permalink"] = f"{BASE_HREF}{page['slug']}.html"
+    page["body"] = markdown(page["text"], output_format="html5")
+
 PLACEHOLDER_POSTS = [
     {
         "slug": "diegetic-character-advancement",
@@ -96,7 +108,8 @@ dir_util.mkpath(os.path.join(OUT_DIR, "year"))
 
 def render(link, template, **metadata):
     permalink = f"{BASE_HREF}{link}"
-    link_to_all_posts = link != "all.html"
+    link_back = template == "page.html"
+    link_to_all_posts = link != "all.html" and not link_back
 
     with open(os.path.join(OUT_DIR, link), "w") as f:
         rendered = JINJA2_ENV.get_template(template).render(
@@ -106,6 +119,7 @@ def render(link, template, **metadata):
             years=YEARS,
             permalink=permalink,
             link_to_all_posts=link_to_all_posts,
+            link_back=link_back,
             **metadata,
         )
         print(rendered, file=f)
@@ -187,4 +201,12 @@ for post in PLACEHOLDER_POSTS:
         "post.html",
         title=post["title"],
         post=post
+    )
+
+for page in PLACEHOLDER_PAGES:
+    render(
+        f"{page['slug']}.html",
+        "page.html",
+        title=page["title"],
+        page=page,
     )

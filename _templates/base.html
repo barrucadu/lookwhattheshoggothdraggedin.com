@@ -53,6 +53,11 @@
       <nav class="pagination box">
         <a class="link link--pagination" href="all.html">All Posts</a>
       </nav>
+{%- elif link_back %}
+
+      <nav class="pagination box">
+        <a class="link link--pagination" href="index.html">Back</a>
+      </nav>
 {%- endif %}
       {%- block afterward %}{% endblock %}
     </div>
