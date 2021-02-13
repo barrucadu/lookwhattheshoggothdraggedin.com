@@ -29,6 +29,10 @@ p {
     line-height: 1.6;
 }
 
+.markdown p {
+    margin-bottom: 16px;
+}
+
 #wrapper {
     max-width: 960px;
     margin: 64px auto;
@@ -38,11 +42,15 @@ p {
     margin-bottom: 48px;
 }
 
-.heading {
+.heading, .markdown h2, .markdown h3 {
     font-family: "Bungee", cursive;
     font-size: 2rem;
     line-height: 1;
     margin-bottom: 16px;
+}
+
+.markdown h3 {
+    font-size: 1rem;
 }
 
 .heading--main {
@@ -101,7 +109,7 @@ p {
     margin-top: 8px;
 }
 
-.link {
+.link, .markdown a {
     color: var(--link);
     text-decoration: underline;
 }
@@ -116,7 +124,7 @@ p {
     font-size: 1.2rem;
 }
 
-.link:hover {
+.link:hover, .markdown a:hover {
     color: var(--link-alt);
     text-decoration: none;
 }

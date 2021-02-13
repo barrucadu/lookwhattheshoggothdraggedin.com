@@ -1,4 +1,6 @@
 {% extends "base.html" %}
 {% block main %}
-  {{ page.body | safe }}
+  <div class="markdown">
+    {{ page.body | safe }}
+  </div>
 {% endblock %}
