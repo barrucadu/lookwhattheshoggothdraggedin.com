@@ -41,6 +41,8 @@ p {
 .heading {
     font-family: "Bungee", cursive;
     font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 16px;
 }
 
 .heading--main {
