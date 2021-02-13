@@ -31,17 +31,6 @@ NUM_RECENT = 5
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
 
-TOPICS = {
-    "gm-advice": "GM Advice",
-    "mechanics": "Mechanics",
-    "review": "Review",
-}
-
-SYSTEMS = {
-    "call-of-cthulhu": "Call of Cthulhu",
-    "troika": "Troika!",
-}
-
 
 def read_files_from(fdir, permalink_base_href=BASE_HREF):
     out = []
@@ -62,6 +51,12 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF):
             out.append(metadata)
     return out
 
+
+with open("config/topics.yaml") as f:
+    TOPICS = yaml.safe_load(f)
+
+with open("config/systems.yaml") as f:
+    SYSTEMS = yaml.safe_load(f)
 
 ALL_PAGES = read_files_from("pages")
 
