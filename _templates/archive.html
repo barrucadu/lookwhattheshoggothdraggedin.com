@@ -2,7 +2,7 @@
 {% block main %}
   {%- for post in posts %}
   <section class="summary">
-    <h2 class="heading"><a class="link heading__link" href="{{ post.permalink }}">{{ post.title }}</a></h2>
+    <h2 class="heading"><a class="link link--no-underline" href="{{ post.permalink }}">{{ post.title }}</a></h2>
 
     <blockquote class="excerpt">
       <p>{{ post.excerpt }}</p>

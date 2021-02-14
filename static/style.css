@@ -44,10 +44,6 @@ p {
     margin-bottom: 16px;
 }
 
-.heading__link {
-    text-decoration: none;
-}
-
 .heading--main {
     font-size: 3rem;
     text-align: right;
@@ -99,13 +95,16 @@ p {
     text-decoration: none;
 }
 
+.link--no-underline {
+    text-decoration: none;
+}
+
 .top-navigation {
     text-align: center;
 }
 
 .top-navigation__link {
     font-family: "Bungee", cursive;
-    text-decoration: none;
     font-size: 1.2rem;
     line-height: 1;
     margin: 16px 32px;;
