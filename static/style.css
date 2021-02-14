@@ -134,3 +134,7 @@ p {
     font-size: 0.8rem;
     padding: 8px;
 }
+
+.markdown ul, .markdown ol {
+    padding-left: 40px;
+}
