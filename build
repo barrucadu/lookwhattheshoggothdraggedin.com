@@ -28,7 +28,7 @@ args = docopt(__doc__)
 OUT_DIR = args["--out"]
 BASE_HREF = args["--root"]
 
-NUM_RECENT = 5
+FEED_SIZE = 5
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
 
@@ -169,26 +169,19 @@ def render_feeds_for(link_without_format, title, posts):
         link_without_format + ".xml",
         "atom.xml",
         title=title,
-        posts=posts[:NUM_RECENT],
+        posts=posts[:FEED_SIZE],
     )
     render_json_feed(
         link_without_format + ".json",
         title=title,
-        posts=posts[:NUM_RECENT],
+        posts=posts[:FEED_SIZE],
     )
 
 
 render(
     "index.html",
-    "index.html",
-    title="Recent Posts",
-    posts=ALL_POSTS[:NUM_RECENT],
-)
-
-render(
-    "all.html",
     "archive.html",
-    title="All Posts",
+    title="Articles",
     posts=ALL_POSTS,
 )
 
