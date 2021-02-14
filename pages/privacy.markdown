@@ -4,10 +4,10 @@ title: How your data is used
 
 ## Analytics
 
-Analytics are implemented with a self-hosted instance of [umami][].
+!!! attention ""
+    You can disable analytics by blocking the domain `umami.lookwhattheshoggothdraggedin.com`.
 
-**You can disable analytics by blocking the domain
-`umami.lookwhattheshoggothdraggedin.com`**
+Analytics are implemented with a self-hosted instance of [umami][].
 
 ![This is the data I can see.](files/privacy/analytics.png)
 
@@ -22,10 +22,10 @@ collected.  No cookies are used.  And no cross-site tracking is done.
 
 ## Comments
 
-Commenting is implemented with a self-hosted instance of [commento][].
+!!! attention ""
+    You can disable comments by blocking the domain `commento.lookwhattheshoggothdraggedin.com`.
 
-**You can disable comments by blocking the domain
-`commento.lookwhattheshoggothdraggedin.com`.**
+Commenting is implemented with a self-hosted instance of [commento][].
 
 ![This is what the comments look like.](files/privacy/comments.png)
 

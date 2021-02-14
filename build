@@ -44,7 +44,7 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF):
             idx = lines[1:].index("---\n") + 1
             metadata = yaml.load("".join(lines[1:idx]), Loader=yaml.SafeLoader)
             metadata["text"] = "".join(lines[idx + 1:])
-            metadata["body"] = markdown(metadata["text"], output_format="html5")
+            metadata["body"] = markdown(metadata["text"], output_format="html5", extensions=["admonition"])
             if "slug" not in metadata:
                 metadata["slug"], _ = os.path.splitext(fname)
             metadata["permalink"] = f"{permalink_base_href}{metadata['slug']}.html"

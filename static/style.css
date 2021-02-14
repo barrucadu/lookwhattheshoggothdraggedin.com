@@ -4,6 +4,7 @@
     --link: #003078;
     --link-alt: #1d70b8;
     --border: #b1b4b6;
+    --border-admonition: #730b0b;
     --main-title-fg: #ffffff;
     --main-title-bg: #730b0b;
 }
@@ -31,10 +32,6 @@ p {
     line-height: 1.6;
 }
 
-.markdown p {
-    margin-bottom: 16px;
-}
-
 #wrapper {
     max-width: 960px;
     margin: 64px auto;
@@ -49,10 +46,6 @@ p {
 
 .heading__link {
     text-decoration: none;
-}
-
-.markdown h3 {
-    font-size: 1rem;
 }
 
 .heading--main {
@@ -135,6 +128,26 @@ p {
     padding: 8px;
 }
 
+.markdown h3 {
+    font-size: 1rem;
+}
+
 .markdown ul, .markdown ol {
     padding-left: 40px;
+}
+
+.markdown p, .markdown li {
+    margin-bottom: 16px;
+}
+
+.markdown .admonition {
+    padding: 16px;
+    margin: 16px 0;
+    border: 5px solid var(--border-admonition);
+    font-weight: bold;
+}
+
+.markdown .admonition p:last-child {
+     margin-bottom: 0;
+     padding-bottom: 0;
 }
