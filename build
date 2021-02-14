@@ -89,19 +89,14 @@ dir_util.mkpath(os.path.join(OUT_DIR, "year"))
 
 
 def render(link, template, **metadata):
-    permalink = f"{BASE_HREF}{link}"
-    link_back = template == "page.html"
-    link_to_all_posts = link != "all.html" and not link_back
-
     with open(os.path.join(OUT_DIR, link), "w") as f:
         rendered = JINJA2_ENV.get_template(template).render(
             base_href=BASE_HREF,
             topics=TOPICS,
             systems=SYSTEMS,
             years=YEARS,
-            permalink=permalink,
-            link_to_all_posts=link_to_all_posts,
-            link_back=link_back,
+            permalink=f"{BASE_HREF}{link}",
+            link=link,
             **metadata,
         )
         print(rendered, file=f)

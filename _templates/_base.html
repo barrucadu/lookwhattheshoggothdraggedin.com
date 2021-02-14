@@ -41,26 +41,21 @@
   </head>
   <body>
     <div id="wrapper">
-      <header class="box">
+      <header>
         <img src="logo.png" alt="Well well well, look what the shoggoth dragged in.">
+
+        <nav class="top-navigation">
+          <a class="link top-navigation__link" href="index.html"{% if link == "index.html" %} aria-current="page"{% endif %}>Recent Posts</a>
+          <a class="link top-navigation__link" href="all.html"{% if link == "all.html" %} aria-current="page"{% endif %}>All Posts</a>
+        </nav>
       </header>
 
-      <main class="box">
+      <main>
         <h1 class="heading heading--main">{{ title }}</h1>
 
         {% block main %}{% endblock %}
       </main>
-{%- if link_to_all_posts %}
 
-      <nav class="pagination box">
-        <a class="link link--pagination" href="all.html">All Posts</a>
-      </nav>
-{%- elif link_back %}
-
-      <nav class="pagination box">
-        <a class="link link--pagination" href="index.html">Back</a>
-      </nav>
-{%- endif %}
       {%- block afterward %}{% endblock %}
     </div>
 
