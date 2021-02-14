@@ -1,0 +1,10 @@
+<dl class="post-metadata">
+  <dt class="post-metadata__label">Posted</dt>
+  <dd class="post-metadata__value">{{ post.month }} {{ post.day }}, <a class="link" href="year/{{ post.year }}.html">{{ post.year }}</a></dd>
+  <dt class="post-metadata__label">Topic</dt>
+  <dd class="post-metadata__value"><a class="link" href="topic/{{ post.topic }}.html">{{ topics[post.topic] }}</a></dd>
+{%- if post.system %}
+  <dt class="post-metadata__label">System</dt>
+  <dd class="post-metadata__value"><a class="link" href="system/{{ post.system }}.html">{{ systems[post.system] }}</a></dd>
+{%- endif %}
+</dl>

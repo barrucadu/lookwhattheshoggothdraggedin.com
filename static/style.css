@@ -64,53 +64,36 @@ p {
     background-color: var(--main-title-bg);
 }
 
-.summary-with-excerpt {
-    display: grid;
-    grid-template-columns: 8rem auto;
-    gap: 16px;
-    grid-template-areas:
-        "metadata main";
-}
-
-.summary-with-excerpt__main {
-    grid-area: main;
-}
-
-.summary-with-excerpt__metadata {
-    grid-area: metadata;
-}
-
-.summary-with-excerpt + .summary-with-excerpt, .summary + .summary {
+.summary + .summary {
     margin-top: 24px;
     padding-top: 8px;
     border-top: 1px solid var(--border);
 }
 
-.summary__metadata, .post__metadata {
+.post-metadata {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 33%;
     grid-template-rows: min-content min-content;
+    margin-top: 24px;
 }
 
-.post__metadata, #commento {
+#commento {
     padding-top: 8px;
     margin-top: 24px;
     border-top: 1px solid var(--border);
 }
 
-.excerpt {
+.excerpt, .markdown blockquote {
     border-left: 5px solid var(--border);
-    padding: 0 0 0 16px;
-    margin: 16px 16px 0 0;
+    padding-left: 8px;
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: 1.1rem;
 }
 
-.metadata-label {
+.post-metadata__label {
     font-weight: bold;
-}
-
-.metadata-value + .metadata-label {
-    margin-top: 8px;
 }
 
 .link, .markdown a {
