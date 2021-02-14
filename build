@@ -15,13 +15,14 @@ Options:
 import datetime
 import jinja2
 import json
+import markdown
 import os
 import sys
 import yaml
+import xml.etree.ElementTree as ET
 
 from distutils import dir_util
 from docopt import docopt
-from markdown import markdown
 
 args = docopt(__doc__)
 OUT_DIR = args["--out"]
@@ -30,6 +31,43 @@ BASE_HREF = args["--root"]
 NUM_RECENT = 5
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
+
+with open("config/topics.yaml") as f:
+    TOPICS = yaml.safe_load(f)
+
+with open("config/systems.yaml") as f:
+    SYSTEMS = yaml.safe_load(f)
+
+with open("config/glossary.yaml") as f:
+    GLOSSARY = yaml.safe_load(f)
+
+
+class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
+    def handleMatch(self, m, data):
+        key = m.group(1)
+        item = GLOSSARY[key]
+
+        link = ET.Element("a")
+        link.set("href", f"glossary.html#{key}")
+
+        if "abbr" in item:
+            abbr = ET.Element("abbr")
+            abbr.set("title", item["title"])
+            abbr.text = item["abbr"]
+            link.append(abbr)
+        else:
+            link.text = item["title"]
+
+        return link, m.start(0), m.end(0)
+
+
+class GlossaryLinkExtension(markdown.extensions.Extension):
+    def extendMarkdown(self, md):
+        md.inlinePatterns.register(GlossaryLinkProcessor(r"\[glo:([a-z]+)\]", md), "glossary", -99999)
+
+
+def do_markdown(text):
+    return markdown.markdown(text, output_format="html5", extensions=["admonition", GlossaryLinkExtension()])
 
 
 def read_files_from(fdir, permalink_base_href=BASE_HREF):
@@ -44,19 +82,13 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF):
             idx = lines[1:].index("---\n") + 1
             metadata = yaml.load("".join(lines[1:idx]), Loader=yaml.SafeLoader)
             metadata["text"] = "".join(lines[idx + 1:])
-            metadata["body"] = markdown(metadata["text"], output_format="html5", extensions=["admonition"])
+            metadata["body"] = do_markdown(metadata["text"])
             if "slug" not in metadata:
                 metadata["slug"], _ = os.path.splitext(fname)
             metadata["permalink"] = f"{permalink_base_href}{metadata['slug']}.html"
             out.append(metadata)
     return out
 
-
-with open("config/topics.yaml") as f:
-    TOPICS = yaml.safe_load(f)
-
-with open("config/systems.yaml") as f:
-    SYSTEMS = yaml.safe_load(f)
 
 ALL_PAGES = read_files_from("pages")
 
@@ -65,6 +97,9 @@ ALL_POSTS = sorted(
     key=lambda post: post["date"],
     reverse=True
 )
+
+for key, defn in GLOSSARY.items():
+    GLOSSARY[key]["body"] = do_markdown(defn["text"])
 
 for post in ALL_POSTS:
     if post.get("topic") not in TOPICS:
@@ -155,6 +190,13 @@ render(
     "archive.html",
     title="All Posts",
     posts=ALL_POSTS,
+)
+
+render(
+    "glossary.html",
+    "glossary.html",
+    title="Glossary",
+    glossary=GLOSSARY,
 )
 
 render_feeds_for("feed", "Recent Posts", ALL_POSTS)

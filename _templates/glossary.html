@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% block main %}
+  {%- for key in glossary %}
+  <section>
+    <h2 class="heading" id="{{ key }}">{{ glossary[key].title }}{% if glossary[key].abbr %} ({{ glossary[key].abbr }}){% endif %}</h2>
+
+    <div class="markdown">
+      {{ glossary[key].body }}
+    </div>
+  </section>
+  {%- endfor %}
+{% endblock %}
