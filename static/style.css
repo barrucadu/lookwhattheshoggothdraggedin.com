@@ -151,3 +151,8 @@ p {
      margin-bottom: 0;
      padding-bottom: 0;
 }
+
+.markdown img {
+    margin: 0 auto;
+    display: block;
+}
