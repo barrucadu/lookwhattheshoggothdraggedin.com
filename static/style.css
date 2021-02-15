@@ -109,10 +109,11 @@ p {
     line-height: 1;
     margin: 16px 32px;;
     display: inline-block;
+    border-top: 3px solid transparent;
 }
 
 .top-navigation__link[aria-current="page"] {
-    border-top: 3px solid var(--link);
+    border-color: var(--link);
 }
 
 .footer {
