@@ -1,3 +1,49 @@
+coc:
+  title: Call of Cthulhu
+  abbr: CoC
+  use_abbr_for_glo_link: false
+  text: |
+    A horror investigation roleplaying game based on the fiction of
+    [H. P. Lovecraft](https://en.wikipedia.org/wiki/H._P._Lovecraft).
+    First published in 1981 by [Chaosium](https://www.chaosium.com/),
+    and now in its seventh edition.
+
+    Unlike [glo:dnd], Call of Cthulhu has no classes or levels and has
+    an extensive skill list.  The default setting is the 1920s, often
+    in the USA, but supplements exist for different periods and
+    locations.
+
+dice-notation:
+  title: Dice Notation
+  text: |
+    Dice rolls are expressed in the form `NdS`, where `N` is the
+    number of dice to roll and `S` is the size of die.  Modifiers can
+    be given with `+M` or `-M`.  Usually the values of the dice are
+    summed to get the result.
+
+    For example, `3d10+7` means "roll three 10-sided dice, sum them,
+    and add 7 to the result".
+
+    There are two common exceptions:
+
+      - `d100`, or "percentile dice".  Very few people own an actual
+        100-sided die, so usually this is done by rolling `2d10` and
+        designating one die the "tens" place and the other the "ones"
+        place.  Or equivalently, rolling `10*d10 + d10`.
+
+        For example, rolling a 3 and a 7 is read as 37.
+
+        A roll of 0 on both dice is read as 100.
+
+      - `d66`, `d666`, and so on.  Similarly to percentile dice, this
+        usually means to roll multiple dice and read them as digits of
+        a larger number.
+
+        For example, rolling a 1, a 3, and a 6 is read as 136.
+
+        Since a `d6` is numbered from 1 to 6, the results of a `d66`
+        (for example) do not cover all values from 1 to 66.
+
 dnd:
   title: Dungeons & Dragons
   abbr: "D&D"
@@ -5,21 +51,33 @@ dnd:
     The most popular roleplaying game, created in the 1970s by Gary
     Gygax and Dave Arneson.
 
-osr:
-  title: Old School Renaissance
-  abbr: OSR
+gm:
+  title: Game Master, Dungeon Master, Keeper, Referee, etc
+  abbr: GM
   text: |
-    A movement to go back to the origins of the hobby which, in
-    practice, usually means games based on early editions of
-    [glo:dnd].
+    The player at the table who plays the part of "the world", rather
+    than controlling a specific [glo:pc].  The GM will describe the
+    events taking place, decide what happens when outcomes are
+    uncertain and control [glo:npc]s.  Traditionally the GM will also
+    handle out-of-game concerns like scheduling.
 
-    Described in the [Principia Apocrypha](https://lithyscaphe.blogspot.com/p/principia-apocrypha.html) as:
+    The GM is not *opposed* to the PCs; they're not trying to win or
+    to score points against the other players.  Even though they have
+    a different role, they are still a player.
 
-    > The more of the following a campaign has, the more old school it
-    > is: high lethality, an open world, a lack of pre-written plot,
-    > an emphasis on creative problem solving, an exploration-centered
-    > reward system (usually XP for treasure), a disregard for
-    > "encounter balance", and the use of random tables to generate
-    > world elements that surprise both players and referees.  Also, a
-    > strong do-it-yourself attitude and a willingness to share your
-    > work and use the creativity of others in your game.
+npc:
+  title: Non-player Character
+  abbr: NPC
+  text: |
+    A character in the game world which is controlled by the [glo:gm].
+    These will be your shopkeepers, guards, aristocrats, monsters, and
+    so on.
+
+pc:
+  title: Player Character
+  abbr: PC
+  text: |
+    A character in the game world which is controlled by one of the
+    players at the table.  Usually each player has exactly one PC,
+    which they have exclusive control over, but that is not
+    necessarily the case.
