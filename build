@@ -38,33 +38,44 @@ with open("config/systems.yaml") as f:
 
 with open("config/glossary.yaml") as f:
     GLOSSARY = yaml.safe_load(f)
+GLOSSARY_CACHE = set()
 
 
 class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
     def handleMatch(self, m, data):
+        global GLOSSARY_CACHE
+
         key = m.group(1)
+        override_title = m.group(3)
         item = GLOSSARY[key]
 
-        link = ET.Element("a")
-        link.set("href", f"glossary.html#{key}")
+        if key in GLOSSARY_CACHE:
+            el = ET.Element("span")
+        else:
+            GLOSSARY_CACHE.add(key)
+            el = ET.Element("a")
+            el.set("href", f"glossary.html#{key}")
 
-        if "abbr" in item:
+        if "abbr" in item and item.get("use_abbr_for_glo_link", True) and override_title is None:
             abbr = ET.Element("abbr")
             abbr.set("title", item["title"])
             abbr.text = item["abbr"]
-            link.append(abbr)
+            el.append(abbr)
         else:
-            link.text = item["title"]
+            el.text = override_title or item["title"]
 
-        return link, m.start(0), m.end(0)
+        return el, m.start(0), m.end(0)
 
 
 class GlossaryLinkExtension(markdown.extensions.Extension):
     def extendMarkdown(self, md):
-        md.inlinePatterns.register(GlossaryLinkProcessor(r"\[glo:([a-z]+)\]", md), "glossary", -99999)
+        md.inlinePatterns.register(GlossaryLinkProcessor(r"\[glo:([a-z-]+)(\s*\"([^\"]+)\")?\]", md), "glossary", -99999)
 
 
 def do_markdown(text):
+    global GLOSSARY_CACHE
+    GLOSSARY_CACHE = set()
+
     return markdown.markdown(text, output_format="html5", extensions=["admonition", GlossaryLinkExtension()])
 
 
