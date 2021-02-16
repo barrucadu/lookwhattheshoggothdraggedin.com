@@ -3,11 +3,12 @@
 """build
 
 Usage:
-  build [--out=<dir>] [--root=<url>]
+  build [--drafts] [--out=<dir>] [--root=<url>]
   build (-h | --help)
 
 Options:
   -h --help       Show this screen.
+  --drafts        Include draft posts and pages.
   --out=<dir>     Directory to generate site in [default: _site]
   --root=<url>    Root of the website [default: https://www.lookwhattheshoggothdraggedin.com/]
 """
@@ -79,7 +80,7 @@ def do_markdown(text):
     return markdown.markdown(text, output_format="html5", extensions=["admonition", GlossaryLinkExtension()])
 
 
-def read_files_from(fdir, permalink_base_href=BASE_HREF):
+def read_files_from(fdir, permalink_base_href=BASE_HREF, include_drafts=False):
     out = []
     for fname in os.listdir(fdir):
         fpath = os.path.join(fdir, fname)
@@ -90,6 +91,8 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF):
             lines = f.readlines()
             idx = lines[1:].index("---\n") + 1
             metadata = yaml.load("".join(lines[1:idx]), Loader=yaml.SafeLoader)
+            if metadata.get("draft", False) and not include_drafts:
+                continue
             metadata["text"] = "".join(lines[idx + 1:])
             metadata["body"] = do_markdown(metadata["text"])
             if "slug" not in metadata:
@@ -99,10 +102,10 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF):
     return out
 
 
-ALL_PAGES = read_files_from("pages")
+ALL_PAGES = read_files_from("pages", include_drafts=args["--drafts"])
 
 ALL_POSTS = sorted(
-    read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/"),
+    read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/", include_drafts=args["--drafts"]),
     key=lambda post: post["date"],
     reverse=True
 )

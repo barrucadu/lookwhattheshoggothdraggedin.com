@@ -8,6 +8,7 @@
     <name>Michael Walker</name>
     <email>mike@barrucadu.co.uk</email>
   </author>
+{%- if posts %}
   <updated>{{ posts[0].atom_date }}</updated>
 {%- for post in posts %}
   <entry>
@@ -20,4 +21,5 @@
     </summary>
   </entry>
 {%- endfor %}
+{%- endif %}
 </feed>
