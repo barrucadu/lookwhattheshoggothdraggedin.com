@@ -112,10 +112,10 @@ for key, defn in GLOSSARY.items():
 
 for post in ALL_POSTS:
     if post.get("topic") not in TOPICS:
-        print(f"{post.slug} has invalid topic.")
+        print(f"{post['slug']} has invalid topic.")
         sys.exit(1)
     if post.get("system") is not None and post["system"] not in SYSTEMS:
-        print(f"{post.slug} has invalid system.")
+        print(f"{post['slug']} has invalid system.")
         sys.exit(1)
 
     post["year"] = post["date"].strftime("%Y")
