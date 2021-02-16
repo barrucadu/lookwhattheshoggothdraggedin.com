@@ -4,8 +4,8 @@
   <section class="division">
     <h2 class="heading"><a class="link link--no-underline" href="{{ post.permalink }}">{{ post.title }}</a></h2>
 
-    <blockquote class="excerpt">
-      <p>{{ post.excerpt }}</p>
+    <blockquote class="excerpt markdown">
+      {{ post.excerpt }}
     </blockquote>
 
     {% include "_post_metadata.html" %}
