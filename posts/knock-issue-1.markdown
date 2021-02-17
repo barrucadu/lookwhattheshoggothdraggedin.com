@@ -37,9 +37,7 @@ Milton][] (Questing Beast), and [Gavin Norman][] (Necrotic Gnome).
 
 ![Excerpts of art.](files/knock-issue-1/art.jpg)
 
-I've read through it all briefly, but there are bits I want to revisit
-and think about some more.  A few articles I've found immediate
-practical use for are:
+I've found immediate practical use from a few of the articles:
 
 - [Monster Design from Classics - The Lich][] and [Just Use Bears][], for monster design.
 - [Dungeon Checklist][] and [The Labors of Hercules as OSR Obstacles][], for adventure design.
