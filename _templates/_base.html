@@ -35,7 +35,7 @@
     <link rel="alternate" type="application/feed+json" href="year/{{ year }}.json" title="JSON feed for {{ year }}" />
 {%- endfor %}
 
-    <script async defer data-website-id="8cb27df6-60d1-468d-81ad-923168d97095" src="https://umami.lookwhattheshoggothdraggedin.com/umami.js"></script>
+    {% if not draft_mode %}<script async defer data-website-id="8cb27df6-60d1-468d-81ad-923168d97095" src="https://umami.lookwhattheshoggothdraggedin.com/umami.js"></script>{% endif %}
 
     <title>{{ title }}</title>
   </head>

@@ -28,6 +28,7 @@ from docopt import docopt
 args = docopt(__doc__)
 OUT_DIR = args["--out"]
 BASE_HREF = args["--root"]
+DRAFT_MODE = args["--drafts"]
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
 
@@ -102,10 +103,10 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF, include_drafts=False):
     return out
 
 
-ALL_PAGES = read_files_from("pages", include_drafts=args["--drafts"])
+ALL_PAGES = read_files_from("pages", include_drafts=DRAFT_MODE)
 
 ALL_POSTS = sorted(
-    read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/", include_drafts=args["--drafts"]),
+    read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/", include_drafts=DRAFT_MODE),
     key=lambda post: post["date"],
     reverse=True
 )
@@ -143,6 +144,7 @@ def render(link, template, **metadata):
             topics=TOPICS,
             systems=SYSTEMS,
             years=YEARS,
+            draft_mode=DRAFT_MODE,
             permalink=f"{BASE_HREF}{link}",
             link=link,
             **metadata,
