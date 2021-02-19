@@ -133,6 +133,13 @@ p {
     font-size: 1.5rem;
 }
 
+.markdown h4 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
 .markdown ul, .markdown ol {
     padding-left: 40px;
 }
