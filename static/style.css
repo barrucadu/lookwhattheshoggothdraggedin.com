@@ -38,7 +38,7 @@ p {
 }
 
 .heading, .markdown h2, .markdown h3 {
-    font-family: "Bungee", cursive;
+    font-family: "Bungee", serif;
     font-size: 2rem;
     line-height: 1;
     margin-bottom: 16px;
