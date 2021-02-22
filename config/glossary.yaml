@@ -99,6 +99,14 @@ osr:
     > strong do-it-yourself attitude and a willingness to share your
     > work and use the creativity of others in your game.
 
+pbp:
+  title: Play-by-Post
+  abbr: PbP
+  text: |
+    A style of asynchronous game where play is done entirely through
+    posting messages to a forum or group chat, rather than regularly
+    gathering in person or in a voice call.
+
 pbta:
   title: Powered by the Apocalypse
   abbr: PbtA
@@ -125,6 +133,14 @@ pc:
     players at the table.  Usually each player has exactly one PC,
     which they have exclusive control over, but that is not
     necessarily the case.
+
+totm:
+  title: theatre-of-the-mind
+  abbr: TotM
+  text: |
+    A style of play which tends to not use battlemaps or miniatures,
+    or care about precise positioning, where the [glo:gm] describes
+    the scene and the players imagine it.
 
 troika:
   title: Troika!
