@@ -66,7 +66,7 @@ gm:
     a different role, they are still a player.
 
 npc:
-  title: Non-player Character
+  title: Non-Player Character
   abbr: NPC
   text: |
     A character in the game world which is controlled by the [glo:gm].
