@@ -40,44 +40,40 @@ with open("config/systems.yaml") as f:
 
 with open("config/glossary.yaml") as f:
     GLOSSARY = yaml.safe_load(f)
-GLOSSARY_CACHE = set()
 
 
 class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
     def handleMatch(self, m, data):
         global GLOSSARY_CACHE
 
-        key = m.group(1)
-        override_title = m.group(3)
+        is_plural = m.group(1) == "s"
+        key = m.group(2)
+        override_title = m.group(4)
         item = GLOSSARY[key]
 
-        if key in GLOSSARY_CACHE:
-            el = ET.Element("span")
-        else:
-            GLOSSARY_CACHE.add(key)
-            el = ET.Element("a")
-            el.set("href", f"glossary.html#{key}")
+        el = ET.Element("a")
+        el.set("class", "link--glossary")
+        el.set("href", f"glossary.html#{key}")
+
+        title = item.get("title_plural", item["title"] + "s") if is_plural else item["title"]
 
         if "abbr" in item and item.get("use_abbr_for_glo_link", True) and override_title is None:
             abbr = ET.Element("abbr")
-            abbr.set("title", item["title"])
-            abbr.text = item["abbr"]
+            abbr.set("title", title)
+            abbr.text = item.get("abbr_plural", item["abbr"] + "s") if is_plural else item["abbr"]
             el.append(abbr)
         else:
-            el.text = override_title or item["title"]
+            el.text = override_title or title
 
         return el, m.start(0), m.end(0)
 
 
 class GlossaryLinkExtension(markdown.extensions.Extension):
     def extendMarkdown(self, md):
-        md.inlinePatterns.register(GlossaryLinkProcessor(r"\[glo:([a-z-]+)(\s*\"([^\"]+)\")?\]", md), "glossary", -99999)
+        md.inlinePatterns.register(GlossaryLinkProcessor(r"\[glo(s)?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md), "glossary", -99999)
 
 
 def do_markdown(text):
-    global GLOSSARY_CACHE
-    GLOSSARY_CACHE = set()
-
     return markdown.markdown(text, output_format="html5", extensions=["admonition", GlossaryLinkExtension()])
 
 

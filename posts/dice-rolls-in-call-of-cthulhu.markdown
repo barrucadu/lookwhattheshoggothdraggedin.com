@@ -207,7 +207,7 @@ these four rules:
 - Bonus and penalty dice represent significant situational advantages
   or disadvantages.
 
-- Opposed rolls are for combat, magic, or if two [glo:pc]s are
+- Opposed rolls are for combat, magic, or if two [glos:pc] are
   directly competing.  Use sparingly elsewhere.
 
 - Before rolling anything, ask if a roll is *really* needed here.  If
