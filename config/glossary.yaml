@@ -29,7 +29,7 @@ dice-notation:
       - `d100`, or "percentile dice".  Very few people own an actual
         100-sided die, so usually this is done by rolling `2d10` and
         designating one die the "tens" place and the other the "ones"
-        place.  Or equivalently, rolling `10*d10 + d10`.
+        place.  Or equivalently, rolling `10×d10 + d10`.
 
         For example, rolling a 3 and a 7 is read as 37.
 

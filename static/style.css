@@ -164,3 +164,8 @@ p {
     margin: 0 auto;
     display: block;
 }
+
+.markdown code {
+    font-family: "Alegreya Sans SC", monospace;
+    font-size: 1.2rem;
+}
