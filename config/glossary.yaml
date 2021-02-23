@@ -72,6 +72,15 @@ gm:
     to score points against the other players.  Even though they have
     a different role, they are still a player.
 
+mythras:
+  title: Mythras
+  text: |
+    A bronze-age fantasy roleplaying game published by [The Design
+    Mechanism](http://thedesignmechanism.com/).
+
+    Mythras is of the same family tree as [glo:coc] and uses a similar
+    skill-based percentile system.
+
 npc:
   title: Non-Player Character
   abbr: NPC
