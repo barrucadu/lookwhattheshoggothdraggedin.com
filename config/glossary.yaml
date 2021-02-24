@@ -1,3 +1,10 @@
+pbta-aw:
+  title: Apocalypse World
+  text: |
+    A post-apocalyptic roleplaying game by [Vincent
+    Baker](https://lumpley.games/) which has inspired a whole class of
+    games collectively called [glo:pbta].
+
 coc:
   title: Call of Cthulhu
   abbr: CoC
@@ -91,6 +98,24 @@ osr:
     > world elements that surprise both players and referees.  Also, a
     > strong do-it-yourself attitude and a willingness to share your
     > work and use the creativity of others in your game.
+
+pbta:
+  title: Powered by the Apocalypse
+  abbr: PbtA
+  text: |
+    Games inspired by [glo:pbta-aw].
+
+    There is no generic "[glo:pbta] system", rather these are games
+    built on the same principles.  As Vincent Baker, the creator of
+    [glo:pbta-aw], has said:
+
+    > Is Apocalypse World an inspiration for your game? Enough so that
+    > you want to call your game [glo:pbta]? Did you follow Meg's and
+    > my policy wrt publishing it? Then cool, your game is Powered by
+    > the Apocalypse. Get with us if you want to use the logo.
+
+    [glo:pbta] games tend to focus on emulating a specific genre, have
+    player-facing rolls, and use playbooks instead of classes.
 
 pc:
   title: Player Character
