@@ -134,6 +134,14 @@ dir_util.mkpath(os.path.join(OUT_DIR, "year"))
 
 
 def render(link, template, **metadata):
+    slug = link.split("/")[-1].split(".")[0]
+    if os.path.isfile(os.path.join("static", "twitter-cards", slug + ".png")):
+        twitter_card = f"twitter-cards/{slug}.png"
+    elif os.path.isfile(os.path.join("static", "twitter-cards", slug + ".jpg")):
+        twitter_card = f"twitter-cards/{slug}.jpg"
+    else:
+        twitter_card = "twitter-card.png"
+
     with open(os.path.join(OUT_DIR, link), "w") as f:
         rendered = JINJA2_ENV.get_template(template).render(
             base_href=BASE_HREF,
@@ -143,6 +151,7 @@ def render(link, template, **metadata):
             draft_mode=DRAFT_MODE,
             permalink=f"{BASE_HREF}{link}",
             link=link,
+            twitter_card=twitter_card,
             **metadata,
         )
         print(rendered, file=f)
