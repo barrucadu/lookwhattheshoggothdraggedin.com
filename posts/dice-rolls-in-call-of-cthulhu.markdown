@@ -82,8 +82,8 @@ player keeps the better of the two "tens" values.
 
 ![Chance of success for a skill roll with a bonus die, for hard difficulty.](files/dice-rolls-in-call-of-cthulhu/bonus.png)
 
-Getting a bonus die is just as beneficial as pushing the roll, and
-pushing a roll with a bonus die is better yet.
+The "Hard (pushed)" line completely covers the "Hard (with bonus)"
+line.  Each is as beneficial as the other.
 
 
 ## Situational disadvantages
