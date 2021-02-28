@@ -74,7 +74,7 @@ class GlossaryLinkExtension(markdown.extensions.Extension):
 
 
 def do_markdown(text):
-    return markdown.markdown(text, output_format="html5", extensions=["admonition", GlossaryLinkExtension()])
+    return markdown.markdown(text, output_format="html5", extensions=["admonition", "smarty", GlossaryLinkExtension()])
 
 
 def read_files_from(fdir, permalink_base_href=BASE_HREF, include_drafts=False):
