@@ -100,3 +100,18 @@ pc:
     players at the table.  Usually each player has exactly one PC,
     which they have exclusive control over, but that is not
     necessarily the case.
+
+troika:
+  title: Troika!
+  text: |
+    A science-fantasy roleplaying game, based on the old [Fighting
+    Fantasy](https://en.wikipedia.org/wiki/Fighting_Fantasy) system,
+    written by [Daniel Sell](https://twitter.com/Ignus1).
+
+    Despite not being based on an old edition of [glo:dnd], generally
+    considered part of the [glo:osr].  The game has backgrounds,
+    rather than classes, and uses a [glo:dice-notation "2d6"]
+    roll-under system as its core mechanic.
+
+    The default setting is in the spirit of the *Dying Earth* and
+    *Book of the New Sun*.
