@@ -17,7 +17,9 @@
     <id>{{ post.permalink }}</id>
     <published>{{ post.atom_date }}</published>
     <summary>
+      <![CDATA[
       {{ post.excerpt }}
+      ]]>
     </summary>
   </entry>
 {%- endfor %}
