@@ -27,7 +27,7 @@ html {
 body {
     font-family: "Noto Sans", sans-serif;
     color: var(--text);
-    padding: 0 40px 100px 40px;
+    padding: 0 20px 100px 20px;
 }
 
 p {
@@ -40,9 +40,8 @@ p {
 }
 
 .heading, .markdown h2, .markdown h3 {
-    font-family: "Bungee", serif;
+    font-family: "Staatliches", serif;
     font-size: 2rem;
-    line-height: 1;
     margin-bottom: 16px;
 }
 
@@ -109,11 +108,11 @@ p {
 }
 
 .top-navigation__link {
-    font-family: "Bungee", cursive;
-    line-height: 1;
+    font-family: "Staatliches", serif;
     margin: 16px 32px;
     display: inline-block;
-    border-top: 3px solid transparent;
+    border-top: 5px solid transparent;
+    font-size: 2rem;
 }
 
 .top-navigation__link[aria-current="page"] {
@@ -145,7 +144,7 @@ p {
 }
 
 .markdown ul, .markdown ol {
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .markdown p, .markdown li {
@@ -171,4 +170,19 @@ p {
 
 .markdown code {
     font-family: "Alegreya Sans SC", monospace;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    #wrapper {
+        margin-top: 20px;
+    }
+
+    .top-navigation__link {
+        margin: 8px 0;
+        display: block;
+    }
 }
