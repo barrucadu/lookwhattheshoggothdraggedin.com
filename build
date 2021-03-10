@@ -14,15 +14,16 @@ Options:
 """
 
 import datetime
+import hashlib
 import jinja2
 import json
 import markdown
 import os
 import sys
-import yaml
 import xml.etree.ElementTree as ET
+import yaml
 
-from distutils import dir_util
+from distutils import dir_util, file_util
 from docopt import docopt
 
 args = docopt(__doc__)
@@ -132,6 +133,23 @@ dir_util.mkpath(os.path.join(OUT_DIR, "system"))
 dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
 dir_util.mkpath(os.path.join(OUT_DIR, "year"))
 
+HASHED_LINKS = {}
+for fname in os.listdir("hashed-static"):
+    fpath = os.path.join("hashed-static", fname)
+    if not os.path.isfile(fpath):
+        continue
+
+    file_hash = hashlib.sha256()
+    with open(fpath, "rb") as f:
+        while True:
+            data = f.read(65536)
+            if not data:
+                break
+            file_hash.update(data)
+    base, ext = os.path.splitext(fname)
+    HASHED_LINKS[fname] = f"{base}-sha256-{file_hash.hexdigest()}{ext}"
+    file_util.copy_file(fpath, os.path.join(OUT_DIR, HASHED_LINKS[fname]))
+
 
 def render(link, template, **metadata):
     slug = link.split("/")[-1].split(".")[0]
@@ -149,6 +167,7 @@ def render(link, template, **metadata):
             systems=SYSTEMS,
             years=YEARS,
             draft_mode=DRAFT_MODE,
+            hashed_links=HASHED_LINKS,
             permalink=f"{BASE_HREF}{link}",
             link=link,
             twitter_card=twitter_card,
