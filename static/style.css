@@ -46,7 +46,7 @@ p {
 }
 
 .heading--main {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: right;
     margin-bottom: 24px;
     padding: 16px;
@@ -179,5 +179,9 @@ p {
     .top-navigation__link {
         margin: 8px 0;
         display: block;
+    }
+
+    .heading--main {
+        font-size: 2rem;
     }
 }
