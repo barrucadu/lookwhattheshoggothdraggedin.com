@@ -5,7 +5,7 @@
     <h2 class="heading"><a class="link link--no-underline" href="{{ post.permalink }}">{{ post.title }}</a></h2>
 
     <div class="markdown">
-      {{ post.excerpt }}
+      {{ post.excerpt | safe }}
     </div>
 
     {% include "_post_metadata.html" %}

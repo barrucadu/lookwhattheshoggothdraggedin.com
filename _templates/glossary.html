@@ -5,7 +5,7 @@
     <h2 class="heading" id="{{ key }}">{{ glossary[key].title }}{% if glossary[key].abbr %} ({{ glossary[key].abbr }}){% endif %}</h2>
 
     <div class="markdown">
-      {{ glossary[key].body }}
+      {{ glossary[key].body | safe }}
     </div>
   </section>
   {%- endfor %}

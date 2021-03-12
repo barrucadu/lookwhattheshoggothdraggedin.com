@@ -31,7 +31,10 @@ OUT_DIR = args["--out"]
 BASE_HREF = args["--root"]
 DRAFT_MODE = args["--drafts"]
 
-JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader("_templates"))
+JINJA2_ENV = jinja2.Environment(
+    autoescape=jinja2.select_autoescape(["html", "xml"]),
+    loader=jinja2.FileSystemLoader("_templates"),
+)
 
 with open("config/topics.yaml") as f:
     TOPICS = yaml.safe_load(f)
