@@ -1,0 +1,60 @@
+resource_types:
+  - name: rsync-resource
+    type: docker-image
+    source:
+      repository: registry.barrucadu.dev/rsync-resource
+      username: registry
+      password: ((docker-registry-password))
+
+resources:
+  - name: www-git
+    type: git
+    source:
+      uri: https://github.com/barrucadu/lookwhattheshoggothdraggedin.com.git
+  - name: www-rsync
+    type: rsync-resource
+    source:
+      server: dunwich.barrucadu.co.uk
+      remote_dir: /srv/http/lookwhattheshoggothdraggedin.com/www
+      private_key: ((dunwich-ssh-private-key))
+
+jobs:
+  - name: update-pipeline
+    plan:
+      - get: www-git
+        trigger: true
+      - set_pipeline: www-lookwhattheshoggothdraggedin-com
+        file: www-git/concourse/pipeline.yml
+
+  - name: build-and-deploy
+    serial: true
+    plan:
+      - get: www-git
+        trigger: true
+      - task: build-site
+        params:
+          OUT_DIR: www
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source:
+              repository: python
+              tag: 3.8
+          inputs:
+            - name: www-git
+          outputs:
+            - name: site
+          run:
+            dir: www-git
+            path: sh
+            args:
+              - -cex
+              - |
+                pip install -r requirements.txt
+                ./build --out="../site/${OUT_DIR}"
+      - put: www-rsync
+        params:
+          path: site/www
+          rsync_args:
+            - --delete
