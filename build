@@ -13,7 +13,6 @@ Options:
   --root=<url>    Root of the website [default: https://www.lookwhattheshoggothdraggedin.com/]
 """
 
-import datetime
 import hashlib
 import jinja2
 import json
@@ -74,11 +73,19 @@ class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
 
 class GlossaryLinkExtension(markdown.extensions.Extension):
     def extendMarkdown(self, md):
-        md.inlinePatterns.register(GlossaryLinkProcessor(r"\[glo(s)?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md), "glossary", -99999)
+        md.inlinePatterns.register(
+            GlossaryLinkProcessor(r"\[glo(s)?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md),
+            "glossary",
+            -99999,
+        )
 
 
 def do_markdown(text):
-    return markdown.markdown(text, output_format="html5", extensions=["admonition", "smarty", GlossaryLinkExtension()])
+    return markdown.markdown(
+        text,
+        output_format="html5",
+        extensions=["admonition", "smarty", GlossaryLinkExtension()],
+    )
 
 
 def read_files_from(fdir, permalink_base_href=BASE_HREF, include_drafts=False):
@@ -90,11 +97,12 @@ def read_files_from(fdir, permalink_base_href=BASE_HREF, include_drafts=False):
 
         with open(fpath, "r") as f:
             lines = f.readlines()
-            idx = lines[1:].index("---\n") + 1
-            metadata = yaml.load("".join(lines[1:idx]), Loader=yaml.SafeLoader)
+            metadata_end_idx = lines[1:].index("---\n") + 1
+            text_start_idx = metadata_end_idx + 1
+            metadata = yaml.load("".join(lines[1:metadata_end_idx]), Loader=yaml.SafeLoader)
             if metadata.get("draft", False) and not include_drafts:
                 continue
-            metadata["text"] = "".join(lines[idx + 1:])
+            metadata["text"] = "".join(lines[text_start_idx:])
             metadata["body"] = do_markdown(metadata["text"])
             if "slug" not in metadata:
                 metadata["slug"], _ = os.path.splitext(fname)
@@ -108,7 +116,7 @@ ALL_PAGES = read_files_from("pages", include_drafts=DRAFT_MODE)
 ALL_POSTS = sorted(
     read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/", include_drafts=DRAFT_MODE),
     key=lambda post: post["date"],
-    reverse=True
+    reverse=True,
 )
 
 for key, defn in GLOSSARY.items():
@@ -128,7 +136,7 @@ for post in ALL_POSTS:
     post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
     post["excerpt"] = do_markdown(post["excerpt"])
 
-YEARS = { post["year"]: post["year"] for post in ALL_POSTS }
+YEARS = {post["year"]: post["year"] for post in ALL_POSTS}
 
 dir_util.copy_tree("static", OUT_DIR)
 dir_util.mkpath(os.path.join(OUT_DIR, "post"))
@@ -200,7 +208,7 @@ def render_json_feed(link, title, posts):
                     "date_published": post["date"].strftime("%Y-%m-%dT%H:%M:%S%z"),
                 }
                 for post in posts
-            ]
+            ],
         }
 
         json.dump(feed, f)
@@ -250,12 +258,7 @@ for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
         render_feeds_for(f"{field}/{slug}", name, matching_posts)
 
 for post in ALL_POSTS:
-    render(
-        f"post/{post['slug']}.html",
-        "post.html",
-        title=post["title"],
-        post=post
-    )
+    render(f"post/{post['slug']}.html", "post.html", title=post["title"], post=post)
 
 for page in ALL_PAGES:
     render(
