@@ -12,8 +12,8 @@ jobs:
         run: |
           set -ex
           pip install flake8 black
-          flake8 build
-          black build
+          black -l 100 build
+          flake8 --max-line-length 100 build
           git diff --exit-code
   test:
     runs-on: ubuntu-latest
