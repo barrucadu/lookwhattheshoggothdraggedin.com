@@ -192,12 +192,7 @@ def render_json_feed(link, title, posts):
             "title": title,
             "home_page_url": BASE_HREF,
             "feed_url": f"{BASE_HREF}{link}",
-            "authors": [
-                {
-                    "name": "Michael Walker",
-                    "email": "mike@barrucadu.co.uk",
-                },
-            ],
+            "authors": [{"name": "Michael Walker", "email": "mike@barrucadu.co.uk"}],
             "items": [
                 {
                     "id": post["permalink"],
