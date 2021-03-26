@@ -47,8 +47,6 @@ with open("config/glossary.yaml") as f:
 
 class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
     def handleMatch(self, m, data):
-        global GLOSSARY_CACHE
-
         is_plural = m.group(1) == "s"
         key = m.group(2)
         override_title = m.group(4)
