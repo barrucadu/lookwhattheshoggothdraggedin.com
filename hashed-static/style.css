@@ -8,6 +8,9 @@
     --border-admonition: #730b0b;
     --main-title-fg: #ffffff;
     --main-title-bg: #730b0b;
+    --thead-fg: #ffffff;
+    --thead-bg: #730b0b;
+    --table-bar-fg: #555555;
 }
 
 * {
@@ -142,7 +145,7 @@ p {
     padding-left: 20px;
 }
 
-.markdown p, .markdown li {
+.markdown p, .markdown li, .markdown table {
     margin-bottom: 16px;
 }
 
@@ -165,6 +168,49 @@ p {
 
 .markdown code {
     font-family: "Alegreya Sans SC", monospace;
+}
+
+.markdown table {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-collapse: collapse;
+}
+
+.markdown thead {
+    background-color: var(--thead-bg);
+    color: var(--thead-fg);
+}
+
+.markdown thead a {
+    color: var(--thead-fg) !important;
+}
+
+.markdown th, .markdown td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+.markdown tbody td, .markdown tbody th {
+    border-bottom: 1px solid var(--border);
+}
+
+.markdown .num {
+    width: 5%;
+    text-align: right;
+}
+
+.markdown .roll-table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.markdown .probability-table {
+    width: 100%;
+}
+
+.markdown .bar {
+    background-color: var(--table-bar-fg);
 }
 
 @media (max-width: 600px) {
