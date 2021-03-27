@@ -18,13 +18,13 @@ import jinja2
 import json
 import markdown
 import os
-import re
 import sys
-import xml.etree.ElementTree as ET
 import yaml
 
 from distutils import dir_util, file_util
 from docopt import docopt
+
+import markdown_extensions
 
 args = docopt(__doc__)
 OUT_DIR = args["--out"]
@@ -46,148 +46,7 @@ with open("config/glossary.yaml") as f:
     GLOSSARY = yaml.safe_load(f)
 
 
-class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
-    def handleMatch(self, m, data):
-        is_plural = m.group(1) == "s"
-        key = m.group(2)
-        override_title = m.group(4)
-        item = GLOSSARY[key]
-
-        el = ET.Element("a")
-        el.set("class", "link--glossary")
-        el.set("href", f"glossary.html#{key}")
-
-        title = item.get("title_plural", item["title"] + "s") if is_plural else item["title"]
-
-        if "abbr" in item and item.get("use_abbr_for_glo_link", True) and override_title is None:
-            abbr = ET.Element("abbr")
-            abbr.set("title", title)
-            abbr.text = item.get("abbr_plural", item["abbr"] + "s") if is_plural else item["abbr"]
-            el.append(abbr)
-        else:
-            el.text = override_title or title
-
-        return el, m.start(0), m.end(0)
-
-
-class GlossaryLinkExtension(markdown.extensions.Extension):
-    def extendMarkdown(self, md):
-        md.inlinePatterns.register(
-            GlossaryLinkProcessor(r"\[glo(s)?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md),
-            "glossary",
-            -99999,
-        )
-
-
-class ProbabilityTableProcessor(markdown.blockprocessors.BlockProcessor):
-    RE_START = r"!!!probability-table\n"
-
-    def test(self, parent, block):
-        return re.match(self.RE_START, block)
-
-    def run(self, parent, blocks):
-        entries = [
-            [entry.strip() for entry in line.strip().split(",")]
-            for line in re.sub(self.RE_START, "", blocks[0]).splitlines()
-            if line.strip()
-        ]
-
-        scale = 100
-        for entry in entries:
-            _, *entryPs = entry
-            for p in entryPs:
-                fp = float(p)
-                while fp * scale > 100:
-                    scale -= 1
-
-        table = self.mkEl(parent, "table", class_="probability-table")
-
-        thead = self.mkEl(table, "thead")
-        theadTr = self.mkEl(thead, "tr")
-        self.mkEl(theadTr, "th", class_="num", text="#")
-        for i in range(len(entries[0]) - 1):
-            self.mkEl(theadTr, "th", class_="num", text="%")
-            self.mkEl(theadTr, "th")
-
-        tbody = self.mkEl(table, "tbody")
-        for entry in entries:
-            entryN, *entryPs = entry
-            tr = self.mkEl(tbody, "tr")
-            self.mkEl(tr, "th", class_="num", text=entryN)
-            for p in entryPs:
-                self.mkEl(tr, "td", class_="num", text=f"{float(p):.2f}%")
-                td = self.mkEl(tr, "td")
-                self.mkEl(td, "div", class_="bar", text="&nbsp;").set(
-                    "style", f"width:calc({scale}*{p}%)"
-                )
-
-        blocks.pop(0)
-
-    def mkEl(self, parent, ty, text=None, class_=None):
-        el = ET.SubElement(parent, ty)
-        if class_:
-            el.set("class", class_)
-        if text:
-            el.text = text
-        return el
-
-
-class ProbabilityTableExtension(markdown.extensions.Extension):
-    def extendMarkdown(self, md):
-        md.parser.blockprocessors.register(
-            ProbabilityTableProcessor(md.parser),
-            "probability-table",
-            175,
-        )
-
-
-class RollTableProcessor(markdown.blockprocessors.BlockProcessor):
-    RE_START = r"!!!roll-table\n"
-
-    def test(self, parent, block):
-        return re.match(self.RE_START, block)
-
-    def run(self, parent, blocks):
-        title, *rows = [
-            line.strip()
-            for line in re.sub(self.RE_START, "", blocks[0]).splitlines()
-            if line.strip()
-        ]
-        entries = [[entry.strip() for entry in row.split(",", 1)] for row in rows]
-
-        table = self.mkEl(parent, "table", class_="roll-table")
-
-        thead = self.mkEl(table, "thead")
-        theadTr = self.mkEl(thead, "tr")
-        self.mkEl(theadTr, "th", class_="num", text="#")
-        for i in range(len(entries[0]) - 1):
-            self.mkEl(theadTr, "th", text=title)
-
-        tbody = self.mkEl(table, "tbody")
-        for entry in entries:
-            entryN, entryT = entry
-            tr = self.mkEl(tbody, "tr")
-            self.mkEl(tr, "th", class_="num", text=entryN)
-            self.mkEl(tr, "td", text=entryT)
-
-        blocks.pop(0)
-
-    def mkEl(self, parent, ty, text=None, class_=None):
-        el = ET.SubElement(parent, ty)
-        if class_:
-            el.set("class", class_)
-        if text:
-            el.text = text
-        return el
-
-
-class RollTableExtension(markdown.extensions.Extension):
-    def extendMarkdown(self, md):
-        md.parser.blockprocessors.register(
-            RollTableProcessor(md.parser),
-            "roll-table",
-            175,
-        )
+EXTENSIONS = markdown_extensions.setup(GLOSSARY)
 
 
 def do_markdown(text):
@@ -197,9 +56,7 @@ def do_markdown(text):
         extensions=[
             "admonition",
             "smarty",
-            GlossaryLinkExtension(),
-            ProbabilityTableExtension(),
-            RollTableExtension(),
+            *[extension() for extension in EXTENSIONS],
         ],
     )
 
