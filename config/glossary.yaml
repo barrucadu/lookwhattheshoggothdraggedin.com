@@ -51,6 +51,32 @@ dice-notation:
         Since a `d6` is numbered from 1 to 6, the results of a `d66`
         (for example) do not cover all values from 1 to 66.
 
+diegesis:
+  title: Diegesis
+  text: |
+    A term borrowed from film studies, [in this post by Emmy
+    Allen](http://cavegirlgames.blogspot.com/2019/09/terminology-diegetic-vs-non-diegetic.html).
+    Something is diegetic if it is happening "in the fiction", and
+    non-diegetic if it is not.  This is a similar distinction to
+    in-character vs out-of-character.
+
+    Some examples of diegetic things:
+
+    - Equipment
+    - Spell slots
+    - Wound systems
+
+    Some examples of non-diegetic things:
+
+    - Numerical measures of HP, attributes, etc
+    - Character levels
+    - Fate points
+
+    Diegesis is a spectrum, not a binary.  For example, 4th edition
+    [glo:dnd] makes HP more diegetic (but still not fully diegetic)
+    with the "bloodied" condition: when a creature loses half of its
+    HP, it is visibly wounded in the fiction.
+
 dnd:
   title: Dungeons & Dragons
   abbr: "D&D"
