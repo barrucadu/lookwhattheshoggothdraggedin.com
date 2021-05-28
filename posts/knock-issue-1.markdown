@@ -3,8 +3,8 @@ title: Knock! An Adventure Gaming Bric-a-brac (#1)
 date: 2021-02-16
 topic: reviews
 excerpt: |
-    Knock! is a recently kickstarted zine full of goodness from the OSR
-    blogosphere.  It's wonderfully designed, and crammed with
+    Knock! is a recently kickstarted zine full of goodness from the
+    [glo:osr] blogosphere.  It's wonderfully designed, and crammed with
     information.  There's a nice mix of stuff which is immediately
     useful (like *Just Use Bears*, or the *Dungeon Checklist*), and
     some more thought-provoking articles too.  Plus some great art.  I

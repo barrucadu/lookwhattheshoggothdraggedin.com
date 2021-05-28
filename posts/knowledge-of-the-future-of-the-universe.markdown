@@ -7,7 +7,7 @@ excerpt: |
     This is a homebrew skill I gave one of my *Masks of Nyarlathotep*
     players after they decided to become friendly with a
     time-traveller.  10% chance of answering a plot-relevant question,
-    and immediate recognition of key NPCs.
+    and immediate recognition of key [glos:npc].
 ---
 
 This probably works best for pulp games.

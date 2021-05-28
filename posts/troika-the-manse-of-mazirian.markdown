@@ -4,8 +4,8 @@ date: 2021-03-08
 topic: scenarios
 system: troika
 excerpt: |
-    This is a starter adventure I wrote and ran for my Troika! group.
-    It's in two parts: first you have to get to the manse, by
+    This is a starter adventure I wrote and ran for my [glo:troika]
+    group.  It's in two parts: first you have to get to the manse, by
     travelling through Emmy Allen's *Gardens of Ynn*, then you have to
     search the manse for the magical artefact the party's patron has
     sent them to find.  Don't worry, Mazirian is supposed to be long
