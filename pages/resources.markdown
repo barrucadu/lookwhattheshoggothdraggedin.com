@@ -27,6 +27,10 @@ title: Resources
   Gaming][gp-glog], and great creatures like the [False
   Hydra][gp-hydra].
 
+- **[The Monsters Know What They're Doing][]** is an exploration of
+  monster tactics.  While written for fifth edition [glo:dnd], the
+  [Why These Tactics?][mk-why] page is fairly widely applicable.
+
 [A Collection of Unmitigated Pedantry]: https://acoup.blog/
 [acup-res]: https://acoup.blog/resources-for-world-builders/
 [The Alexandrian]: https://thealexandrian.net/
@@ -39,6 +43,8 @@ title: Resources
 [Goblin Punch]: http://goblinpunch.blogspot.com/
 [gp-glog]: http://goblinpunch.blogspot.com/2016/05/the-glog.html
 [gp-hydra]: http://goblinpunch.blogspot.com/2014/09/false-hydra.html
+[The Monsters Know What They're Doing]: https://www.themonstersknow.com/
+[mk-why]: https://www.themonstersknow.com/why-these-tactics/
 
 ## Tools
 
