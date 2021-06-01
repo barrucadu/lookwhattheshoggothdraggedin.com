@@ -140,3 +140,24 @@ troika:
 
     The default setting is in the spirit of the *Dying Earth* and
     *Book of the New Sun*.
+
+west-marches:
+  title: West Marches
+  text: |
+    A style of play popularised by [a series of blog posts by Ben Robbins](http://arsludi.lamemage.com/index.php/78/grand-experiments-west-marches/)
+    which set out to be the opposite of a standard campaign:
+
+    - There isn't a regular session time: the players handle the
+      scheduling.
+
+    - There isn't a regular party: there's a pool of players who party
+      up based on their goals.
+
+    - There isn't a regular plot: the players decide where to go and
+      what to do.
+
+    The usual setting is a frontier, where the [glos:pc] are
+    explorers, venturing out into the wilderness for gold and glory.
+    They have a safe home base, which every adventure starts and ends
+    in; a partial map (left by previous adventurers); and rumours of
+    what's out there.  Everything else is up to the players.
