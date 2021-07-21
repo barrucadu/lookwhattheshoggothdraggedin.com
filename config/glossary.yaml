@@ -58,6 +58,12 @@ dnd:
     The most popular roleplaying game, created in the 1970s by Gary
     Gygax and Dave Arneson.
 
+godbound:
+  title: Godbound
+  text: |
+    An [glo:osr] game by [Sine Nomine Publishing](https://sine-nomine-publishing.myshopify.com/pages/about-us)
+    about being divine heroes in an apocalyptic fantasy world.
+
 gm:
   title: Game Master, Dungeon Master, Keeper, Referee, etc
   abbr: GM
@@ -125,6 +131,21 @@ pc:
     players at the table.  Usually each player has exactly one PC,
     which they have exclusive control over, but that is not
     necessarily the case.
+
+traveller:
+  title: Traveller
+  text: |
+    A far-future sci-fi roleplaying game, first created in 1977
+    by [Marc Miller](https://en.wikipedia.org/wiki/Marc_Miller_(game_designer)),
+    with two editions currently in print: [Mongoose Traveller 2e](https://www.mongoosepublishing.com/)
+    and [Traveller5](https://traveller5.net/).
+
+    Traveller is notable for being a skill-based game, with very slow
+    character advancement (getting better gear is more common than
+    improving your stats), and using a lifepath character creation
+    system.
+
+    Legend has it that [Firefly was based on a Traveller campaign](https://scifi.stackexchange.com/a/13703).
 
 troika:
   title: Troika!
