@@ -135,14 +135,18 @@ for fname in os.listdir("hashed-static"):
     file_util.copy_file(fpath, os.path.join(OUT_DIR, HASHED_LINKS[fname]))
 
 
+def find_file_by_slug(directory, slug, default=None):
+    for ext in ["png", "jpg"]:
+        fname = f"{slug}.{ext}"
+        if os.path.isfile(os.path.join("static", directory, fname)):
+            return f"{directory}/{fname}"
+    return default
+
+
 def render(link, template, **metadata):
     slug = link.split("/")[-1].split(".")[0]
-    if os.path.isfile(os.path.join("static", "twitter-cards", slug + ".png")):
-        twitter_card = f"twitter-cards/{slug}.png"
-    elif os.path.isfile(os.path.join("static", "twitter-cards", slug + ".jpg")):
-        twitter_card = f"twitter-cards/{slug}.jpg"
-    else:
-        twitter_card = "twitter-card.png"
+    twitter_card = find_file_by_slug("twitter-cards", slug, default="twitter-card.jpg")
+    header_image = find_file_by_slug("headers", slug)
 
     with open(os.path.join(OUT_DIR, link), "w") as f:
         rendered = JINJA2_ENV.get_template(template).render(
@@ -155,6 +159,7 @@ def render(link, template, **metadata):
             permalink=f"{BASE_HREF}{link}",
             link=link,
             twitter_card=twitter_card,
+            header_image=header_image,
             **metadata,
         )
         print(rendered, file=f)

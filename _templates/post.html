@@ -1,5 +1,9 @@
 {% extends "_base.html" %}
 {% block main %}
+  {% if header_image %}
+    <img src="{{ header_image }}" alt="{{ post.title }}"{% if post.header_image_title is defined %} title="{{ post.header_image_title }}"{% endif %} class="post-header">
+  {% endif %}
+
   <div class="markdown">
     {{ post.body | safe }}
   </div>

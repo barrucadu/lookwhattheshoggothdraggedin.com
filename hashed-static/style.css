@@ -6,6 +6,7 @@
     --link-glossary: var(--text);
     --border: #b1b4b6;
     --border-admonition: #730b0b;
+    --border-header: #730b0b;
     --main-title-fg: #ffffff;
     --main-title-bg: #730b0b;
     --thead-fg: #ffffff;
@@ -69,6 +70,12 @@ p {
     grid-auto-columns: 33%;
     grid-template-rows: min-content min-content;
     margin-top: 24px;
+}
+
+.post-header {
+    margin: 0 auto 24px auto;
+    display: block;
+    border: 1px solid var(--border-header);
 }
 
 #commento {
