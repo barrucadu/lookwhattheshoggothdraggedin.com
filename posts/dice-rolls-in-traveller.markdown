@@ -12,6 +12,10 @@ excerpt: |
     graphs.
 ---
 
+!!! attention ""
+    The "Trying again" section was initially incorrect, and said that a
+    task chain was better than pushing the roll in some situations.
+
 When a [glo:pc] wants to do something, the [glo:gm] might call for a
 roll to see whether they succeed or, if success or failure is a given,
 how well they do.
@@ -259,13 +263,12 @@ and each probably makes more sense in different situations.
 
 ![Chance of succeeding ehen trying a check again, with target number normalised to zero.](files/dice-rolls-in-traveller/try-again.png)
 
-Interestingly, pushing a roll is better if your `Total Modifier minus
-Difficulty Target` is below -9, but a task chain is better at -9 or
-higher.  This is the point at which the task chain tips over to being
-more likely to have a positive than negative modifier.  So keep that
-in mind if the character is really poorly suited to a situation:
-perhaps they *should* first have to climb out of the hole they dug for
-themselves, rather than just get a second attempt!
+Pushing a roll is always better than doing a task chain.  Because the
+first roll failed, the second roll in the chain will always have a
+negative modifier; whereas a pushed roll is just a straight re-roll.
+So keep that in mind if the character is really poorly suited to a
+situation: perhaps they *should* first have to climb out of the hole
+they dug for themselves, rather than just get a second attempt!
 
 For example, if the [glo:pc] is trying to repair something, and they
 badly fail, then a task chain makes sense as they now need to repair
