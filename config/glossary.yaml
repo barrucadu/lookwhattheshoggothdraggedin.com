@@ -132,6 +132,15 @@ pc:
     which they have exclusive control over, but that is not
     necessarily the case.
 
+sandbox:
+  title: Sandbox
+  text: |
+    A style of campaign where the action is almost entirely
+    player-directed.  The [glo:gm] creates a world peppered with
+    adventure seeds and interesting characters, but no over-arching
+    plot or linear storyline.  The players choose what content to
+    engage with, and the [glo:gm] prepares what they need for that.
+
 traveller:
   title: Traveller
   text: |
