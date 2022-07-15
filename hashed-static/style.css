@@ -78,12 +78,6 @@ p {
     border: 1px solid var(--border-header);
 }
 
-#commento {
-    padding-top: 8px;
-    margin-top: 24px;
-    border-top: 1px solid var(--border);
-}
-
 .markdown blockquote {
     border-left: 5px solid var(--border);
     padding-left: 8px;

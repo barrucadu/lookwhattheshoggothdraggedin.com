@@ -19,27 +19,3 @@ No <abbr title="Personally Identifiable Information">PII</abbr> is
 collected.  No cookies are used.  And no cross-site tracking is done.
 
 [umami]: https://umami.is/
-
-## Comments
-
-!!! attention ""
-    You can disable comments by blocking the domain `commento.lookwhattheshoggothdraggedin.com`.
-
-Commenting is implemented with a self-hosted instance of [commento][].
-
-![This is what the comments look like.](files/privacy/comments.png)
-
-Comments may be left anonymously; by creating an account with an email
-address and password; by linking to a Google account; or by linking to
-a Twitter account.
-
-If you log in to leave a comment, a cookie containing a session ID is
-stored.
-
-Unless anonymous, the name of the author of a comment is displayed
-publicly.  If you left a comment with Twitter, it will link to your
-profile.
-
-Email addresses are not shared.
-
-[commento]: https://commento.io/
