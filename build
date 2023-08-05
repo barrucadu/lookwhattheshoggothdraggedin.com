@@ -56,6 +56,7 @@ def do_markdown(text):
         extensions=[
             "admonition",
             "smarty",
+            "tables",
             *[extension() for extension in EXTENSIONS],
         ],
     )

@@ -132,6 +132,17 @@ pc:
     which they have exclusive control over, but that is not
     necessarily the case.
 
+rqg:
+  title: RuneQuest - Roleplaying in Glorantha
+  text: |
+    A high-magic bronze age fantasy roleplaying game set in the fictional world
+    of Glorantha by Greg Stafford.  First published in 1978 by
+    [Chaosium](https://www.chaosium.com/).
+
+    RuneQuest uses the same underlying system as [glo:coc] which, unlike
+    [glo:dnd], has no classes or levels instead using a skill-based approach
+    where characters gradually improve in their areas of focus.
+
 sandbox:
   title: Sandbox
   text: |
