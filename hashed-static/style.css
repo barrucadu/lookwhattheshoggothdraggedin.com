@@ -153,7 +153,7 @@ p {
 .markdown .admonition {
     padding: 16px;
     margin: 16px 0;
-    border: 5px solid var(--border-admonition);
+    border: 5px dashed var(--border-admonition);
     font-weight: bold;
 }
 
