@@ -147,7 +147,6 @@ def find_file_by_slug(directory, slug, default=None):
 def render(link, template, **metadata):
     slug = link.split("/")[-1].split(".")[0]
     twitter_card = find_file_by_slug("twitter-cards", slug, default="twitter-card.jpg")
-    header_image = find_file_by_slug("headers", slug)
 
     with open(os.path.join(OUT_DIR, link), "w") as f:
         rendered = JINJA2_ENV.get_template(template).render(
@@ -160,7 +159,6 @@ def render(link, template, **metadata):
             permalink=f"{BASE_HREF}{link}",
             link=link,
             twitter_card=twitter_card,
-            header_image=header_image,
             **metadata,
         )
         print(rendered, file=f)

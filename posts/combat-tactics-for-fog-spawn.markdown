@@ -3,7 +3,6 @@ title: Combat Tactics for Fog-spawn
 date: 2021-08-19
 topic: gm-advice
 system: call-of-cthulhu
-header_image_title: This post has spoilers for the Masks of Nyarlathotep campaign.
 excerpt: |
     The Fog-spawn (or Thing in the Fog) is an other-dimensional
     creature from the *Masks of Nyarlathotep* campaign for [glo:coc].
