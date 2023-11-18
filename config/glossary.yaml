@@ -5,6 +5,21 @@ pbta-aw:
     Baker](https://lumpley.games/) which has inspired a whole class of
     games collectively called [glo:pbta].
 
+adnd:
+  title: Advanced Dungeons & Dragons
+  abbr: "AD&D"
+  text: |
+    An early edition of [glo:dnd], considered somewhat complex now and not used
+    so much in the [glo:osr] space, but still with a loyal following.
+
+bxdnd:
+  title: Basic/Expert Dungeons & Dragons
+  abbr: "B/X D&D"
+  text: |
+    An early edition of [glo:dnd], popular in the [glo:osr] space today for its
+    simplicity, with two tiers of play: "Basic" which focuses on dungeon
+    exploration, and "Expert", which focuses on wilderness adventures.
+
 coc:
   title: Call of Cthulhu
   abbr: CoC
@@ -86,6 +101,15 @@ npc:
     These will be your shopkeepers, guards, aristocrats, monsters, and
     so on.
 
+ose:
+  title: Old School Essentials
+  abbr: OSE
+  text: |
+    A modern, cleanly formatted and edited, restatement of [glo:bxdnd].  There's
+    also an "Advanced" flavour which incorporates aspects of [glo:adnd].
+
+    It's very popular in the [glo:osr] space.
+
 osr:
   title: Old School Renaissance
   abbr: OSR
@@ -104,6 +128,13 @@ osr:
     > world elements that surprise both players and referees.  Also, a
     > strong do-it-yourself attitude and a willingness to share your
     > work and use the creativity of others in your game.
+
+osric:
+  title: OSRIC
+  text: |
+    OSRIC is to [glo:adnd] as [glo:ose] is to [glo:bxdnd].
+
+    [OSRIC is free to download](https://osricrpg.com/get.php).
 
 pbta:
   title: Powered by the Apocalypse
@@ -181,6 +212,14 @@ troika:
 
     The default setting is in the spirit of the *Dying Earth* and
     *Book of the New Sun*.
+
+vtt:
+  title: Virtual Tabletop
+  abbr: VTT
+  text: |
+    Software to mimic the experience of playing around a physical tabletop.
+    Usually they incorporate a shared virtual whiteboard, dice roller, and
+    character sheets.
 
 west-marches:
   title: West Marches
