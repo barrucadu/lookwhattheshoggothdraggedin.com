@@ -78,7 +78,7 @@ p {
     border: 1px solid var(--border-header);
 }
 
-.markdown blockquote {
+.markdown blockquote, .markdown pre {
     border-left: 5px solid var(--border);
     padding-left: 8px;
     margin-top: 16px;
@@ -169,6 +169,15 @@ p {
 
 .markdown code {
     font-family: "Alegreya Sans SC", monospace;
+}
+
+.markdown pre {
+    font-size: 0.8em;
+    overflow-x: scroll;
+}
+
+.markdown pre code {
+    font-family: "Triplicate B Code", monospace;
 }
 
 .markdown table {
