@@ -93,6 +93,10 @@ ALL_POSTS = sorted(
     reverse=True,
 )
 
+ALL_POSTS_EXCLUDING_UNLISTED = [
+    post for post in ALL_POSTS if not post.get("unlisted", False)
+]
+
 for key, defn in GLOSSARY.items():
     GLOSSARY[key]["body"] = do_markdown(defn["text"])
 
@@ -110,7 +114,7 @@ for post in ALL_POSTS:
     post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
     post["excerpt"] = do_markdown(post["excerpt"])
 
-YEARS = {post["year"]: post["year"] for post in ALL_POSTS}
+YEARS = {post["year"]: post["year"] for post in ALL_POSTS_EXCLUDING_UNLISTED}
 
 dir_util.copy_tree("static", OUT_DIR)
 dir_util.mkpath(os.path.join(OUT_DIR, "post"))
@@ -209,7 +213,7 @@ render(
     "index.html",
     "archive.html",
     title="Articles",
-    posts=ALL_POSTS,
+    posts=ALL_POSTS_EXCLUDING_UNLISTED,
 )
 
 render(
@@ -219,11 +223,11 @@ render(
     glossary=GLOSSARY,
 )
 
-render_feeds_for("feed", "Recent Posts", ALL_POSTS)
+render_feeds_for("feed", "Recent Posts", ALL_POSTS_EXCLUDING_UNLISTED)
 
 for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
     for slug, name in entries.items():
-        matching_posts = [post for post in ALL_POSTS if post.get(field) == slug]
+        matching_posts = [post for post in ALL_POSTS_EXCLUDING_UNLISTED if post.get(field) == slug]
 
         render(
             f"{field}/{slug}.html",
