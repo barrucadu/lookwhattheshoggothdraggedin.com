@@ -93,9 +93,7 @@ ALL_POSTS = sorted(
     reverse=True,
 )
 
-ALL_POSTS_EXCLUDING_UNLISTED = [
-    post for post in ALL_POSTS if not post.get("unlisted", False)
-]
+ALL_POSTS_EXCLUDING_UNLISTED = [post for post in ALL_POSTS if not post.get("unlisted", False)]
 
 for key, defn in GLOSSARY.items():
     GLOSSARY[key]["body"] = do_markdown(defn["text"])
