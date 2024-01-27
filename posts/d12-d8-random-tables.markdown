@@ -3,7 +3,7 @@ title: 1d12 + 1d8 Random Tables
 date: 2021-05-02
 topic: gm-advice
 excerpt: |
-    The [glo:dice-notation "`1d12 + 1d8`"] table is commonly used for
+    The `1d12 + 1d8` table is commonly used for
     random encounters, because it gives a nonuniform distribution where
     some outcomes are more likely than others.  But why stick to that?
     By rolling one of the dice with advantage or disadvantage, you get
@@ -11,8 +11,8 @@ excerpt: |
     situations.
 ---
 
-I [read a post][] about how D&D suggests [glo:dice-notation "`1d12 +
-1d8`"] for random encounter tables.  It gives a distribution from 2 to
+I [read a post][] about how [abbr:dnd] suggests `1d12 + 1d8`
+for random encounter tables.  It gives a distribution from 2 to
 20, where the numbers 9 to 13 are equally likely, and the others
 gradually less so as you get to the extremes.
 
@@ -22,7 +22,7 @@ That's already pretty nice but, whenever I see a small number of dice
 being rolled together, I can't help but wonder "what if you roll one
 die with advantage or disadvantage"?
 
-If we skew the [glo:dice-notation "`d12`"], we get a gradual shift in
+If we skew the `d12`, we get a gradual shift in
 the distribution, making 9 or 13 the most likely numbers, and the
 chance of getting a 2 or a 20 almost negligible if you're skewing the
 die the other way.
@@ -48,7 +48,7 @@ die the other way.
 19,0.347222222222,2.08333333333,3.81944444444
 20,0.0868055555556,1.04166666667,1.99652777778
 
-On the other hand, if we skew the [glo:dice-notation "`d8`"], we keep
+On the other hand, if we skew the `d8`, we keep
 the equally-likely 9 to 13 range, but the edges of the distribution
 change a lot:
 
@@ -80,7 +80,7 @@ with advantage or disadvantage depending on the situation.
 To construct the table, I find it helpful to use a symmetric pattern:
 
 !!!roll-table
-[glo:dice-notation "`1d12+1d8`"] Encounters
+`1d12+1d8` Encounters
 2,Extremely rare
 3,Very rare
 4,Very rare
@@ -128,11 +128,11 @@ teas at the extremes can be made more likely in certain outcomes on
 the encounter table.
 
 !!!roll-table
-[glo:dice-notation "`1d12+1d8`"] Encounters in a Tea Room
-2,You find a box of rare teas for sale.  Roll [glo:dice-notation "`1d6`"] on the Rare Teas table [glo:dice-notation "`1d2+1`"] times.
+`1d12+1d8` Encounters in a Tea Room
+2,You find a box of rare teas for sale.  Roll `1d6` on the Rare Teas table `1d2+1` times.
 3,You recognise by certain signs that this shop has an entrance to an underground network of tunnels known as the "Thieves' Highway".
 4,The shopkeeper is busy kicking in the teeth of a would-be shoplifter.  For the moment, he's distracted...
-5,You find a box of rare tea for sale.  Roll [glo:dice-notation "`1d4`"] on the Rare Teas table.
+5,You find a box of rare tea for sale.  Roll `1d4` on the Rare Teas table.
 6,You ask to sample some tea, which seems to take the shopkeeper aback.  He doesn't heat the water enough, steeps the leaves for too long and, on closer inspection, the leaves are dusty with age!  This shop is clearly a front for something else.
 7,As you browse the shelves, a pickpocket attempts to sneakily make off with your coin purse!
 8,A fortune teller sits in a corner of the shop, willing to read your future from the tea leaves, if you part with some coin.
@@ -144,13 +144,13 @@ the encounter table.
 14,You learn that the shopkeeper is preparing to send a caravan to one of his remoter, and higher quality, suppliers.  He's looking to hire reliable guards and other useful sorts.
 15,As you sit sipping a cup of chai, a local businessman, with whom you have had some dealings previously, strides into the room.  He spots you and approaches.
 16,The shopkeeper glances up at you as you enter and says "about time, quick, get this to your master!" and hands you a small, ornate, wooden chest.  You have no idea what he's talking about.
-17,You find a box of rare tea for sale.  Roll [glo:dice-notation "`1d4+2`"] on the Rare Teas table.
+17,You find a box of rare tea for sale.  Roll `1d4+2` on the Rare Teas table.
 18,The shopkeeper is being intensely questioned by a servant of the local High Priest, a man known for his love of tea.  For the moment, he's distracted...
 19,You hear some juicy gossip about recent indiscretions of the Imperial Heir.  If it hasn't spread very far yet, someone might pay well for this information.
-20,You find a box of rare teas for sale.  Roll [glo:dice-notation "`1d6`"] on the Rare Teas table [glo:dice-notation "`1d2+1`"] times.
+20,You find a box of rare teas for sale.  Roll `1d6` on the Rare Teas table `1d2+1` times.
 
 !!!roll-table
-[glo:dice-notation "`1d6`"] Rare Teas
+`1d6` Rare Teas
 1,**Rogue's Friend.**  Made of rare and expensive herbs and steeped with a body part (hair, nails, etc) from the chosen target, tastes slightly peppery, and physically transforms the drinker into the target until the next sunrise or sunset.  The transformation is very painful.
 2,**Purple Spiral Tea.**  Smells and tastes like a high-quality black tea.  Fatally toxic, unless the drinker has chewed fresh mint leaves recently.  Leaves no identifying trace.
 3,**Galen's Brew.**  Allows the drinker to see in the dark, in colour, until they next go to the bathroom.  Makes the eyes glow.
@@ -181,7 +181,7 @@ dangerous place, it's not all bad (like finding an unexpected, though
 temporary, ally in Smeagol).
 
 !!!roll-table
-[glo:dice-notation "`1d12+1d8`"] Events in the Distant Wilds
+`1d12+1d8` Events in the Distant Wilds
 2,You find a small village, cut off from civilisation, but welcoming and safe nonetheless.
 3,You encounter a small band of hostile monsters.
 4,The weather takes a turn for the better, letting you make out landmarks and navigate more easily.

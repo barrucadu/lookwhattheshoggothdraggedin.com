@@ -10,10 +10,10 @@ excerpt: |
 
 In my [How to Learn a New System][] post, I said that I like to make
 cheatsheets before embarking on a full campaign, and I gave a
-cheatsheet I'd made for [glo:traveller] as an example.
+cheatsheet I'd made for Traveller as an example.
 
 This post has an updated version of *that* sheet, and all my *other*
-[glo:traveller] sheets.  I've been using these for a few months now
+Traveller sheets.  I've been using these for a few months now
 (except for the space piracy one, which is fairly new), and these are
 the first things I get out when sitting down to run a session.
 
@@ -64,7 +64,7 @@ covering:
 - Travel zones
 
 I mostly use this for the list of berthing costs.  I'm using the
-official [glo:traveller] setting in my campaign, so I can use the
+official Traveller setting in my campaign, so I can use the
 excellent [travellermap.com][], rather than needing to decode UWPs
 myself.
 

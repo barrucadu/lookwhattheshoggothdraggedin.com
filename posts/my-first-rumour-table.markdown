@@ -4,24 +4,24 @@ date: 2021-10-31
 system: traveller
 topic: campaign-notes
 excerpt: |
-    Rumour tables are a staple of [glo:sandbox "sandbox"] style play,
-    and I wanted to make one for my new [glo:traveller] campaign.  I
+    Rumour tables are a staple of sandbox style play,
+    and I wanted to make one for my new Traveller campaign.  I
     found it pretty tricky to come up with a list of 20 interesting
     bits of lore and story hooks from nothing, but I managed it in the
     end.
 ---
 
 
-I've recently started a new [glo:traveller] campaign.  I'll probably
+I've recently started a new Traveller campaign.  I'll probably
 write a post about how I prepared for it and how it's going after a
 few more sessions, as we're only two sessions in so far (plus a
 session zero).
 
-It's a [glo:sandbox "sandbox"] style campaign: there is no overarching
+It's a sandbox style campaign: there is no overarching
 story, no big bad the players must defeat, just a wide open universe
-(and the [glo:traveller] universe is [very big indeed][]) for them to
+(and the Traveller universe is [very big indeed][]) for them to
 explore and have adventures in.  But I couldn't just drop the
-[glos:pc] in a starport and say "alright, you've got your first
+[abbr:pc "PCs"] in a starport and say "alright, you've got your first
 spaceship---what do you do?"  They wouldn't have known what to do
 because they wouldn't have known what they *could* do.
 
@@ -33,8 +33,8 @@ So I decided I needed, amongst other things, a rumour table.
 
 The rumour table is a staple of old-school adventures.  Basically,
 it's a list (usually of 20, or 12, or 10; some standard die size) of
-adventure seeds, which the [glos:pc] can find by interacting with
-[glos:npc].
+adventure seeds, which the [abbr:pc "PCs"] can find by interacting with
+[abbr:npc "NPCs"].
 
 You can write a rumour as just some keywords to use as a prompt for
 improvisation, like:
@@ -74,7 +74,7 @@ and the examples I give will be rumours they've already found.
 Firstly, I decided that I liked the idea of them finding some totally
 random things I'd not prepared in advance.  Using random tables for
 patrons, missions, and encounters seems a very traditional approach to
-running [glo:traveller], and I wanted to keep some aspect of that.  So
+running Traveller, and I wanted to keep some aspect of that.  So
 the first five entries on my table are all random:
 
 !!!roll-table
@@ -164,19 +164,19 @@ it's one of my automatic rumours and they meet the condition).
 
 Some examples of rumour gathering checks could be:
 
-- Attending a party: Average SOC / Carouse check, [glo:dice-notation "`1d6`"] hours
-- Going on a pub crawl: Routine END / Carouse check, [glo:dice-notation "`4×1d6`"] hours
-- Impressing people at a casino: Average INT / Gambler check, [glo:dice-notation "`1d6`"] hours
+- Attending a party: Average SOC / Carouse check, `1d6` hours
+- Going on a pub crawl: Routine END / Carouse check, `4×1d6` hours
+- Impressing people at a casino: Average INT / Gambler check, `1d6` hours
 
 I don't have a very well-developed system here yet, but I'm *thinking*
-that the base time for gathering rumours should be [glo:dice-notation
-"`1d6`"] hours, as you've got to find some people and spend a while
+that the base time for gathering rumours should be
+`1d6` hours, as you've got to find some people and spend a while
 talking to them.  Going faster or slower (like spending somewhere
 between a night and a day going on a long pub crawl) will adjust the
 difficulty up or down, according to the standard rules on timeframes
 I've written about in [my previous post on Traveller dice rolls][].
 
-Skills in [glo:traveller] are pretty flexible.  Gathering rumours
+Skills in Traveller are pretty flexible.  Gathering rumours
 doesn't have to be done with an explicitly social skill, impressing or
 blending in with any group of people could be done with a relevant
 skill.  For example, a player could make an EDU / Gun Combat
@@ -201,7 +201,7 @@ At the end of a session, I look through my notes and:
    what they're interested in, and what new things *I'm* interested
    in, to fill in any gaps.
 
-This is a [glo:sandbox "sandbox"] game, but there are still things *I*
+This is a sandbox game, but there are still things *I*
 want to see in the campaign, and I like that I can use rumours to
 introduce those topics.  But it's up to the players whether to follow
 up on them or not.

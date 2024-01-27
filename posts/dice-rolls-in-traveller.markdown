@@ -4,7 +4,7 @@ date: 2021-09-10
 system: traveller
 topic: mechanics
 excerpt: |
-    [glo:traveller] uses a `2d6` dice system where characters add their
+    Traveller uses a `2d6` dice system where characters add their
     relevant characteristic and skill levels, with various possible
     target numbers and situational modifiers.  It also has a notion of
     "task chains", where one roll gives a bonus or a penalty to
@@ -16,21 +16,21 @@ excerpt: |
     The "Trying again" section was initially incorrect, and said that a
     task chain was better than pushing the roll in some situations.
 
-When a [glo:pc] wants to do something, the [glo:gm] might call for a
+When a [abbr:pc] wants to do something, the [abbr:gm] might call for a
 roll to see whether they succeed or, if success or failure is a given,
 how well they do.
 
-In [glo:traveller], the player rolls [glo:dice-notation "`2d6`"],
+In Traveller, the player rolls `2d6`,
 adding their characteristic modifier, skill level (or a penalty of -3
 if they lack the skill entirely), and any other modifiers the rules
 specify, generally against a target number of 8.  In situations where
 there is no relevant skill, the player just adds their characteristic
 modifier: for example, forcing a door open would just be
-[glo:dice-notation "`2d6 + Strength Mod`"].
+`2d6 + Strength Mod`.
 
 ![Chance of success for a task check against a difficulty of 8.](files/dice-rolls-in-traveller/basic.png)
 
-The average result for [glo:dice-notation "`2d6`"] is 7, but the usual
+The average result for `2d6` is 7, but the usual
 difficulty target is 8.  The average characteristic modifier is 0, but
 finishing character creation with skills at level 1 or 2 is easily
 doable, so almost all characters do have situations where they have
@@ -65,7 +65,7 @@ On the one hand, I like having different difficulty levels to pick
 from.  On the other hand, this feels like too many.  I'm a big fan of
 [only rolling when the outcome is in doubt][], so I'm not sure when
 I'd ask for a roll for a Simple or Easy task.  Even a Routine task
-feels a bit much.  I'd probably have the [glos:pc] succeed
+feels a bit much.  I'd probably have the [abbr:pc "PCs"] succeed
 automatically at all of those (though, with a caveat: see the next
 section on timeframes).
 
@@ -81,22 +81,22 @@ bare fists.
 
 ## Timeframes
 
-One thing I like a lot about the [glo:traveller] task check system is
+One thing I like a lot about the Traveller task check system is
 that it has rules for increasing or reducing the difficulty of a task
 check by going faster or slower.  In most systems, that's kind of up
-to [glo:gm] fiat, but here it's codified.
+to [abbr:gm] fiat, but here it's codified.
 
 The timeframes are:
 
-- [glo:dice-notation "`1d6`"] seconds
-- [glo:dice-notation "`1d6`"] combat rounds
-- [glo:dice-notation "`10×1d6 `"] seconds
-- [glo:dice-notation "`1d6`"] minutes
-- [glo:dice-notation "`10×1d6`"] minutes
-- [glo:dice-notation "`1d6`"] hours
-- [glo:dice-notation "`4×1d6`"] hours
-- [glo:dice-notation "`10×1d6`"] hours
-- [glo:dice-notation "`1d6`"] days
+- `1d6` seconds
+- `1d6` combat rounds
+- `10×1d6 ` seconds
+- `1d6` minutes
+- `10×1d6` minutes
+- `1d6` hours
+- `4×1d6` hours
+- `10×1d6` hours
+- `1d6` days
 
 There are a few small examples given for each.  For example, applying
 first aid takes minutes, whereas repairing a damaged ship takes tens
@@ -139,9 +139,9 @@ or fail:
 
 We'll see these thresholds again when discussing task chains.
 
-An alternative way to think about [glo:traveller] task checks is that
+An alternative way to think about Traveller task checks is that
 you're trying to roll an effect of 0 or more.  So, there's a fixed
-target number you want to equal or beat, and the [glo:gm] has eight
+target number you want to equal or beat, and the [abbr:gm] has eight
 possible penalties he can subtract from your roll depending on the
 difficulty of the situation.
 
@@ -167,7 +167,7 @@ This is the formulation we'll use going forwards.
 
 ## Situational advantages and disadvantages
 
-Let's say that a [glo:pc] is trying to hotwire a locked-down jump
+Let's say that a [abbr:pc] is trying to hotwire a locked-down jump
 drive.
 
 Perhaps our would-be pirate has an easy time of it.  Maybe they're
@@ -175,17 +175,17 @@ blessed with a particularly competent assistant; or there's a detailed
 diagram explaining exactly how the lock works.
 
 On the other hand, perhaps they have an unusually hard time.  Maybe
-the engine room is really small and awkward, so the [glo:pc] can't get
+the engine room is really small and awkward, so the [abbr:pc] can't get
 a good look at the mechanism; or they have shoddy tools.
 
 In these cases, the skill-based task itself (hotwiring the jump drive)
 is exactly the same, it's just the circumstances around it which vary.
 So making the task check easier or harder doesn't really fit.
 
-To handle this sort of situational effect, the [glo:gm] might give the
+To handle this sort of situational effect, the [abbr:gm] might give the
 player a *boon die* or a *bane die*.  The player now rolls
-[glo:dice-notation "`3d6`"], keeping the better (or worse) of the two
-rolls.  Or the [glo:gm] might say that success or failure is
+`3d6`, keeping the better (or worse) of the two
+rolls.  Or the [abbr:gm] might say that success or failure is
 impossible given these additional situational factors, and so remove
 the roll entirely.
 
@@ -199,10 +199,10 @@ and so on.
 
 ## Task chains
 
-Let's say that the [glos:pc] are preparing to jump to another system:
+Let's say that the [abbr:pc "PCs"] are preparing to jump to another system:
 the astrogator plots the route, then the engineer inputs it into the
 jump drive.  The quality of route should affect how well the engineer
-is able to configure the jump drive, and [glo:traveller] handles this
+is able to configure the jump drive, and Traveller handles this
 sort of thing with "task chains": a sequence of connected task checks
 where the effect of a check applies a modifier to the next check in
 the chain.
@@ -252,7 +252,7 @@ Very different!
 
 ## Trying again
 
-Unlike [glo:coc], [glo:traveller] has nothing like [pushing a roll][].
+Unlike Call of Cthulhu, Traveller has nothing like [pushing a roll][].
 So if you want to allow a player to try a task check again, you'll
 have to improvise.
 
@@ -270,10 +270,10 @@ So keep that in mind if the character is really poorly suited to a
 situation: perhaps they *should* first have to climb out of the hole
 they dug for themselves, rather than just get a second attempt!
 
-For example, if the [glo:pc] is trying to repair something, and they
+For example, if the [abbr:pc] is trying to repair something, and they
 badly fail, then a task chain makes sense as they now need to repair
 the original damage *and* what new damage they just caused.  Whereas
-if the [glo:pc] is trying to find a target in some surveillance tapes,
+if the [abbr:pc] is trying to find a target in some surveillance tapes,
 failure doesn't destroy the tapes, but trying again might cost them
 much more time than they're comfortable spending, so pushing the roll
 makes more sense.
@@ -318,5 +318,5 @@ conflicts?
 As always, before rolling anything, ask if a roll is *really* needed
 here.
 
-If the task is challenging but the [glo:pc] can spend as long on it as
+If the task is challenging but the [abbr:pc] can spend as long on it as
 they want, shouldn't they just automatically succeed?

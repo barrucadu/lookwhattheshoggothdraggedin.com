@@ -4,7 +4,7 @@ date: 2021-03-08
 topic: scenarios
 system: troika
 excerpt: |
-    This is a starter adventure I wrote and ran for my [glo:troika]
+    This is a starter adventure I wrote and ran for my Troika
     group.  It's in two parts: first you have to get to the manse, by
     travelling through Emmy Allen's *Gardens of Ynn*, then you have to
     search the manse for the magical artefact the party's patron has
@@ -13,7 +13,7 @@ excerpt: |
 ---
 
 This is a short adventure I wrote for my group's first experience of
-[glo:troika].  Here's the prompt I gave them:
+Troika.  Here's the prompt I gave them:
 
 > Your patron has sent you to a distant sphere, inhabited by Mazirian,
 > a mighty magician.  None have seen him for centuries, and so he is
@@ -38,8 +38,8 @@ There are two parts to this adventure:
     you don't have a copy, there is an [online generator][].  Or you
     can make up your own wacky garden adventure.
 
-    [glo:troika], while usually considered in the [glo:osr] sphere,
-    isn't based on an old edition of [glo:dnd].  So there's some
+    Troika, while usually considered in the [abbr:osr] sphere,
+    isn't based on an old edition of [abbr:dnd].  So there's some
     conversion work to do.  I didn't want to convert the entire Ynn
     book ahead of time, so I made some generic conversion rules.  See
     the next section for these.
@@ -83,7 +83,7 @@ The rules are:
 3. Keep off the grass
 4. Beware (this has clearly been painted on later)
 
-The donation box says "5" on it.  The [glos:pc] have a variety of
+The donation box says "5" on it.  The [abbr:pc "PCs"] have a variety of
 currencies and denominations in their pockets.  If they enter without
 donating a suitable amount, they hear a disembodied tutting.
 
@@ -94,10 +94,10 @@ donating a suitable amount, they hear a disembodied tutting.
 Some Ynnian effects attack the character's psyche, represented
 numerically as their Sense of Self stat.  The starting value is
 `Charisma + Constitution`.  If using the "highest 3 of
-[glo:dice-notation "`4d6`"]" approach to stat generation, this is a
+`4d6`" approach to stat generation, this is a
 slightly skewed normal distribution centred on 25.
 
-[glo:troika] does not use the standard [glo:dnd] six attributes.
+Troika does not use the standard [abbr:dnd] six attributes.
 
 Instead, use `Skill + Luck + 10`.  This has a smaller standard
 deviation, but the right centre.  Except for the Zoanthrop, who double
@@ -106,7 +106,7 @@ attacks.
 
 #### Saves
 
-[glo:troika] does not use saves.
+Troika does not use saves.
 
 For ongoing debilitating status effects (drowning, burning, poisoning,
 etc), use the "Drowning" rules (page 47).
@@ -166,13 +166,13 @@ The Manse
 The main source of danger in the manse is a protective spell which
 guards its contents.
 
-If a [glo:pc] tries to damage something, as they attack whatever has
+If a [abbr:pc] tries to damage something, as they attack whatever has
 caught their attention they rapidly turn into a pile of rats: first
 growing a long tail, then whiskers, then finally exploding into a
 dozen rats.  Two cat statues in the waiting hall animate and chase
-down the hapless [glo:pc].
+down the hapless [abbr:pc].
 
-A be-rat-ed [glo:pc] returns to normal after avoiding harm for 10
+A be-rat-ed [abbr:pc] returns to normal after avoiding harm for 10
 rounds, at which point the cats lose interest and turn back into
 statues.
 
@@ -182,15 +182,15 @@ statues.
 
     A coat and hat rack next to the door, 8 chairs around the edges.
     In the alcoves two obsidian cat statues with eyes which follow the
-    [glos:pc].  One statue is on a plinth engraved "INTEGRITY", the
+    [abbr:pc "PCs"].  One statue is on a plinth engraved "INTEGRITY", the
     other "HONESTY".
 
     A green imp is dusting.
 
-    *If any [glos:pc] are turned into rats:* the statues animate and
+    *If any [abbr:pc "PCs"] are turned into rats:* the statues animate and
     pursue.
 
-    *If they wait:* the [glos:pc] will see a blue imp walking past
+    *If they wait:* the [abbr:pc "PCs"] will see a blue imp walking past
     carrying Mazirian's breakfast.  A bowl of some furry-looking blue
     substance, which smells faintly of cinnamon.  The imp won't object
     to being followed.
@@ -211,10 +211,10 @@ statues.
 
     *In one room:* the carpet is very frayed.  It is inhabited by a
     race of tiny carpet-people, who will take the arrival of a
-    [glo:pc] as the arrival of the prophesied Great Foot, herald of
+    [abbr:pc] as the arrival of the prophesied Great Foot, herald of
     the end times.
 
-    Several of them can gang up to attack a [glo:pc].
+    Several of them can gang up to attack a [abbr:pc].
 
     *In another room:* there is a sweet old lady in a blue shawl
     sitting on the bed, only visible through a mirror.  She is an
@@ -247,11 +247,11 @@ statues.
 
     The silver bowl comes closer when you snap your fingers or
     whistle.  Always full of strong alcohol and improbable fruits.
-    When drunk roll [glo:dice-notation "1d6"]: 1--3, feel confident
+    When drunk roll `1d6`: 1--3, feel confident
     and gain 1 stamina (even above maximum); 4--6: throw up and lose 1
     stamina.
 
-    *If a [glo:pc] throws up:* a purple imp with a mop and bucket of
+    *If a [abbr:pc] throws up:* a purple imp with a mop and bucket of
     soapy water rushes in through the door and begins mopping the
     carpet.
 
@@ -269,11 +269,11 @@ statues.
 
     *If questioned:* the hubbub is because "honoured guests" are
     expected.  If questioned further about the guests, the imps
-    describe the [glos:pc].
+    describe the [abbr:pc "PCs"].
 
-    The imps will eventually serve a meal for the [glos:pc] in the
+    The imps will eventually serve a meal for the [abbr:pc "PCs"] in the
     dining room.  They will run around in a panic trying to find the
-    [glos:pc], to direct them to the meal.
+    [abbr:pc "PCs"], to direct them to the meal.
 
 6. **Store room**
 
@@ -284,7 +284,7 @@ statues.
     is half of an imp on the ground next to the vines, and some of the
     vines are bloody.
 
-    *If a [glo:pc] approaches the vines:* they wave around
+    *If a [abbr:pc] approaches the vines:* they wave around
     undirectedly but threateningly and quickly.
 
 7. **Toilet**
@@ -299,7 +299,7 @@ statues.
 
     *In various rooms:* imps of assorted colours sleeping.  They're
     very deep sleepers, and can even be picked up.  They talk in their
-    sleep.  A determined [glo:pc] can wake up an imp.
+    sleep.  A determined [abbr:pc] can wake up an imp.
 
     *In one room:* an orange imp peering into a shard of broken
     mirror, shaving a stubbly beard.
@@ -323,12 +323,12 @@ statues.
     sphere.
 
     A pair of wires run from the telescope up along the ceiling and
-    south towards the dining room.  If the [glos:pc] experiment, they
+    south towards the dining room.  If the [abbr:pc "PCs"] experiment, they
     can see that adjusting the telescope adjusts the view through the
     dining room window, and pulling the cord adjusts the telescope.
 
-    *Inside the telescope:* is the treasure the [glos:pc] have been
-    sent to find.  A [glo:pc] can safely dismantle the telescope if
+    *Inside the telescope:* is the treasure the [abbr:pc "PCs"] have been
+    sent to find.  A [abbr:pc] can safely dismantle the telescope if
     they are wearing the fancy wizard gloves.
 
 10. **Mazirian's private library**
@@ -338,9 +338,9 @@ statues.
     complete set, up to 321 years ago, of the annual *Journal of the
     Academy of Doors*.
 
-    *If a [glo:pc] touches the books:* they cannot remove them from
+    *If a [abbr:pc] touches the books:* they cannot remove them from
     the shelves and begin to turn into rats.  Wearing the fancy wizard
-    gloves allows a [glo:pc] to interact with the books.
+    gloves allows a [abbr:pc] to interact with the books.
 
     Amongst the books is Mazirian's Diary, which describes his
     wonderful telescope capable of focusing on anything in creation,
@@ -358,7 +358,7 @@ statues.
     shoulders of a purple imp and waving a stick at the window to try
     to close it.  The owls came through this window.
 
-    *If a [glo:pc] spends time in the library:* test Luck.  On success
+    *If a [abbr:pc] spends time in the library:* test Luck.  On success
     they find a book which lets them immediately try to Get Better at
     any Advanced Skill or Spell they have.  On a failure they get
     absorbed into reading something interesting but ultimately
@@ -374,14 +374,14 @@ statues.
     half of the room.  On a large brass book stand is *The Anarchical
     Grimoire of Propylonic Discharges* (from Knock!).
 
-    *If a [glo:pc] moves the skull:* it asks to be put back, and will
+    *If a [abbr:pc] moves the skull:* it asks to be put back, and will
     bite if able to reach.
 
-    *If a [glo:pc] wanders into the Star Maps:* test Astrology.  On
+    *If a [abbr:pc] wanders into the Star Maps:* test Astrology.  On
     failure, they are lost within the maps until found by another
-    [glo:pc].
+    [abbr:pc].
 
-    *If a [glo:pc] tries to remove an item from the room, or damages
+    *If a [abbr:pc] tries to remove an item from the room, or damages
     an item:* rat magic!
 
 13. **Mazirian's bedroom** *(above 9)*
@@ -401,8 +401,8 @@ statues.
     towels, and a tube of "EXTREME WHITENING TOOTHPASTE, WITH BAKING
     SODA!"
 
-    *If a [glo:pc] swims through the bath-portal:* they emerge in a
-    pool of hot water on Depth [glo:dice-notation "`d20+10`"] of the
+    *If a [abbr:pc] swims through the bath-portal:* they emerge in a
+    pool of hot water on Depth `d20+10` of the
     gardens.  The manse is faintly visible in the distance.
 
 15. **Mazirian's storeroom** *(below 9)*
@@ -437,8 +437,8 @@ earlier.
 - **Mien:** none, they are either inanimate or aggressive.
 
 Fiercely protective of the manse and its contents, but kind of stupid.
-These automata will chase down any [glo:pc] who has been turned into a
-pile of rats, but will lose interest the moment the [glo:pc] recovers.
+These automata will chase down any [abbr:pc] who has been turned into a
+pile of rats, but will lose interest the moment the [abbr:pc] recovers.
 
 #### Gang of Carpet People
 
@@ -450,7 +450,7 @@ pile of rats, but will lose interest the moment the [glo:pc] recovers.
 
 A collection of tiny humanoids who dwell within the carpet of one of
 Mazirian's guest rooms.  The imps tolerate them because they eat dust.
-They will regard the arrival of a [glo:pc] as the arrival of the
+They will regard the arrival of a [abbr:pc] as the arrival of the
 prophesied Great Foot, herald of the end times.
 
 #### Imp
@@ -529,7 +529,7 @@ Rather than write a mien table for everything, I made three templates.
 2. Stationary
 3. Unstable
 4. Probing
-5. Ignoring the [glos:pc] and doing its own thing
+5. Ignoring the [abbr:pc "PCs"] and doing its own thing
 6. Aggressive (or cautious)
 
 
@@ -571,7 +571,7 @@ From [Troika! - Mucking about in the Gardens of Ynn](https://the-last-redoubt.bl
 **Special:**
 
 You don't recover Stamina by eating a Provision---instead you may
-consume a mouthful of blood ([glo:dice-notation "`1d6`"] Stamina from
+consume a mouthful of blood (`1d6` Stamina from
 any willing or unwilling volunteers) at most 3 times per day to
 recover an equivalent amount of Stamina.
 

@@ -4,19 +4,19 @@ date: 2021-02-15
 system: call-of-cthulhu
 topic: mechanics
 excerpt: |
-    [glo:coc] uses a roll-under percentile dice system.  It also has a
+    Call of Cthulhu uses a roll-under percentile dice system.  It also has a
     notion of task difficulty and situational modifiers, and a way for
     two characters to directly compete.  This post runs through all
     these variations, with lots of graphs, and gives my rules for
     deciding what sort of roll to make when.
 ---
 
-When a [glo:pc] wants to do something, the [glo:gm] might call for a
+When a [abbr:pc] wants to do something, the [abbr:gm] might call for a
 roll to see whether they succeed or (if success or failure is a
 given), how well they do.
 
-In [glo:coc], the player rolls a pair of [glo:dice-notation
-"percentile dice"], succeeding if they roll equal to or below their
+In Call of Cthulhu, the player rolls a pair of
+percentile dice, succeeding if they roll equal to or below their
 skill level.  The higher your skill, the fewer possible dice results
 there are above it, so the more likely you are to succeed.
 
@@ -46,7 +46,7 @@ Extreme rolls are for things at the border of human ability.
 ## Trying again
 
 Let's say our player character Xander is searching for a book about
-Yig, the Father of Serpents, in an occult book shop.  The [glo:gm]
+Yig, the Father of Serpents, in an occult book shop.  The [abbr:gm]
 calls for a **Library Use** roll, and Xander fails.  I guess he
 doesn't find the book, everyone go back home.
 
@@ -70,13 +70,13 @@ linear, there's a slight curve to the probability.
 
 Perhaps this shop is blessed with an unusually helpful shopkeeper, or
 a thorough catalogue, or a clear organisation.  In such circumstances,
-the [glo:gm] might grant an automatic success.
+the [abbr:gm] might grant an automatic success.
 
 Let's say that success isn't guaranteed though, there is still some
 additional difficulty which puts the outcome in doubt, even though
 Xander has this benefit.
 
-To represent this sort of situational advantage, the [glo:gm] may
+To represent this sort of situational advantage, the [abbr:gm] may
 grant the player a *bonus die*: an additional "tens" die, where the
 player keeps the better of the two "tens" values.
 
@@ -96,7 +96,7 @@ In this case the skill-based task itself (finding the book) isn't more
 difficult, so making the skill roll hard when it would have been
 normal, or extreme when it would have been hard, doesn't really fit.
 
-To represent this sort of situational disadvantage, the [glo:gm] may
+To represent this sort of situational disadvantage, the [abbr:gm] may
 give the player a *penalty die*.  This is exactly the same as a bonus
 die, but rather than keeping the *better* of the two "tens" values,
 the player keeps the *worse*.
@@ -112,8 +112,8 @@ bonuses or multiple penalties.
 
 ## Going head-to-head
 
-If a [glo:pc] goes up against someone significant (another [glo:pc],
-or a major [glo:npc]), the [glo:gm] may call for an *opposed roll*.
+If a [abbr:pc] goes up against someone significant (another [abbr:pc],
+or a major [abbr:npc]), the [abbr:gm] may call for an *opposed roll*.
 
 Both sides roll, and the side with the greater degree of success
 (critical > extreme > hard > normal > failure) wins.  If both sides
@@ -140,11 +140,11 @@ Let's flesh out Xander's shopping trip a bit more:
 2. The cultist follows Xander in, but loses sight of him amongst the
    shelves.
 
-3. The [glo:gm] calls for a hard **Library Use** roll with a penalty
+3. The [abbr:gm] calls for a hard **Library Use** roll with a penalty
    die; the shop is disorganised, and it'll be difficult to search
    while avoiding the cultist.
 
-4. Xander fails.  The [glo:gm] says that the cultist hasn't found him
+4. Xander fails.  The [abbr:gm] says that the cultist hasn't found him
    yet, and that he can push it, but if he fails the pushed roll the
    cultist will definitely find him.
 
@@ -207,11 +207,11 @@ these four rules:
 - Bonus and penalty dice represent significant situational advantages
   or disadvantages.
 
-- Opposed rolls are for combat, magic, or if two [glos:pc] are
+- Opposed rolls are for combat, magic, or if two [abbr:pc "PCs"] are
   directly competing.  Use sparingly elsewhere.
 
 - Before rolling anything, ask if a roll is *really* needed here.  If
-  the task is difficult but the [glo:pc] can spend as long on it as
+  the task is difficult but the [abbr:pc] can spend as long on it as
   they want, shouldn't they just automatically succeed?
 
 ![All the lines on one graph.](files/dice-rolls-in-call-of-cthulhu/all.thumb.png)

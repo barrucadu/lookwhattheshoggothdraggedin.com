@@ -44,7 +44,7 @@ And it sparked some good discussion.  Everyone *was* happy with the
 game and how it was going but, even though we didn't change anything,
 it was useful to confirm that everyone was still on the same page.
 
-Then the other [glo:gm] in the group asked the same questions about
+Then the other [abbr:gm] in the group asked the same questions about
 *their* game a week later, which sparked a discussion about character
 advancement and how *I* was a little dissatisfied with some aspects of
 how we'd been handling it.  One day I'll write my thoughts on that up

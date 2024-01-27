@@ -4,15 +4,15 @@ date: 2021-03-07
 topic: reviews
 system: troika
 excerpt: |
-    Today I ran my first session of [glo:troika], a very weird *Book of
+    Today I ran my first session of Troika, a very weird *Book of
     the New Sun* / *Dying Earth* / *Discworld* style game.  We had a
     lot of fun, it's pretty rules light, and we'll probably be playing
     it again some time.
 ---
 
-[glo:troika] is British science-fantasy roleplaying game, with a [free
-SRD][], usually lumped in the [glo:osr] sphere even though it's
-descended from [Fighting Fantasy][] and not [glo:dnd].
+Troika is British science-fantasy roleplaying game, with a [free
+SRD][], usually lumped in the [abbr:osr] sphere even though it's
+descended from [Fighting Fantasy][] and not [abbr:dnd].
 
 It's weird, fun, and pretty rules-light.
 
@@ -39,16 +39,16 @@ It just looks and feels very nice.
 The core of the system is nice and straightforward.  It's an
 attributes-and-skills system, but only has a few attributes.  There
 are two slightly different core resolution mechanics, one for opposed
-situations and one for unopposed, where you roll [glo:dice-notation
-"`2d6`"] and compare it with your stats.
+situations and one for unopposed, where you roll
+`2d6` and compare it with your stats.
 
-There are no [glo:dnd]-style attribute modifiers, or saves, or levels.
+There are no [abbr:dnd]-style attribute modifiers, or saves, or levels.
 There is an experience mechanic but it's not experience points: like
-[glo:coc], when you successfully use a skill, you mark it, and then
+Call of Cthulhu, when you successfully use a skill, you mark it, and then
 in downtime you can try to improve what you marked.
 
 At first the lack of saves threw me a bit.  I was planning to run some
-[glo:osr] content, and that stuff has "save vs X" *all over the
+[abbr:osr] content, and that stuff has "save vs X" *all over the
 place!*  But it's actually pretty straightforward to translate saves
 to skill checks:
 
@@ -61,14 +61,14 @@ to skill checks:
 
 - Or is it purely up to chance?  Make a luck check.
 
-The rulebook encourages [glos:gm] to make up new skills as needed, and
+The rulebook encourages the [abbr:gm] to make up new skills as needed, and
 the provided *Blancmange & Thistle* scenario gives an example of that
 for holding your breath.  Having weird niche skills isn't a problem in
-[glo:troika]
+Troika
 
 ### Cool Mechanics
 
-The weirdness of [glo:troika] isn't confined to its setting, some of
+The weirdness of Troika isn't confined to its setting, some of
 the novelty budget gets spent on interesting mechanics:
 
 - **Initiative** is done by putting a bunch of tokens in a bag,
@@ -78,8 +78,8 @@ the novelty budget gets spent on interesting mechanics:
 - **Damage** is done with charts mapping dice results to damage
   scores, making different weapons *feel* different.
 
-- **Reaction rolls** are a staple of [glo:osr] gaming, but in
-  [glo:troika] each monster or animal type has its own reaction table,
+- **Reaction rolls** are a staple of [abbr:osr] gaming, but in
+  Troika each monster or animal type has its own reaction table,
   modelled after the personality of the creature.
 
 - **Inventory slots** are numbered, and the order you store your items
@@ -92,7 +92,7 @@ the novelty budget gets spent on interesting mechanics:
 
 ## Backgrounds
 
-Most of what differentiates [glos:pc] in [glo:troika], at least to
+Most of what differentiates [abbr:pc "PCs"] in Troika, at least to
 start with, comes from their background.  These consist of a paragraph
 or two of lore, a few items, some skills, and spells.
 
@@ -102,7 +102,7 @@ your own is generally hard (I'm sure we've all heard horror stories of
 players *insisting* on using some horribly unbalanced homebrew race or
 class).
 
-Contrast that with [glo:troika], where each background is evocative
+Contrast that with Troika, where each background is evocative
 and mechanically simple, and also just plain *weird*.  For example:
 
 ![Fellow of The Sublime Society of Beef Steaks: Brawlers believe the application of might and a good beef steak is the universal truth.  Words have no power and can no more define the universe than they can build a house, lift a cup, or sear a steak. Might can!  Really, they have thought a lot about this.](files/first-impressions-troika/beef-steaks.jpg)
@@ -117,7 +117,7 @@ but my mind went immediately to [Armstrong and Curtis from Fullmetal
 Alchemist][].
 
 There are 36 of these backgrounds.  Many of them reference people,
-places, or things which don't get further explained.  [glo:troika] is
+places, or things which don't get further explained.  Troika is
 great for *implying* a setting without expecting you to learn a bunch
 of detailed lore for *the* setting.
 
@@ -144,17 +144,17 @@ floor that you sink several inches into" which are strange (why is the
 carpet so deep?) and slightly uncomfortable (that carpet *must* be
 gross).
 
-There's also a wealth of [glo:troika] scenarios on itch.io, for
+There's also a wealth of Troika scenarios on itch.io, for
 example the recent [Great Troika! Pocket Sphere Jam!][], so even if
 the rulebook hadn't come with an example scenario I'd have been able
 to make do.
 
 The only thing I felt was missing were some guidelines for converting
-content, particularly monster statblocks, from other [glo:osr] games,
-which tend to be based on [glo:dnd].  Perhaps that's a bit unfair of
+content, particularly monster statblocks, from other [abbr:osr] games,
+which tend to be based on [abbr:dnd].  Perhaps that's a bit unfair of
 me.  For instance, I wouldn't expect a fantasy game based on the
-[glo:coc] system to come with [glo:dnd] conversion instructions.  But
-[glo:troika] *is* often lumped into the general [glo:osr] sphere.  I
+Call of Cthulhu system to come with [abbr:dnd] conversion instructions.  But
+Troika *is* often lumped into the general [abbr:osr] sphere.  I
 ended up making up some rules which worked for the particular scenario
 I ran.
 
@@ -168,7 +168,7 @@ everyone's inventory sorted out we were good to go.  The players
 needed to ask "is this a roll under or roll versus?" a few times, but
 there was never any difficulty for me to resolve that.
 
-Playing into the weirdness of the system was great.  One [glo:pc]
+Playing into the weirdness of the system was great.  One [abbr:pc]
 found a mysterious vial of blue liquid, asked if they could tell what
 it was, and I just made up a skill: "I don't know, make a Liquid
 Identification check."
@@ -184,7 +184,7 @@ Our sessions are only three hours long.  If we had longer sessions I'd
 have extended the garden part, which would probably have upped the
 danger.
 
-We all enjoyed it, and I expect we'll be running another [glo:troika]
+We all enjoyed it, and I expect we'll be running another Troika
 one-shot, probably with fresh characters, in the future.
 
 [Emmy Allen's]: http://cavegirlgames.blogspot.com/

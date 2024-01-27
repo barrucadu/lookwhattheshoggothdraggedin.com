@@ -6,7 +6,7 @@ system: ose
 excerpt: |
     I've been running a campaign of [The Halls of Arden Vul](https://preview.drivethrurpg.com/en/product/307787/Arden-Vul-Bundle-BUNDLE)
     for 6 months now and it is tremendous fun.  This post is for the potential
-    Arden Vul [glo:gm], on the fence over whether to run it.  I'll cover what
+    Arden Vul [abbr:gm], on the fence over whether to run it.  I'll cover what
     Arden Vul is and how I feel about it; the highlights of my campaign and what
     crazy stuff the players have got up to in the last 24 weekly sessions; the
     practical matters of rules, preparation, and how I run it week to week; and
@@ -18,7 +18,7 @@ It's been a lot of fun so far, and we have *barely* scratched the surface: we'll
 be playing this for a long time yet.  I do not regret the expensive books at
 all.
 
-This post is for the potential Arden Vul [glo:gm], still on the fence over
+This post is for the potential Arden Vul [abbr:gm], still on the fence over
 whether to run it or not.  I'll cover what it is and generally how I feel about
 it now that I've got some experience with it (though this isn't a comprehensive
 review); the highlights of my campaign and what crazy stuff the players have got
@@ -158,8 +158,8 @@ one teaches you about the other.
 However, it would be remiss of me to portray it as all sunshine and rainbows.
 Running Arden Vul does have some challenges.
 
-The main problem is that it's just not as well laid-out as some other [glo:osr]
-material, such as the [glo:ose] books and adventures.  Descriptions tend to be
+The main problem is that it's just not as well laid-out as some other [abbr:osr]
+material, such as the [abbr:ose] books and adventures.  Descriptions tend to be
 long and wordy, and the PDF isn't hyperlinked, which makes skimming through
 things at the table a little tricky at times.  I did a lot of reading before
 starting the campaign, and still sometimes have to call a short break while I
@@ -299,7 +299,7 @@ it):
     > The book says that the normal fee is 10sp per person, but that Riglon will
     > charge them 1gp.  In the session I didn't really pick up on how weird a
     > statement that is (since 10sp = 1gp), but I looked into it afterwards and
-    > found that in [glo:adnd], 1gp = 20sp.  So Riglon (and most of the other
+    > found that in [abbr:adnd], 1gp = 20sp.  So Riglon (and most of the other
     > lift operators) charge unsuspecting rubes twice the normal price.
     >
     > I decided to leave it, and also to not adjust any of the other prices in
@@ -577,11 +577,11 @@ it):
 
 ## Rules
 
-We use the [glo:ose] Advanced Fantasy rules.  Arden Vul is written for
-[glo:adnd], so I also reference [glo:osric] for [glo:adnd]-specific material.
+We use the [abbr:ose] Advanced Fantasy rules.  Arden Vul is written for
+[abbr:adnd], so I also reference [abbr:osric] for [abbr:adnd]-specific material.
 Fortunately, [OSRIC is free][].  The main things to convert are:
 
-- **Alignment:** [glo:bxdnd] uses one-axis alignment, [glo:adnd] uses two-axis.
+- **Alignment:** [abbr:bxdnd] uses one-axis alignment, [abbr:adnd] uses two-axis.
 
     My general approach is to treat Good and Evil as personality traits, not as
     alignments.  To say someone is "Good" or "Evil" is just a descriptor of how
@@ -589,21 +589,21 @@ Fortunately, [OSRIC is free][].  The main things to convert are:
     your religious beliefs and which gods religious characters are pledged to.
     I handle magical effects which key off alignment on a case-by-case basis.
 
-- **Monsters:** Where monsters have an [glo:ose] version, I use that; otherwise
+- **Monsters:** Where monsters have an [abbr:ose] version, I use that; otherwise
     I use the Arden Vul version without further conversion.
 
-    As [glo:adnd] is a bit higher-powered, this means the [glo:adnd] monsters
-    are a bit stronger and more resilient than the [glo:ose] ones.  But that's
+    As [abbr:adnd] is a bit higher-powered, this means the [abbr:adnd] monsters
+    are a bit stronger and more resilient than the [abbr:ose] ones.  But that's
     not really been an issue so far.  The players just have to be cautious.
 
-- **Magic Items and Spells:** A lot of these aren't in the [glo:ose] Referee's
+- **Magic Items and Spells:** A lot of these aren't in the [abbr:ose] Referee's
     Tome.
 
-    Unfortunately, [glo:adnd] spells don't quite map cleanly to [glo:ose],
-    because in [glo:adnd] one combat round is 60s, and what [glo:bxdnd] calls a
-    "round", [glo:adnd] calls a "segment".  I don't like specifying spell
+    Unfortunately, [abbr:adnd] spells don't quite map cleanly to [abbr:ose],
+    because in [abbr:adnd] one combat round is 60s, and what [abbr:bxdnd] calls a
+    "round", [abbr:adnd] calls a "segment".  I don't like specifying spell
     durations in "minutes", since nothing else in the game uses that, so when I
-    copy a spell over from [glo:osric] I pick a new duration for it.
+    copy a spell over from [abbr:osric] I pick a new duration for it.
 
 I mostly convert things on the fly, I don't tend to read ahead and pre-convert
 things.  This does mean that things might change between sessions, but I'm open
@@ -616,7 +616,7 @@ surprises there.
 
 It's not a complete document in itself: I'm incorporating some material from the
 [Carcass Crawler zines][] and from [Downtime in Zyan][].  I do toy with the idea
-of writing and printing a complete book that's the subset of the [glo:ose] rules
+of writing and printing a complete book that's the subset of the [abbr:ose] rules
 we're actually using, plus all the house rules; but then I wouldn't be able to
 distribute that, and also I change the house rules on occasion so it'd get out
 of date.
@@ -639,7 +639,7 @@ tweaks, other than three significant changes during the course of the campaign:
     of fantasy carousing rules model, decided that wasn't the game we were
     playing, and removed them.
 
-- **Training:** [glo:adnd] requires you to undertake training to level up, and
+- **Training:** [abbr:adnd] requires you to undertake training to level up, and
     there are trainer NPCs in Gosterwick.  So when we started the campaign, we
     decided to use training rules.
 
@@ -693,13 +693,13 @@ Vul for two reasons:
     like using item-based encumbrance.  So I'd need to change the character
     sheets.  Foundry character sheets are defined in code, and while I am a
     software engineer by trade and do program things for fun, I didn't really
-    feel like reprogramming my [glo:vtt] just to run a game.
+    feel like reprogramming my [abbr:vtt] just to run a game.
 
     I already went down that route previously, with [Roll20][], and it led to a
     lot of work.
 
 - **Mapping:** The Foundry drawing tools are pretty bad.  The assumption is very
-    much that the [glo:gm] provides cool maps with dynamic lighting and effects
+    much that the [abbr:gm] provides cool maps with dynamic lighting and effects
     and everything all set up, and the players just move their tokens through
     the map.  The drawing tools are for quickly sketching something small.
 
@@ -854,7 +854,7 @@ All that said, I know you all like procedures, so as far as I have a concrete
 
 1. Review previous session notes.
 2. Do any work left over from last time (e.g., converting spells or magic items
-     from [glo:osric] and copying them into the player notes).
+     from [abbr:osric] and copying them into the player notes).
 3. Read any important material I think is likely to come up, or which just seems
      fun to read.
 4. Think hard about the current state of the dungeon and whether the last
@@ -910,7 +910,7 @@ the time, and what can be relegated to the background.
 
 On my desk I have:
 
-- The [glo:ose] referee screen, in case I need to reference anything there.
+- The [abbr:ose] referee screen, in case I need to reference anything there.
 - The physical Arden Vul books, open to the random encounter table for the
   current floor.
 - A pad of paper and a pen, to jot down rough notes as we play.
@@ -929,7 +929,7 @@ After the session I distil my notes into what's actually important (monster HP
 tracked in a battle, probably not important; a location partially looted, or an
 important NPC interacted with, probably important) and type it up into Obsidian,
 along with a list of things I need to do before next time (like adding any
-non-[glo:ose] spells they've found to the notes doc, or figuring out how an NPC
+non-[abbr:ose] spells they've found to the notes doc, or figuring out how an NPC
 will react to the events of the session).  See the appendix to this post for an
 example.
 
@@ -986,7 +986,7 @@ important to share:
     occasionally need to take a minute to read a long description or look up a
     reference.
 
-- **Embace [glo:osr] principles.**
+- **Embace [abbr:osr] principles.**
 
     The [Principia Apocrypha][] is a wealth of pithy advice for how to run this
     style of game.  I periodically return to it and I never feel like the reread
@@ -1116,7 +1116,7 @@ things offset by half a square or which are half a square big.
 ### Session 0
 
 These were my notes going into session 0.  Before this I'd already pitched the
-idea of a megadungeon using some sort of [glo:osr] system to the players, so
+idea of a megadungeon using some sort of [abbr:osr] system to the players, so
 they were on board with the basic idea.
 
 > - This session:

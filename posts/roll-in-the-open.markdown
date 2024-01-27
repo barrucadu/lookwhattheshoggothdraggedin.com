@@ -3,7 +3,7 @@ title: I Roll in the Open
 date: 2021-04-02
 topic: gm-advice
 excerpt: |
-    A lot of [glos:gm] advise rolling behind a screen, so you can fudge
+    A lot of [abbr:gm "GMs"] advise rolling behind a screen, so you can fudge
     rolls when you get a result which would be bad for the story.  I
     think that at best fudging is unnecessary, and can be remedied by
     being more thoughtful about what rolls you ask for (and I go in to
@@ -11,7 +11,7 @@ excerpt: |
     explicitly ignoring the rules of the game.
 ---
 
-One really common piece of [glo:gm] advice is to roll your dice behind
+One really common piece of [abbr:gm] advice is to roll your dice behind
 a screen, so your players can't see what you got.
 
 This lets you decide if what you rolled is actually what's best for
@@ -25,8 +25,8 @@ I completely disagree.
 
 ## Why do we roll dice?
 
-[glo:pbta-aw], a game I don't particularly like but which has some
-good ideas, says in its [glo:gm] Principles:
+Apocalypse World, a game I don't particularly like but which has some
+good ideas, says in its [abbr:gm] Principles:
 
 > In order to play to find out what happens, you'll need to pass
 > decision-making off sometimes.  Whenever something comes up that
@@ -34,8 +34,8 @@ good ideas, says in its [glo:gm] Principles:
 > game gives you four key tools you can use to disclaim
 > responsibility: [...]
 
-In [glo:pbta-aw], the [glo:gm] can't just call for a roll, and when a
-mechanic *is* triggered it's the player who rolls, not the [glo:gm].
+In Apocalypse World, the [abbr:gm] can't just call for a roll, and when a
+mechanic *is* triggered it's the player who rolls, not the [abbr:gm].
 The system is fudge-proof by design, and doesn't seem to suffer for
 it.
 
@@ -44,7 +44,7 @@ an RPG?  It's so we can *disclaim decision-making*.
 
 Sometimes it's just more
 fun to play to find out what happens, rather than to decide by
-[glo:gm] fiat.
+[abbr:gm] fiat.
 
 
 ## The two flavours of fudge
@@ -55,12 +55,12 @@ There are two distinct situations which can call for a roll:
    strict combat rules which give specific options the players can
    choose from, and corresponding dice rolls which must be made.
 
-2. When the [glo:gm] wants to disclaim decision-making.  For example,
-   a [glo:pc] is trying to bluff their way past a guard, but both
-   success and failure would be interesting outcomes, so the [glo:gm]
+2. When the [abbr:gm] wants to disclaim decision-making.  For example,
+   a [abbr:pc] is trying to bluff their way past a guard, but both
+   success and failure would be interesting outcomes, so the [abbr:gm]
    doesn't want to just pick one.
 
-Many [glos:gm] treat fudging in these cases the same: if a dice roll
+Many [abbr:gm "GMs"] treat fudging in these cases the same: if a dice roll
 gives a "bad" result, fix it by saying you rolled something else.
 
 But I don't think they're the same at all!
@@ -80,10 +80,10 @@ miss instead, and didn't that lead to such an *awesome* climax?",
 doesn't that cheapen the victory?  A victory the players thought they
 earned was, in fact, just given to them.
 
-Even pro-fudging [glos:gm] recognise this, and advise that you should
+Even pro-fudging [abbr:gm "GMs"] recognise this, and advise that you should
 never tell your players when you fudge.
 
-On the other hand, if the [glo:gm] called for a roll which they
+On the other hand, if the [abbr:gm] called for a roll which they
 weren't required to, and isn't happy with the all of the possible
 results, well, maybe they shouldn't have called for it.  That's an
 understandable mistake, and certainly one I've made.
@@ -91,14 +91,14 @@ understandable mistake, and certainly one I've made.
 
 ## When do we roll dice?
 
-So, a [glo:pc] wants to do something, and you're not in a situation
+So, a [abbr:pc] wants to do something, and you're not in a situation
 where the rules dictate what to do.  Before calling for a roll, ask
 yourself: **is the outcome in doubt?**
 
 ### The success of the action is in doubt
 
 Are there consequences for failure?  If there aren't any, or if the
-[glo:pc] can just keep trying with no consequences, then it's not
+[abbr:pc] can just keep trying with no consequences, then it's not
 *really* in doubt: they can just succeed automatically.
 
 It's the combination of challenge and potential consequence which

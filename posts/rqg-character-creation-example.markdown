@@ -4,13 +4,13 @@ date: 2023-08-05
 topic: mechanics
 system: rqg
 excerpt: |
-    I'm gearing up to run a one-shot of [glo:rqg], but I found bits of the
+    I'm gearing up to run a one-shot of RuneQuest: Roleplaying in Glorantha, but I found bits of the
     character creation pretty confusing.  So here is a full worked example based
     on my current understanding of the rules.
 ---
 
-[glo:rqg] is probably the crunchiest game I've looked into running.  It's based
-on the same "basic roleplaying system" as [glo:coc], but set in a high-magic
+RuneQuest: Roleplaying in Glorantha is probably the crunchiest game I've looked into running.  It's based
+on the same "basic roleplaying system" as Call of Cthulhu, but set in a high-magic
 bronze-age fantasy context, and *significantly* more complex.  That said, I
 think the character creation does a pretty good job of gradually introducing
 this complexity without being overwhelming, but there were a few aspects which
@@ -63,53 +63,53 @@ play a campaign of RuneQuest, we'll definitely do the full character creation.
 
 #### 1622
 
-As Orstan is from Sartar, I rolled [glo:dice-notation "`1d20+5`"] to see what he
+As Orstan is from Sartar, I rolled `1d20+5` to see what he
 was doing.  I got a 13: Orstan was dealing with the Great Winter.
 
-Rolling [glo:dice-notation "`1d20`"] on the Great Winter table, I got a 5,
-meaning he nearly froze to death.  Rolling on the subtable ([glo:dice-notation
-"`1d6`"] this time), I got a 6, so Orstan survived by fleeing to Esrolia and
+Rolling `1d20` on the Great Winter table, I got a 5,
+meaning he nearly froze to death.  Rolling on the subtable (`1d6`
+this time), I got a 6, so Orstan survived by fleeing to Esrolia and
 fighting in the civil war there.
 
-Rolling [glo:dice-notation "`1d20+5`"] on the Civil War in Esrolia table this
+Rolling `1d20+5` on the Civil War in Esrolia table this
 time, I got a 22.  Orstan fought gloriously protecting Queen Samastina from Red
 Earth assassins, gaining **Honour** 60%, **Loyalty (Queen Samastina)** 60%, and
-**Reputation** +[glo:dice-notation "`1d6`"]% (for which I rolled a 3).
+**Reputation** +`1d6`% (for which I rolled a 3).
 
 #### 1623
 
-No modifiers for Sartarites this time, so just a straight [glo:dice-notation
-"`1d20`"] roll.  I got an 8, which means that it was a normal year for Orstan
+No modifiers for Sartarites this time, so just a straight
+`1d20` roll.  I got an 8, which means that it was a normal year for Orstan
 and nothing really happened.
 
 #### 1624
 
-No modifier for this roll either, so a straight [glo:dice-notation "`1d20`"].  I
+No modifier for this roll either, so a straight `1d20`.  I
 got a 20, meaning Orstan fought at the Battle of Pennel Ford.
 
-Rolling [glo:dice-notation "`1d20+10`"] on the Pennel Ford table, I got a 21,
+Rolling `1d20+10` on the Pennel Ford table, I got a 21,
 which means that he fought with great glory, gaining **Honour** +10%, **Battle**
-+10%, and **Reputation** +[glo:dice-notation "`1d6`"]% (for which I rolled a 3).
++10%, and **Reputation** +`1d6`% (for which I rolled a 3).
 
 Some skills start at a value other than 0.  **Battle** starts at 10%, so Orstan
 now has **Battle** 20%.
 
 I then chose whether Orstan accompanied Argrath to the summoning of Jaldon
 Goldentooth, or aided Harrek the Berserk in sacking the City of Wonders.  I
-chose the summoning, rolling [glo:dice-notation "`1d20`"] on that table, and got
+chose the summoning, rolling `1d20` on that table, and got
 a 6: Orstan acknowledged Argrath as the White Bull, gaining **Loyalty (White
 Bull)** 60%.
 
 #### 1625
 
-No modifier for this roll either, [glo:dice-notation "`1d20`"] again, and I
+No modifier for this roll either, `1d20` again, and I
 rolled a 13.  Orstan witnessed a several-kilometer-long dragon explode out of
 the ground and destroy a temple-city of the Lunar Empire, then he took up arms
 and fought in the Liberation of Sartar!
 
-Rolling [glo:dice-notation "`1d20`"] on the Liberation of Sartar table, I got a
+Rolling `1d20` on the Liberation of Sartar table, I got a
 1.  Orstan fought with great glory, gaining **Honour** +10%, **Loyalty
-(Sartar)** 60%, **Reputation** +[glo:dice-notation "`1d3`"]% (for which I rolled
+(Sartar)** 60%, **Reputation** +`1d3`% (for which I rolled
 a 1), and **Battle** +10%.
 
 The game begins in 1625, so now we're ready to leave history behind and look to
@@ -200,13 +200,13 @@ There's a sidebar with some suggestions for how to change the process if you
 want slightly better characteristics than average (for example, rerolling 1s),
 but I just went for the default:
 
-- **STR:** [glo:dice-notation "`3d6`"]: 12
-- **DEX:** [glo:dice-notation "`3d6`"]: 10
-- **CON:** [glo:dice-notation "`3d6`"]: 10
-- **POW:** [glo:dice-notation "`3d6`"]: 12
-- **CHA:** [glo:dice-notation "`3d6`"]: 13
-- **SIZ:** [glo:dice-notation "`2d6+6`"]: 11
-- **INT:** [glo:dice-notation "`2d6+6`"]: 13
+- **STR:** `3d6`: 12
+- **DEX:** `3d6`: 10
+- **CON:** `3d6`: 10
+- **POW:** `3d6`: 12
+- **CHA:** `3d6`: 13
+- **SIZ:** `2d6+6`: 11
+- **INT:** `2d6+6`: 13
 
 From Orstan's **Air** I took **STR** +2, and from his **Earth**, **CON** +1.
 
@@ -297,8 +297,8 @@ those bonuses.  And note that **Speak Own Language (Heortling)** and **Customs
   Loyalty (Colymar tribe) 70%, Loyalty (Queen Samastina) 60%, Loyalty (White
   Bull) 60%, Loyalty (Sartar) 60%
 - **Reputation:** 9%
-- **Damage Bonus:** +[glo:dice-notation "`1d4`"]
-- **Spirit Combat Damage:** [glo:dice-notation "`1d6+1`"]
+- **Damage Bonus:** +`1d4`
+- **Spirit Combat Damage:** `1d6+1`
 - **Healing Rate:** 2
 - **Skills:**
     - *Agility (+0%):* Ride (any) 10%
@@ -310,15 +310,15 @@ those bonuses.  And note that **Speak Own Language (Heortling)** and **Customs
       (Lance) 15%, Broadsword 25%, Composite Bow 15%, Javelin 20%, Medium Shield
       30%, Large Shield 25%
 
-Hit Location  | [glo:dice-notation "`1d20`"] | Armour | HP
-------------- | ---------------------------- | ------ | --
-Right Leg     | 1--4                         | 0      | 4
-Left Leg      | 5--8                         | 0      | 4
-Abdomen       | 9--11                        | 0      | 4
-Chest         | 12                           | 0      | 5
-Right Arm     | 13--15                       | 0      | 3
-Left Arm      | 16--18                       | 0      | 3
-Head          | 19--20                       | 0      | 4
+Hit Location  | `1d20` | Armour | HP
+------------- | ------ | ------ | --
+Right Leg     | 1--4   | 0      | 4
+Left Leg      | 5--8   | 0      | 4
+Abdomen       | 9--11  | 0      | 4
+Chest         | 12     | 0      | 5
+Right Arm     | 13--15 | 0      | 3
+Left Arm      | 16--18 | 0      | 3
+Head          | 19--20 | 0      | 4
 
 With his above-average STR and average DEX, I think Orstan is well-suited to
 being a warrior.
@@ -336,7 +336,7 @@ Chariot** +40%, **Whip** +25%, **1H Axe (Battle Axe)** +20%, **Dance** +15%,
 **Javelin** +20%, **Scan** +15%, **Honour** +10% (really going all in on the
 honour).
 
-He also gains [glo:dice-notation "`1d6`"] distinctive scars.  I rolled a 4, and
+He also gains `1d6` distinctive scars.  I rolled a 4, and
 decided at one point he was mauled, or slashed, or something, on the right side
 of his body, so he has scars on his face, down the right side of his chest, and
 really bad scarring on his right arm.
@@ -405,8 +405,8 @@ other occupation, this would have been made clear.  Oh well.
   Loyalty (Colymar tribe) 70%, Loyalty (Queen Samastina) 60%, Loyalty (White
   Bull) 60%, Loyalty (Sartar) 60%
 - **Reputation:** 9%
-- **Damage Bonus:** +[glo:dice-notation "`1d4`"]
-- **Spirit Combat Damage:** [glo:dice-notation "`1d6+1`"]
+- **Damage Bonus:** +`1d4`
+- **Spirit Combat Damage:** `1d6+1`
 - **Healing Rate:** 2
 - **Armour:** linothorax (linen, 3pt), greaves (leather, 1pt), vambraces
   (leather, 1pt), composite helm (2pt)
@@ -423,22 +423,22 @@ other occupation, this would have been made clear.  Oh well.
     - *Perception (+5%):* Scan 40%
 - **Ransom:** 500L
 
-Hit Location  | [glo:dice-notation "`1d20`"] | Armour | HP
-------------- | ---------------------------- | ------ | --
-Right Leg     | 1--4                         | 1      | 4
-Left Leg      | 5--8                         | 1      | 4
-Abdomen       | 9--11                        | 3      | 4
-Chest         | 12                           | 3      | 5
-Right Arm     | 13--15                       | 1      | 3
-Left Arm      | 16--18                       | 1      | 3
-Head          | 19--20                       | 2      | 4
+Hit Location  | `1d20` | Armour | HP
+------------- | ------ | ------ | --
+Right Leg     | 1--4   | 1      | 4
+Left Leg      | 5--8   | 1      | 4
+Abdomen       | 9--11  | 3      | 4
+Chest         | 12     | 3      | 5
+Right Arm     | 13--15 | 1      | 3
+Left Arm      | 16--18 | 1      | 3
+Head          | 19--20 | 2      | 4
 
-Weapon Attack    | %  | Damage                                | Range | HP | SR |
----------------- | -- | ------------------------------------- | ----- | -- | -- |
-1H Battle Axe    | 45 | [glo:dice-notation "`1d8 + 2 + 1d4`"] | 0.8m  | 8  | 8  |
-Whip             | 40 | [glo:dice-notation "`1d4`"]           | 2m    | 12 | 5  |
-Javelin (melee)  | 15 | [glo:dice-notation "`1d6 + 1d4`"]     | 1.5m  | 8  | 7  |
-Javelin (thrown) | 45 | [glo:dice-notation "`1d10`"]          | 20m   | 8  | 3  |
+Weapon Attack    | %  | Damage          | Range | HP | SR |
+---------------- | -- | --------------- | ----- | -- | -- |
+1H Battle Axe    | 45 | `1d8 + 2 + 1d4` | 0.8m  | 8  | 8  |
+Whip             | 40 | `1d4`           | 2m    | 12 | 5  |
+Javelin (melee)  | 15 | `1d6 + 1d4`     | 1.5m  | 8  | 7  |
+Javelin (thrown) | 45 | `1d10`          | 20m   | 8  | 3  |
 
 As an aside, I think there's a mistake in Vasana, the example character in the
 core rulebook, who has Strike Rank 7 for their broadsword, battle axe, and
@@ -483,8 +483,8 @@ spirit magic.
   Loyalty (Colymar tribe) 70%, Loyalty (Queen Samastina) 60%, Loyalty (White
   Bull) 60%, Loyalty (Sartar) 60%, Devotion (Orlanth) 60%
 - **Reputation:** 9%
-- **Damage Bonus:** +[glo:dice-notation "`1d4`"]
-- **Spirit Combat Damage:** [glo:dice-notation "`1d6+1`"]
+- **Damage Bonus:** +`1d4`
+- **Spirit Combat Damage:** `1d6+1`
 - **Healing Rate:** 2
 - **Armour:** linothorax (linen, 3pt), greaves (leather, 1pt), vambraces
   (leather, 1pt), composite helm (2pt)
@@ -502,23 +502,23 @@ spirit magic.
     - *Perception (+5%):* Scan 40%
 - **Ransom:** 500L
 
-Hit Location  | [glo:dice-notation "`1d20`"] | Armour | HP
-------------- | ---------------------------- | ------ | --
-Right Leg     | 1--4                         | 1      | 4
-Left Leg      | 5--8                         | 1      | 4
-Abdomen       | 9--11                        | 3      | 4
-Chest         | 12                           | 3      | 5
-Right Arm     | 13--15                       | 1      | 3
-Left Arm      | 16--18                       | 1      | 3
-Head          | 19--20                       | 2      | 4
+Hit Location  | `1d20` | Armour | HP
+------------- | ------ | ------ | --
+Right Leg     | 1--4   | 1      | 4
+Left Leg      | 5--8   | 1      | 4
+Abdomen       | 9--11  | 3      | 4
+Chest         | 12     | 3      | 5
+Right Arm     | 13--15 | 1      | 3
+Left Arm      | 16--18 | 1      | 3
+Head          | 19--20 | 2      | 4
 
-Weapon Attack    | %  | Damage                                | Range | HP | SR |
----------------- | -- | ------------------------------------- | ----- | -- | -- |
-1H Battle Axe    | 45 | [glo:dice-notation "`1d8 + 2 + 1d4`"] | 0.8m  | 8  | 8  |
-Broadsword       | 40 | [glo:dice-notation "`1d8 + 1 + 1d4`"] | 1m    | 12 | 7  |
-Whip             | 40 | [glo:dice-notation "`1d4`"]           | 2m    | 12 | 5  |
-Javelin (melee)  | 15 | [glo:dice-notation "`1d6 + 1d4`"]     | 1.5m  | 8  | 7  |
-Javelin (thrown) | 45 | [glo:dice-notation "`1d10`"]          | 20m   | 8  | 3  |
+Weapon Attack    | %  | Damage          | Range | HP | SR |
+---------------- | -- | --------------- | ----- | -- | -- |
+1H Battle Axe    | 45 | `1d8 + 2 + 1d4` | 0.8m  | 8  | 8  |
+Broadsword       | 40 | `1d8 + 1 + 1d4` | 1m    | 12 | 7  |
+Whip             | 40 | `1d4`           | 2m    | 12 | 5  |
+Javelin (melee)  | 15 | `1d6 + 1d4`     | 1.5m  | 8  | 7  |
+Javelin (thrown) | 45 | `1d10`          | 20m   | 8  | 3  |
 
 ### Step 7: Personal Skill Bonuses
 
@@ -550,8 +550,8 @@ else.
   Loyalty (Colymar tribe) 70%, Loyalty (Queen Samastina) 60%, Loyalty (White
   Bull) 60%, Loyalty (Sartar) 60%, Devotion (Orlanth) 60%
 - **Reputation:** 9%
-- **Damage Bonus:** +[glo:dice-notation "`1d4`"]
-- **Spirit Combat Damage:** [glo:dice-notation "`1d6+1`"]
+- **Damage Bonus:** +`1d4`
+- **Spirit Combat Damage:** `1d6+1`
 - **Healing Rate:** 2
 - **Armour:** linothorax (linen, 3pt), greaves (leather, 1pt), vambraces
   (leather, 1pt), composite helm (2pt)
@@ -570,29 +570,29 @@ else.
     - *Perception (+5%):* Scan 50%
 - **Ransom:** 500L
 
-Hit Location  | [glo:dice-notation "`1d20`"] | Armour | HP
-------------- | ---------------------------- | ------ | --
-Right Leg     | 1--4                         | 1      | 4
-Left Leg      | 5--8                         | 1      | 4
-Abdomen       | 9--11                        | 3      | 4
-Chest         | 12                           | 3      | 5
-Right Arm     | 13--15                       | 1      | 3
-Left Arm      | 16--18                       | 1      | 3
-Head          | 19--20                       | 2      | 4
+Hit Location  | `1d20` | Armour | HP
+------------- | ------ | ------ | --
+Right Leg     | 1--4   | 1      | 4
+Left Leg      | 5--8   | 1      | 4
+Abdomen       | 9--11  | 3      | 4
+Chest         | 12     | 3      | 5
+Right Arm     | 13--15 | 1      | 3
+Left Arm      | 16--18 | 1      | 3
+Head          | 19--20 | 2      | 4
 
-Weapon Attack    | %  | Damage                                | Range | HP | SR |
----------------- | -- | ------------------------------------- | ----- | -- | -- |
-1H Battle Axe    | 70 | [glo:dice-notation "`1d8 + 2 + 1d4`"] | 0.8m  | 8  | 8  |
-Broadsword       | 65 | [glo:dice-notation "`1d8 + 1 + 1d4`"] | 1m    | 12 | 7  |
-Whip             | 65 | [glo:dice-notation "`1d4`"]           | 2m    | 12 | 5  |
-Javelin (melee)  | 15 | [glo:dice-notation "`1d6 + 1d4`"]     | 1.5m  | 8  | 7  |
-Javelin (thrown) | 70 | [glo:dice-notation "`1d10`"]          | 20m   | 8  | 3  |
+Weapon Attack    | %  | Damage          | Range | HP | SR |
+---------------- | -- | --------------- | ----- | -- | -- |
+1H Battle Axe    | 70 | `1d8 + 2 + 1d4` | 0.8m  | 8  | 8  |
+Broadsword       | 65 | `1d8 + 1 + 1d4` | 1m    | 12 | 7  |
+Whip             | 65 | `1d4`           | 2m    | 12 | 5  |
+Javelin (melee)  | 15 | `1d6 + 1d4`     | 1.5m  | 8  | 7  |
+Javelin (thrown) | 70 | `1d10`          | 20m   | 8  | 3  |
 
 ### Step 8: Other Information
 
 Since I already picked a name, tribe, and clan, I didn't have much to do here.
 Just roll Orstan's birthday (Godsday of Movement Week in Air Season), note down
-his starting **Reputation** +10%, and roll [glo:dice-notation "`1d20`"] for a
+his starting **Reputation** +10%, and roll `1d20` for a
 family heirloom.
 
 I got a 19: an ostentatious metal helmet (worth 3x normal price) containing a
@@ -629,8 +629,8 @@ clan of the Colymar Tribe.*
   Loyalty (Colymar tribe) 70%, Loyalty (Queen Samastina) 60%, Loyalty (White
   Bull) 60%, Loyalty (Sartar) 60%, Devotion (Orlanth) 60%
 - **Reputation:** 19%
-- **Damage Bonus:** +[glo:dice-notation "`1d4`"]
-- **Spirit Combat Damage:** [glo:dice-notation "`1d6+1`"]
+- **Damage Bonus:** +`1d4`
+- **Spirit Combat Damage:** `1d6+1`
 - **Healing Rate:** 2
 - **Armour:** linothorax (linen, 3pt), greaves (leather, 1pt), vambraces
   (leather, 1pt), composite helm (2pt) (contains 2-point spirit magic matrix
@@ -652,20 +652,20 @@ clan of the Colymar Tribe.*
   matrix Protection spell.
 - **Ransom:** 500L
 
-Hit Location  | [glo:dice-notation "`1d20`"] | Armour | HP
-------------- | ---------------------------- | ------ | --
-Right Leg     | 1--4                         | 1      | 4
-Left Leg      | 5--8                         | 1      | 4
-Abdomen       | 9--11                        | 3      | 4
-Chest         | 12                           | 3      | 5
-Right Arm     | 13--15                       | 1      | 3
-Left Arm      | 16--18                       | 1      | 3
-Head          | 19--20                       | 2      | 4
+Hit Location  | `1d20` | Armour | HP
+------------- | ------ | ------ | --
+Right Leg     | 1--4   | 1      | 4
+Left Leg      | 5--8   | 1      | 4
+Abdomen       | 9--11  | 3      | 4
+Chest         | 12     | 3      | 5
+Right Arm     | 13--15 | 1      | 3
+Left Arm      | 16--18 | 1      | 3
+Head          | 19--20 | 2      | 4
 
-Weapon Attack    | %  | Damage                                | Range | HP | SR |
----------------- | -- | ------------------------------------- | ----- | -- | -- |
-1H Battle Axe    | 70 | [glo:dice-notation "`1d8 + 2 + 1d4`"] | 0.8m  | 8  | 8  |
-Broadsword       | 65 | [glo:dice-notation "`1d8 + 1 + 1d4`"] | 1m    | 12 | 7  |
-Whip             | 65 | [glo:dice-notation "`1d4`"]           | 2m    | 12 | 5  |
-Javelin (melee)  | 15 | [glo:dice-notation "`1d6 + 1d4`"]     | 1.5m  | 8  | 7  |
-Javelin (thrown) | 70 | [glo:dice-notation "`1d10`"]          | 20m   | 8  | 3  |
+Weapon Attack    | %  | Damage          | Range | HP | SR |
+---------------- | -- | --------------- | ----- | -- | -- |
+1H Battle Axe    | 70 | `1d8 + 2 + 1d4` | 0.8m  | 8  | 8  |
+Broadsword       | 65 | `1d8 + 1 + 1d4` | 1m    | 12 | 7  |
+Whip             | 65 | `1d4`           | 2m    | 12 | 5  |
+Javelin (melee)  | 15 | `1d6 + 1d4`     | 1.5m  | 8  | 7  |
+Javelin (thrown) | 70 | `1d10`          | 20m   | 8  | 3  |

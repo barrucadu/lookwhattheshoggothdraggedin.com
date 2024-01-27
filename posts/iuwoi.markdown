@@ -5,7 +5,7 @@ topic: setting
 system: traveller
 excerpt: |
     For the last few weeks, I've been running my players through *The
-    Borderland Run*, a [glo:traveller] adventure by Mongoose
+    Borderland Run*, a Traveller adventure by Mongoose
     Publishing.  I wanted to develop the politics a little more than
     the adventure gives, and in particular develop the Aslan clan *Iuwoi*
     further.  This post builds on [a great series written by
@@ -14,7 +14,7 @@ excerpt: |
     will be spoilers!**
 ---
 
-In *The Borderland Run*, an adventure for [glo:traveller] by Mongoose
+In *The Borderland Run*, an adventure for Traveller by Mongoose
 Publishing, the travellers are hired to transport a package to the
 palace of clan *Iuwoi* on [Tyokh][] by a deadline.  Their employer
 doesn't exactly know what the consequences for late delivery will be,
@@ -28,7 +28,7 @@ turn back now: **there will be spoilers!**
 
 ## The Aslan
 
-If you've never run [glo:traveller] before, or looked into the
+If you've never run Traveller before, or looked into the
 official setting much, think of the Aslan as honour-obsessed
 warrior-poets who basically think of all non-Aslan as incomprehensible
 barbarians.
@@ -42,7 +42,7 @@ to take offense, and are obsessed with owning land.  To avoid
 destroying themselves, over the millennia they've developed a complex
 system of honour and ritualised warfare.
 
-I really like running Aslan NPCs.  You can play them as kind of like
+I really like running Aslan [abbr:npc "NPCs"].  You can play them as kind of like
 just really upstanding humans who sometimes make weird suggestions
 ("Why do we not simply kill this man where he stands? He is a criminal
 and has offended your honour!"), or have them be really steeped in

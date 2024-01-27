@@ -3,7 +3,6 @@
     --text-alt: #505a5f;
     --link: #003078;
     --link-alt: #1d70b8;
-    --link-glossary: var(--text);
     --border: #b1b4b6;
     --border-admonition: #730b0b;
     --border-header: #730b0b;
@@ -97,10 +96,6 @@ p {
 .link:hover, .markdown a:hover {
     color: var(--link-alt);
     text-decoration: none;
-}
-
-.link--glossary {
-    color: var(--link-glossary) !important;
 }
 
 .link--no-underline {

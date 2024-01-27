@@ -42,11 +42,8 @@ with open("config/topics.yaml") as f:
 with open("config/systems.yaml") as f:
     SYSTEMS = yaml.safe_load(f)
 
-with open("config/glossary.yaml") as f:
-    GLOSSARY = yaml.safe_load(f)
 
-
-EXTENSIONS = markdown_extensions.setup(GLOSSARY)
+EXTENSIONS = markdown_extensions.setup()
 
 
 def do_markdown(text):
@@ -94,9 +91,6 @@ ALL_POSTS = sorted(
 )
 
 ALL_POSTS_EXCLUDING_UNLISTED = [post for post in ALL_POSTS if not post.get("unlisted", False)]
-
-for key, defn in GLOSSARY.items():
-    GLOSSARY[key]["body"] = do_markdown(defn["text"])
 
 for post in ALL_POSTS:
     if post.get("topic") not in TOPICS:
@@ -212,13 +206,6 @@ render(
     "archive.html",
     title="Articles",
     posts=ALL_POSTS_EXCLUDING_UNLISTED,
-)
-
-render(
-    "glossary.html",
-    "glossary.html",
-    title="Glossary",
-    glossary=GLOSSARY,
 )
 
 render_feeds_for("feed", "Recent Posts", ALL_POSTS_EXCLUDING_UNLISTED)

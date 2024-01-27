@@ -3,16 +3,16 @@ title: Izirion's Enchiridion of the West Marches
 date: 2021-06-01
 topic: reviews
 excerpt: |
-    Izirion's Enchiridion is a source book for [glo:west-marches] style
-    play.  It's written for fifth edition [glo:dnd], but has some
-    guidelines for converting it to [glo:osr] systems.  Overall, I like
+    Izirion's Enchiridion is a source book for West Marches style
+    play.  It's written for fifth edition [abbr:dnd], but has some
+    guidelines for converting it to [abbr:osr] systems.  Overall, I like
     it, and have only minor complaints.  It's worth checking out.
 ---
 
 [Izirion's Enchiridion of the West Marches][] is a source book for
-[glo:west-marches] style play, which I kickstarted earlier this year.
-It's written for fifth edition [glo:dnd], but has an appendix giving
-some guidance for using it with [glo:osr] systems.
+West Marches style play, which I kickstarted earlier this year.
+It's written for fifth edition [abbr:dnd], but has an appendix giving
+some guidance for using it with [abbr:osr] systems.
 
 In addition to the usual rules, setting, and examples, the book has
 frequent asides explaining *why* something has been designed the way
@@ -34,7 +34,7 @@ consistent:
 ## What's in the book
 
 13 pages of **frontmatter and introduction**, giving an overview of
-the [glo:west-marches] style of play for people unfamiliar with it,
+the West Marches style of play for people unfamiliar with it,
 also covering safety tools and some potentially sensitive topics that
 might come up in your game.
 
@@ -53,7 +53,7 @@ caught in an avalanche or a blizzard, you can get lost, encounter
 monsters, or run out of resources.
 
 30 pages on **worldbuilding**, broken down into four large subsections
-on the town (the safe home base of the [glos:pc]), regions, factions,
+on the town (the safe home base of the [abbr:pc "PCs"]), regions, factions,
 and dungeons.
 
 Since a party might travel through the same region in the Marches many
@@ -61,33 +61,33 @@ times, these locations have to work for repeat visits and for
 differing character levels.  While regions and dungeons will have a
 broadly consistent danger level, as mentioned above, they can have
 isolated pockets of danger, giving a challenge for returning
-adventurers.  Ben Robbins, the creator of the [glo:west-marches]
+adventurers.  Ben Robbins, the creator of the West Marches
 style, called these "[treasure rooms][]", and the Enchiridion covers
 not only treasure rooms, but also how to change dungeons and regions
 over time if (for example) the party clear out the current inhabitants
 and then leave it open for someone else to move in.
 
-Unlike regular [glo:dnd], a dungeon isn't a one-time challenge in the
+Unlike regular [abbr:dnd], a dungeon isn't a one-time challenge in the
 Marches.
 
 13 pages on **narrative**, covering the mechanical basis of emergent
 narrative (and, I'm happy to see, the authors agree with me on [not
 fudging dice][]), how to create narrative through lore and encounters,
-and why a comprehensive [glo:pc] backstory is actually a *hinderance*
-in a [glo:west-marches] game.
+and why a comprehensive [abbr:pc] backstory is actually a *hinderance*
+in a West Marches game.
 
 ![Dice Rolls in Preparing vs. Running](izirions-enchiridion/dice-rolls.jpg)
 
 Often, players arrive at the game table for the very first session
 with an idea of who they want to play, and even with a backstory
-written up for the [glo:gm] to use to generate relevant story hooks.
-But that approach doesn't work well in the [glo:west-marches], because
+written up for the [abbr:gm] to use to generate relevant story hooks.
+But that approach doesn't work well in the West Marches, because
 *who you were before coming to the town doesn't matter*.  The story
-comes from what the [glos:pc] do and how they change; who they *were*
+comes from what the [abbr:pc "PCs"] do and how they change; who they *were*
 merely informs how they start out.
 
 5 pages on **player options**, which is probably the least useful
-section if you're not using something [glo:dnd]-based.  It gives some
+section if you're not using something [abbr:dnd]-based.  It gives some
 feats and class changes, and argues that you should use XP levelling
 (rather than milestone levelling), and that you can give XP for
 exploration as well as for combat.
@@ -103,7 +103,7 @@ their hangers-on.
 Examples are always great to have.  I find a good worked example
 really helps me understand how the system is meant to be used.  In
 source books I usually like to see sample scenarios, but the
-player-driven nature of the [glo:west-marches] doesn't lend itself so
+player-driven nature of the West Marches doesn't lend itself so
 well to that style of play: a dungeon is more useful here than a
 story.
 
@@ -112,7 +112,7 @@ person.  Magical boots which let you ignore difficult terrain, or a
 magical apron which makes things in its pockets rot more slowly, or a
 magical cloak which let you teleport are all in danger of making magic
 feel too mundane in my opinion.  I'm fine with magical tools (for
-example, in my current [glo:dnd] game I have a magnifying glass which
+example, in my current [abbr:dnd] game I have a magnifying glass which
 lets my character see magic much like the *Detect Magic* spell) and
 magical weapons and armour, but magical clothes are just a step too
 far.
@@ -132,14 +132,14 @@ I can imagine going out on a quest to an abandoned dwarven mining
 outpost, to get some rare ore, and bring it back to the town to have
 some special item made.  That's an adventure right there.
 
-2 pages on **[glo:osr] conversion**, covering lethality, difficulty
+2 pages on **[abbr:osr] conversion**, covering lethality, difficulty
 classes, saving throws, encumbrance, conditions, and monsters.  Since
-[glo:osr] systems are all slightly different, this section gives rules
+[abbr:osr] systems are all slightly different, this section gives rules
 of thumb and not exact formulae for, e.g., how much damage being hit
 by an avalanche should do.  This section looks like it'll be useful
-for converting to non-[glo:dnd]-based games too.
+for converting to non-[abbr:dnd]-based games too.
 
-And finally, 16 pages of **summaries**, covering [glo:dnd] conditions,
+And finally, 16 pages of **summaries**, covering [abbr:dnd] conditions,
 and a big collection of all the tables used elsewhere in the book.
 It's mostly tables, actually.  I've not tried using this in game yet,
 but the tables are grouped by topic, so it seems like it'd work well.
@@ -158,11 +158,11 @@ interesting than just "you walk through the forest for three days and
 
 ![The physical book: a hardback, with pages which don't lay flat](izirions-enchiridion/book.jpg)
 
-The book is a bit [glo:dnd]-specific, but it would be unfair to
+The book is a bit [abbr:dnd]-specific, but it would be unfair to
 criticise it for that because it didn't pretend to be otherwise.  In
 fact, by including a chapter with tips on how to convert it for
-[glo:osr] systems it's already more system-neutral than most modern
-[glo:dnd] material.
+[abbr:osr] systems it's already more system-neutral than most modern
+[abbr:dnd] material.
 
 I only really have two major complaints about the book.
 

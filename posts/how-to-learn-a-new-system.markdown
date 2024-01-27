@@ -9,20 +9,20 @@ excerpt: |
     cheatsheets, and then run that campaign.
 ---
 
-Over the past month I've been preparing to run a [glo:traveller]
+Over the past month I've been preparing to run a Traveller
 campaign: I've been reading the books, watching scenario reviews,
 pitching the campaign (Matt Colville has a great video on [campaign
 pitches][], check it out) to my players... and all of this because we
 did a one-shot a while back and quite enjoyed it.
 
-I'm not an experienced [glo:traveller] [glo:gm].  I've been learning
+I'm not an experienced Traveller [abbr:gm].  I've been learning
 the rules as much as I've been preparing adventure hooks, so learning
 a new system has been on my mind lately.
 
-RPGs are usually taught through a kind of oral tradition: the [glo:gm]
+RPGs are usually taught through a kind of oral tradition: the [abbr:gm]
 teaches the players through play, and some people manage to go years
 playing a game before they even read any of the books at all.  But
-that doesn't work so well if the [glo:gm] is *you*.  While yes, you
+that doesn't work so well if the [abbr:gm] is *you*.  While yes, you
 could seek out and play in a campaign using the system you want to
 learn, that'll take a long time, and might not even be feasible.
 
@@ -47,7 +47,7 @@ it's just not *right* either.
 
 For example, I currently have the [RuneQuest: Roleplaying in Glorantha
 slipcase set][] sitting unused on my shelf.  I got it because I liked
-the premise and knew it was a somewhat similar system to [glo:coc],
+the premise and knew it was a somewhat similar system to Call of Cthulhu,
 which I do know very well, but the rules are a fair bit more fiddly
 and also there's not really been an opening in either of my gaming
 groups for a new fantasy campaign yet.  I might return to it later, or
@@ -76,9 +76,9 @@ works.  I might (and likely will) forget the specifics of this by the
 time I actually get around to running a campaign, but I find the
 knowledge generally comes back easily enough when I need it.
 
-For example, for my upcoming [glo:traveller] game, I'm planning to
+For example, for my upcoming Traveller game, I'm planning to
 include one of the optional sourcebooks on alien cultures, which has
-some alternative character creation rules for alien [glos:pc].  So I
+some alternative character creation rules for alien [abbr:pc "PCs"].  So I
 made a few characters using the standard rules, then a few characters
 using the variant rules, to help fix the differences in my mind.
 
@@ -107,7 +107,7 @@ that you're playing one or two sessions of this game and then might
 never touch it again, it's a lot easier to put up with a mechanic you
 don't like, and enjoy the game despite any issues.
 
-In my [glo:coc] game, we play a one-shot after each major story arc,
+In my Call of Cthulhu game, we play a one-shot after each major story arc,
 and there are always systems we want to try, so this works out nicely
 for us.
 
@@ -116,7 +116,7 @@ for us.
 The one-shot could go one of three ways:
 
 1. We decide that this *isn't* a game we want to play more of.  This
-   recently happened with [glo:godbound] for us: I found it hard to
+   recently happened with Godbound for us: I found it hard to
    come up with fun challenges for a party of 5 demigods, and the idea
    of doing that for a whole campaign wasn't appealing
 
@@ -127,10 +127,10 @@ The one-shot could go one of three ways:
 3. It's fun, and we want a campaign.  Maybe not right now, but
    certainly at some point.
 
-For us, [glo:traveller] was a definite (3).  One of the players wanted
-a sci-fi game, which is why I was looking into [glo:traveller] in the
+For us, Traveller was a definite (3).  One of the players wanted
+a sci-fi game, which is why I was looking into Traveller in the
 first place, and then the one-shot went well so we decided we wanted
-more.  But we were in the middle of a [glo:coc] campaign right then,
+more.  But we were in the middle of a Call of Cthulhu campaign right then,
 so it would come some time in the future.
 
 A little under a year later, the future is now.
@@ -153,7 +153,7 @@ Making cheatsheets serves three purposes:
 3. It gives my players a reference sheet to use in play.
 
 (2) and (3) are slightly different use-cases.  There is information
-which I, as the [glo:gm], will need, but the players will not.  For
+which I, as the [abbr:gm], will need, but the players will not.  For
 example, the appropriate sanity loss for finding a mangled corpse.
 But it's not too tricky to make a cheatsheet which caters to both
 these cases.  Players may find it a little verbose, but it's easier
@@ -162,12 +162,12 @@ than making two cheatsheets.
 But a cheatsheet is supposed to be short, and if it's getting too long
 I'll cut some of the player-facing content first.  I expect my players
 to know how their characters work.  So I won't necessarily include,
-for example, all of the [glo:pc] abilities---for games I am a player
+for example, all of the [abbr:pc] abilities---for games I am a player
 in, I sometimes make a personal cheatsheet which has that sort of
 thing---but even without getting into such specifics, there's a lot of
 overlap in what's useful for me and what's useful for them.
 
-For example, here is a cheatsheet I made for [glo:traveller] covering
+For example, here is a cheatsheet I made for Traveller covering
 [the basic, non-spacecraft, rules][], and here is a
 cheat"sheet" (it's more of a document; I'd do it differently now)
 summarising [the rule changes in Pulp Cthulhu][].

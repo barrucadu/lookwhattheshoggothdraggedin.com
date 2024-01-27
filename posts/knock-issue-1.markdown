@@ -4,7 +4,7 @@ date: 2021-02-16
 topic: reviews
 excerpt: |
     Knock! is a recently kickstarted zine full of goodness from the
-    [glo:osr] blogosphere.  It's wonderfully designed, and crammed with
+    [abbr:osr] blogosphere.  It's wonderfully designed, and crammed with
     information.  There's a nice mix of stuff which is immediately
     useful (like *Just Use Bears*, or the *Dungeon Checklist*), and
     some more thought-provoking articles too.  Plus some great art.  I
@@ -12,7 +12,7 @@ excerpt: |
 ---
 
 [Knock!][] is a recently kickstarted zine full of goodness from the
-[glo:osr] blogosphere.  It's wonderfully designed, and crammed with
+[abbr:osr] blogosphere.  It's wonderfully designed, and crammed with
 information: the inside of the dust cover has a dungeoncrawl, the book
 cover itself has a demon generator, and the bookmark is a grimoire!
 
@@ -31,7 +31,7 @@ has put together a [list of links on /r/osr][]), then towards the end
 there's 60 pages of maps, monsters, new classes, and a few short
 adventures.
 
-There's some big names from the [glo:osr] scene.  A few I recognised
+There's some big names from the [abbr:osr] scene.  A few I recognised
 are [Emmy Allen][] (cavegirl), [Arnold K][] (Goblin Punch), [Ben
 Milton][] (Questing Beast), and [Gavin Norman][] (Necrotic Gnome).
 

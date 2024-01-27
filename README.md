@@ -1,0 +1,5 @@
+Removed pages:
+
+```
+/glossary.html
+```

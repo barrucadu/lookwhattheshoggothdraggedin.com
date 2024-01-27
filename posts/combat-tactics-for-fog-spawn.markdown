@@ -5,13 +5,13 @@ topic: gm-advice
 system: call-of-cthulhu
 excerpt: |
     The Fog-spawn (or Thing in the Fog) is an other-dimensional
-    creature from the *Masks of Nyarlathotep* campaign for [glo:coc].
+    creature from the *Masks of Nyarlathotep* campaign for Call of Cthulhu.
     If you're a player in that campaign, turn back now: **there will be
     spoilers!**
 ---
 
 The Fog-spawn (or Thing in the Fog) is an other-dimensional creature
-from the *Masks of Nyarlathotep* campaign for [glo:coc].  If you're a
+from the *Masks of Nyarlathotep* campaign for Call of Cthulhu.  If you're a
 player in that campaign, turn back now: there will be spoilers!
 
 ## Now that the players are gone...

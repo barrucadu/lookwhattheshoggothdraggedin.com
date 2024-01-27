@@ -2,55 +2,50 @@ import markdown
 import re
 import xml.etree.ElementTree as ET
 
-GLOSSARY = {}
-
-
 # #############################################################################
 # Inline Processors
 
+ABBREVIATIONS = {
+    "adnd": { "display": "AD&D", "title": "Advanced Dungeons & Dragons" },
+    "bxdnd": { "display": "B/X D&D", "title": "Basic / Expert Dungeons & Dragons" },
+    "dnd": { "display": "D&D", "title": "Dungeons & Dragons" },
+    "gm": { "display": "GM", "title": "Game Master" },
+    "npc": { "display": "NPC", "title": "Non-player Character" },
+    "ose": { "display": "OSE", "title": "Old School Essentials" },
+    "osr": { "display": "OSR", "title": "Old School Renaissance" },
+    "osric": { "display": "OSRIC", "title": "Old School Reference and Index Compilation" },
+    "pc": { "display": "PC", "title": "Player Character" },
+    "vtt": { "display": "VTT", "title": "Virtual Tabletop" },
+}
 
-class GlossaryLinkProcessor(markdown.inlinepatterns.InlineProcessor):
-    """Glossary Links.
+class AbbreviationProcessor(markdown.inlinepatterns.InlineProcessor):
+    """Abbreviations.
 
     Syntax:
 
-        [glo:key]         - show name/acronym & link to entry
-        [glos:key]        - show name/acronym (pluralised) & link to entry
-        [glo:key "title"] - show title & link to entry
+        [abbr:key]         - show name
+        [abbr:key "title"] - show title
 
-    The optional title can include other inline markdown.  For example:
-
-        [glo:dice-notation "`1d12 + 1d8`"]
+    The optional title can include other inline markdown.
     """
 
     def handleMatch(self, m, data):
-        is_plural = m.group(1) == "s"
-        key = m.group(2)
-        override_title = m.group(4)
-        item = GLOSSARY[key]
+        key = m.group(1)
+        override_title = m.group(3)
+        item = ABBREVIATIONS[key]
 
-        el = ET.Element("a")
-        el.set("class", "link--glossary")
-        el.set("href", f"glossary.html#{key}")
-
-        title = item.get("title_plural", item["title"] + "s") if is_plural else item["title"]
-
-        if "abbr" in item and item.get("use_abbr_for_glo_link", True) and override_title is None:
-            abbr = ET.Element("abbr")
-            abbr.set("title", title)
-            abbr.text = item.get("abbr_plural", item["abbr"] + "s") if is_plural else item["abbr"]
-            el.append(abbr)
-        else:
-            el.text = override_title or title
+        el = ET.Element("abbr")
+        el.set("title", item["title"])
+        el.text = override_title or item["display"]
 
         return el, m.start(0), m.end(0)
 
 
-class GlossaryLinkExtension(markdown.extensions.Extension):
+class AbbreviationExtension(markdown.extensions.Extension):
     def extendMarkdown(self, md):
         md.inlinePatterns.register(
-            GlossaryLinkProcessor(r"\[glo(s)?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md),
-            "glossary",
+            AbbreviationProcessor(r"\[abbr?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md),
+            "abbreviation",
             -99999,
         )
 
@@ -194,8 +189,5 @@ class RollTableExtension(markdown.extensions.Extension):
 # #############################################################################
 
 
-def setup(glossary):
-    global GLOSSARY
-    GLOSSARY = glossary
-
-    return [GlossaryLinkExtension, ProbabilityTableExtension, RollTableExtension]
+def setup():
+    return [AbbreviationExtension, ProbabilityTableExtension, RollTableExtension]
