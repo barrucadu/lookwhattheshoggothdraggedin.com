@@ -5,18 +5,6 @@ import xml.etree.ElementTree as ET
 # #############################################################################
 # Inline Processors
 
-ABBREVIATIONS = {
-    "adnd": { "display": "AD&D", "title": "Advanced Dungeons & Dragons" },
-    "bxdnd": { "display": "B/X D&D", "title": "Basic / Expert Dungeons & Dragons" },
-    "dnd": { "display": "D&D", "title": "Dungeons & Dragons" },
-    "gm": { "display": "GM", "title": "Game Master" },
-    "npc": { "display": "NPC", "title": "Non-player Character" },
-    "ose": { "display": "OSE", "title": "Old School Essentials" },
-    "osr": { "display": "OSR", "title": "Old School Renaissance" },
-    "osric": { "display": "OSRIC", "title": "Old School Reference and Index Compilation" },
-    "pc": { "display": "PC", "title": "Player Character" },
-    "vtt": { "display": "VTT", "title": "Virtual Tabletop" },
-}
 
 class AbbreviationProcessor(markdown.inlinepatterns.InlineProcessor):
     """Abbreviations.
@@ -29,10 +17,14 @@ class AbbreviationProcessor(markdown.inlinepatterns.InlineProcessor):
     The optional title can include other inline markdown.
     """
 
+    def __init__(self, abbreviations, pattern, md=None):
+        super().__init__(pattern, md)
+        self.abbreviations = abbreviations
+
     def handleMatch(self, m, data):
         key = m.group(1)
         override_title = m.group(3)
-        item = ABBREVIATIONS[key]
+        item = self.abbreviations[key]
 
         el = ET.Element("abbr")
         el.set("title", item["title"])
@@ -42,9 +34,13 @@ class AbbreviationProcessor(markdown.inlinepatterns.InlineProcessor):
 
 
 class AbbreviationExtension(markdown.extensions.Extension):
+    def __init__(self, abbreviations):
+        super().__init__()
+        self.abbreviations = abbreviations
+
     def extendMarkdown(self, md):
         md.inlinePatterns.register(
-            AbbreviationProcessor(r"\[abbr?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md),
+            AbbreviationProcessor(self.abbreviations, r"\[abbr?:([a-z-]+)(\s*\"([^\"]+)\")?\]", md),
             "abbreviation",
             -99999,
         )
@@ -184,10 +180,3 @@ class RollTableExtension(markdown.extensions.Extension):
             "roll-table",
             175,
         )
-
-
-# #############################################################################
-
-
-def setup():
-    return [AbbreviationExtension, ProbabilityTableExtension, RollTableExtension]

@@ -36,14 +36,35 @@ JINJA2_ENV = jinja2.Environment(
     loader=jinja2.FileSystemLoader("_templates"),
 )
 
-with open("config/topics.yaml") as f:
-    TOPICS = yaml.safe_load(f)
+ABBREVIATIONS = {
+    "adnd": { "display": "AD&D", "title": "Advanced Dungeons & Dragons" },
+    "bxdnd": { "display": "B/X D&D", "title": "Basic / Expert Dungeons & Dragons" },
+    "dnd": { "display": "D&D", "title": "Dungeons & Dragons" },
+    "gm": { "display": "GM", "title": "Game Master" },
+    "npc": { "display": "NPC", "title": "Non-player Character" },
+    "ose": { "display": "OSE", "title": "Old School Essentials" },
+    "osr": { "display": "OSR", "title": "Old School Renaissance" },
+    "osric": { "display": "OSRIC", "title": "Old School Reference and Index Compilation" },
+    "pc": { "display": "PC", "title": "Player Character" },
+    "vtt": { "display": "VTT", "title": "Virtual Tabletop" },
+}
 
-with open("config/systems.yaml") as f:
-    SYSTEMS = yaml.safe_load(f)
+SYSTEMS = {
+    "call-of-cthulhu": "Call of Cthulhu",
+    "ose": "Old School Essentials",
+    "rqg": "RuneQuest - Roleplaying in Glorantha",
+    "traveller": "Traveller",
+    "troika": "Troika!",
+}
 
-
-EXTENSIONS = markdown_extensions.setup()
+TOPICS = {
+    "campaign-notes": "Campaign Notes",
+    "gm-advice": "GM Advice",
+    "mechanics": "Mechanics",
+    "reviews": "Reviews",
+    "scenarios": "Scenarios",
+    "setting": "Setting",
+}
 
 
 def do_markdown(text):
@@ -54,7 +75,9 @@ def do_markdown(text):
             "admonition",
             "smarty",
             "tables",
-            *[extension() for extension in EXTENSIONS],
+            markdown_extensions.AbbreviationExtension(ABBREVIATIONS),
+            markdown_extensions.ProbabilityTableExtension(),
+            markdown_extensions.RollTableExtension(),
         ],
     )
 
