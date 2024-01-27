@@ -2,13 +2,6 @@
 title: 1d12 + 1d8 Random Tables
 date: 2021-05-02
 topic: gm-advice
-excerpt: |
-    The `1d12 + 1d8` table is commonly used for
-    random encounters, because it gives a nonuniform distribution where
-    some outcomes are more likely than others.  But why stick to that?
-    By rolling one of the dice with advantage or disadvantage, you get
-    a very different distribution, and can make one table work in many
-    situations.
 ---
 
 I [read a post][] about how [abbr:dnd] suggests `1d12 + 1d8`

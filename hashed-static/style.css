@@ -57,10 +57,14 @@ p {
     background-color: var(--main-title-bg);
 }
 
-.division + .division, .markdown h2:not(:first-child) {
-    margin-top: 24px;
-    padding-top: 8px;
-    border-top: 1px solid var(--border);
+.archive-list__metadata {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.archive-list__tags {
+    text-transform: lowercase;
 }
 
 .post-metadata {
@@ -71,10 +75,14 @@ p {
     margin-top: 24px;
 }
 
-.post-header {
-    margin: 0 auto 24px auto;
-    display: block;
-    border: 1px solid var(--border-header);
+.post-metadata__label {
+    font-weight: bold;
+}
+
+.markdown h2:not(:first-child) {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
 }
 
 .markdown blockquote, .markdown pre {
@@ -82,10 +90,6 @@ p {
     padding-left: 8px;
     margin-top: 16px;
     margin-left: 16px;
-}
-
-.post-metadata__label {
-    font-weight: bold;
 }
 
 .link, .markdown a {
@@ -137,11 +141,11 @@ p {
     margin-bottom: 16px;
 }
 
-.markdown ul, .markdown ol {
+.archive-list, .markdown ul, .markdown ol {
     padding-left: 20px;
 }
 
-.markdown p, .markdown li, .markdown table {
+.archive-list__item, .markdown p, .markdown li, .markdown table {
     margin-bottom: 16px;
 }
 
@@ -234,5 +238,9 @@ p {
 
     .heading--main {
         font-size: 2rem;
+    }
+
+    .archive-list__metadata {
+        flex-direction: column;
     }
 }

@@ -3,15 +3,6 @@ title: Fleshing out clan Iuwoi
 date: 2022-05-19
 topic: setting
 system: traveller
-excerpt: |
-    For the last few weeks, I've been running my players through *The
-    Borderland Run*, a Traveller adventure by Mongoose
-    Publishing.  I wanted to develop the politics a little more than
-    the adventure gives, and in particular develop the Aslan clan *Iuwoi*
-    further.  This post builds on [a great series written by
-    Garnfellow](https://greatdungeonnorth.blogspot.com/search/label/Aslan).
-    If you're a player in *The Borderland Run*, turn back now: **there
-    will be spoilers!**
 ---
 
 In *The Borderland Run*, an adventure for Traveller by Mongoose

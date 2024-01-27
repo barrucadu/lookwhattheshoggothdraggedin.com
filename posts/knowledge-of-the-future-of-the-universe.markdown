@@ -4,11 +4,6 @@ date: 2021-04-15
 updated: 2024-01-27
 system: call-of-cthulhu
 topic: mechanics
-excerpt: |
-    This is a homebrew skill I gave one of my *Masks of Nyarlathotep*
-    players after they decided to become friendly with a
-    time-traveller.  10% chance of answering a plot-relevant question,
-    and immediate recognition of key [abbr:npc "NPCs"].
 ---
 
 A homebrew skill I gave one of my Call of Cthulhu players after they decided to

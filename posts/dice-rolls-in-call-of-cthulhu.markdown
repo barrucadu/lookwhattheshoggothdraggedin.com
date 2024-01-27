@@ -3,12 +3,6 @@ title: Dice rolls in Call of Cthulhu
 date: 2021-02-15
 system: call-of-cthulhu
 topic: mechanics
-excerpt: |
-    Call of Cthulhu uses a roll-under percentile dice system.  It also has a
-    notion of task difficulty and situational modifiers, and a way for
-    two characters to directly compete.  This post runs through all
-    these variations, with lots of graphs, and gives my rules for
-    deciding what sort of roll to make when.
 ---
 
 When a [abbr:pc] wants to do something, the [abbr:gm] might call for a

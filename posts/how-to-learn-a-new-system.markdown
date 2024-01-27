@@ -2,11 +2,6 @@
 title: How to Learn a New System
 date: 2021-07-21
 topic: gm-advice
-excerpt: |
-    Here's how to learn a new RPG system.  Or at least, how *I* learn a
-    new RPG system.  In brief: skim through the book, practice making
-    some characters, read the book more carefully, run a one-shot, make
-    cheatsheets, and then run that campaign.
 ---
 
 Over the past month I've been preparing to run a Traveller

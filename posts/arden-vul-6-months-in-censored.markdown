@@ -4,7 +4,6 @@ date: 2023-11-29
 topic: campaign-notes
 system: ose
 unlisted: true
-excerpt: ""
 ---
 
 I've been running a campaign of [The Halls of Arden Vul][] for 6 months now.

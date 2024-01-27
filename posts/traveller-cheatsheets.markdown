@@ -3,9 +3,6 @@ title: Traveller Cheatsheets
 date: 2022-02-12
 system: traveller
 topic: mechanics
-excerpt: |
-    All my cheatsheets for Mongoose Traveller 2e, covering: all the
-    basic rules, spacecraft, space piracy, and how to read a UWP.
 ---
 
 In my [How to Learn a New System][] post, I said that I like to make

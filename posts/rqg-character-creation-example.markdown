@@ -3,10 +3,6 @@ title: A worked example of RuneQuest character creation
 date: 2023-08-05
 topic: mechanics
 system: rqg
-excerpt: |
-    I'm gearing up to run a one-shot of RuneQuest: Roleplaying in Glorantha, but I found bits of the
-    character creation pretty confusing.  So here is a full worked example based
-    on my current understanding of the rules.
 ---
 
 RuneQuest: Roleplaying in Glorantha is probably the crunchiest game I've looked into running.  It's based

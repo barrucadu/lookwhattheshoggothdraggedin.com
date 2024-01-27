@@ -2,11 +2,6 @@
 title: Izirion's Enchiridion of the West Marches
 date: 2021-06-01
 topic: reviews
-excerpt: |
-    Izirion's Enchiridion is a source book for West Marches style
-    play.  It's written for fifth edition [abbr:dnd], but has some
-    guidelines for converting it to [abbr:osr] systems.  Overall, I like
-    it, and have only minor complaints.  It's worth checking out.
 ---
 
 [Izirion's Enchiridion of the West Marches][] is a source book for

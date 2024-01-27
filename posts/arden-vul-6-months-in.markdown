@@ -3,14 +3,6 @@ title: My Arden Vul campaign, 6 months in
 date: 2023-11-18
 topic: campaign-notes
 system: ose
-excerpt: |
-    I've been running a campaign of [The Halls of Arden Vul](https://preview.drivethrurpg.com/en/product/307787/Arden-Vul-Bundle-BUNDLE)
-    for 6 months now and it is tremendous fun.  This post is for the potential
-    Arden Vul [abbr:gm], on the fence over whether to run it.  I'll cover what
-    Arden Vul is and how I feel about it; the highlights of my campaign and what
-    crazy stuff the players have got up to in the last 24 weekly sessions; the
-    practical matters of rules, preparation, and how I run it week to week; and
-    finally I'll end with some advice.
 ---
 
 I've been running a campaign of [The Halls of Arden Vul][] for 6 months now.

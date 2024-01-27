@@ -3,11 +3,6 @@ title: First Impressions of Troika!
 date: 2021-03-07
 topic: reviews
 system: troika
-excerpt: |
-    Today I ran my first session of Troika, a very weird *Book of
-    the New Sun* / *Dying Earth* / *Discworld* style game.  We had a
-    lot of fun, it's pretty rules light, and we'll probably be playing
-    it again some time.
 ---
 
 Troika is British science-fantasy roleplaying game, with a [free

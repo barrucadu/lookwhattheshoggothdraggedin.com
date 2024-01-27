@@ -3,12 +3,6 @@ title: My First Rumour Table
 date: 2021-10-31
 system: traveller
 topic: campaign-notes
-excerpt: |
-    Rumour tables are a staple of sandbox style play,
-    and I wanted to make one for my new Traveller campaign.  I
-    found it pretty tricky to come up with a list of 20 interesting
-    bits of lore and story hooks from nothing, but I managed it in the
-    end.
 ---
 
 

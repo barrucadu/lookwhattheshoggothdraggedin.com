@@ -2,13 +2,6 @@
 title: I Roll in the Open
 date: 2021-04-02
 topic: gm-advice
-excerpt: |
-    A lot of [abbr:gm "GMs"] advise rolling behind a screen, so you can fudge
-    rolls when you get a result which would be bad for the story.  I
-    think that at best fudging is unnecessary, and can be remedied by
-    being more thoughtful about what rolls you ask for (and I go in to
-    how I think about rolls), and at worst cheating, where you're
-    explicitly ignoring the rules of the game.
 ---
 
 One really common piece of [abbr:gm] advice is to roll your dice behind

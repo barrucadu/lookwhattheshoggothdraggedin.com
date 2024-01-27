@@ -1,14 +1,16 @@
 {% extends "_base.html" %}
 {% block main %}
+  <ul class="archive-list">
   {%- for post in posts %}
-  <section class="division">
-    <h2 class="heading"><a class="link link--no-underline" href="{{ post.permalink }}">{{ post.title }}</a></h2>
-
-    <div class="markdown">
-      {{ post.excerpt | safe }}
-    </div>
-
-    {% include "_post_metadata.html" %}
-  </section>
+    <li class="archive-list__item">
+      <a class="link link--no-underline" href="{{ post.permalink }}">{{ post.title }}</a>
+      <div class="archive-list__metadata">
+        <time datetime="{{ post.date }}">{{ post.month }} {{ post.day }}, {{ post.year }}</time>
+        <span class="archive-list__tags">
+          <a class="link" href="topic/{{ post.topic }}.html">#{{ topics[post.topic] }}</a>{% if post.system %}, <a class="link" href="system/{{ post.system }}.html">#{{ systems[post.system] }}</a>{% endif %}
+        </span>
+      </div>
+    </li>
   {%- endfor %}
+  </ul>
 {% endblock %}

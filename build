@@ -108,7 +108,6 @@ for post in ALL_POSTS:
     post["day"] = post["date"].strftime("%-d")
     post["atom_published"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%zZ")
     post["atom_updated"] = post["updated"].strftime("%Y-%m-%dT%H:%M:%S%zZ")
-    post["excerpt"] = do_markdown(post["excerpt"])
 
 YEARS = {post["year"]: post["year"] for post in ALL_POSTS_EXCLUDING_UNLISTED}
 
@@ -181,7 +180,7 @@ def render_json_feed(link, title, posts):
                 {
                     "id": post["permalink"],
                     "url": post["permalink"],
-                    "content_text": post["excerpt"],
+                    "content_html": post["body"],
                     "date_published": post["atom_published"],
                     "date_modified": post["atom_updated"],
                 }

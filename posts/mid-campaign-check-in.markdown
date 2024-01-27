@@ -2,13 +2,6 @@
 title: Run a mid-campaign check-in
 date: 2021-07-01
 topic: gm-advice
-excerpt: |
-    Campaigns can be huge games which last years.  Players might come
-    and go.  People's tastes might change.  What you decided the
-    campaign would be about one, two, or more years ago might not be
-    what the players want any more.  So, hold a mid-campaign check-in
-    to ask about how everyone is finding the game and whether anything
-    needs to change.
 ---
 
 Campaigns can be huge games which last years.  The campaign I'm

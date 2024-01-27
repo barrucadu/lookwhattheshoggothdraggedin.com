@@ -3,13 +3,6 @@ title: Dice rolls in Traveller
 date: 2021-09-10
 system: traveller
 topic: mechanics
-excerpt: |
-    Traveller uses a `2d6` dice system where characters add their
-    relevant characteristic and skill levels, with various possible
-    target numbers and situational modifiers.  It also has a notion of
-    "task chains", where one roll gives a bonus or a penalty to
-    another.  This post runs through all these variations, with lots of
-    graphs.
 ---
 
 !!! attention ""

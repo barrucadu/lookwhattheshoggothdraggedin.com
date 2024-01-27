@@ -17,11 +17,11 @@
     <id>{{ post.permalink }}</id>
     <published>{{ post.atom_published }}</published>
     <updated>{{ post.atom_updated }}</updated>
-    <summary>
+    <content type="html">
       <![CDATA[
-      {{ post.excerpt | safe }}
+      {{ post.body | safe }}
       ]]>
-    </summary>
+    </content>
   </entry>
 {%- endfor %}
 {%- endif %}
