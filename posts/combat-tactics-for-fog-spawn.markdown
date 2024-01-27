@@ -11,10 +11,11 @@ excerpt: |
 ---
 
 The Fog-spawn (or Thing in the Fog) is an other-dimensional creature
-from the *Masks of Nyarlathotep* campaign for Call of Cthulhu.  If you're a
-player in that campaign, turn back now: there will be spoilers!
+from the *Masks of Nyarlathotep* campaign for Call of Cthulhu.
 
-## Now that the players are gone...
+If you're a player in that campaign, turn back now: **there will be spoilers!**
+
+## The Fog-spawn
 
 The approach I'm taking in this post is to asume that the Fog-spawn is
 an *evolved* creature, with instincts and tactics based on its natural
