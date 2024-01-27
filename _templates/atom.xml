@@ -9,13 +9,14 @@
     <email>mike@barrucadu.co.uk</email>
   </author>
 {%- if posts %}
-  <updated>{{ posts[0].atom_date }}</updated>
+  <updated>{{ posts[0].atom_updated }}</updated>
 {%- for post in posts %}
   <entry>
     <title>{{ post.title }}</title>
     <link href="{{ post.permalink }}" />
     <id>{{ post.permalink }}</id>
-    <published>{{ post.atom_date }}</published>
+    <published>{{ post.atom_published }}</published>
+    <updated>{{ post.atom_updated }}</updated>
     <summary>
       <![CDATA[
       {{ post.excerpt | safe }}

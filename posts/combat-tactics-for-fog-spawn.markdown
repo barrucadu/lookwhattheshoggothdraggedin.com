@@ -1,6 +1,7 @@
 ---
 title: Combat Tactics for Fog-spawn
 date: 2021-08-19
+updated: 2024-01-27
 topic: gm-advice
 system: call-of-cthulhu
 excerpt: |

@@ -100,10 +100,14 @@ for post in ALL_POSTS:
         print(f"{post['slug']} has invalid system.")
         sys.exit(1)
 
+    if "updated" not in post:
+        post["updated"] = post["date"]
+
     post["year"] = post["date"].strftime("%Y")
     post["month"] = post["date"].strftime("%b")
     post["day"] = post["date"].strftime("%-d")
-    post["atom_date"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%z")
+    post["atom_published"] = post["date"].strftime("%Y-%m-%dT%H:%M:%S%zZ")
+    post["atom_updated"] = post["updated"].strftime("%Y-%m-%dT%H:%M:%S%zZ")
     post["excerpt"] = do_markdown(post["excerpt"])
 
 YEARS = {post["year"]: post["year"] for post in ALL_POSTS_EXCLUDING_UNLISTED}
@@ -178,7 +182,8 @@ def render_json_feed(link, title, posts):
                     "id": post["permalink"],
                     "url": post["permalink"],
                     "content_text": post["excerpt"],
-                    "date_published": post["date"].strftime("%Y-%m-%dT%H:%M:%S%z"),
+                    "date_published": post["atom_published"],
+                    "date_modified": post["atom_updated"],
                 }
                 for post in posts
             ],

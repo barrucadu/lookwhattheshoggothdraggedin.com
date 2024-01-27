@@ -1,6 +1,7 @@
 ---
 title: Knowledge of the Future of the Universe (10%)
 date: 2021-04-15
+updated: 2024-01-27
 system: call-of-cthulhu
 topic: mechanics
 excerpt: |
