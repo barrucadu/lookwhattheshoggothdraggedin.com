@@ -78,6 +78,7 @@ def do_markdown(text):
             markdown_extensions.AbbreviationExtension(ABBREVIATIONS),
             markdown_extensions.ProbabilityTableExtension(),
             markdown_extensions.RollTableExtension(),
+            markdown_extensions.MakeRelativeLinksAbsoluteExtension(BASE_HREF),
         ],
     )
 

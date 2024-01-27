@@ -180,3 +180,36 @@ class RollTableExtension(markdown.extensions.Extension):
             "roll-table",
             175,
         )
+
+
+# #############################################################################
+# Tree Processors
+
+class MakeRelativeLinksAbsoluteProcessor(markdown.treeprocessors.Treeprocessor):
+    """Make relative links absolute.
+    """
+
+    def __init__(self, base_href, md=None):
+        super().__init__(md)
+        self.base_href = base_href
+
+    def run(self, root):
+        elements = { "a": "href", "img": "src" }
+        for tag, attr in elements.items():
+            for elem in root.iter(tag):
+                value = elem.get(attr)
+                if not (value.startswith("/") or "://" in value):
+                    elem.set(attr, f"{self.base_href}{value}")
+
+
+class MakeRelativeLinksAbsoluteExtension(markdown.extensions.Extension):
+    def __init__(self, base_href):
+        super().__init__()
+        self.base_href = base_href
+
+    def extendMarkdown(self, md):
+        md.treeprocessors.register(
+            MakeRelativeLinksAbsoluteProcessor(self.base_href, md),
+            "make-relative-links-absolute",
+            -99999,
+        )
