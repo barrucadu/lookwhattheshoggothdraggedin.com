@@ -10,7 +10,8 @@ excerpt: |
     and immediate recognition of key [abbr:npc "NPCs"].
 ---
 
-This probably works best for pulp games.
+A homebrew skill I gave one of my Call of Cthulhu players after they decided to
+become friendly with a time-traveller.  This probably works best for pulp games.
 
 At will, any suitable Mythos entity can impart memories of the future
 to a character.  The information is instantly learned, but causes a
