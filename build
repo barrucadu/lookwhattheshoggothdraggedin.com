@@ -44,6 +44,7 @@ ABBREVIATIONS = {
     "npc": { "display": "NPC", "title": "Non-player Character" },
     "ose": { "display": "OSE", "title": "Old School Essentials" },
     "osr": { "display": "OSR", "title": "Old School Renaissance" },
+    "pbta": { "display": "PbtA", "title": "Powered by the Apocalypse" },
     "osric": { "display": "OSRIC", "title": "Old School Reference and Index Compilation" },
     "pc": { "display": "PC", "title": "Player Character" },
     "vtt": { "display": "VTT", "title": "Virtual Tabletop" },
@@ -51,6 +52,7 @@ ABBREVIATIONS = {
 
 SYSTEMS = {
     "call-of-cthulhu": "Call of Cthulhu",
+    "ironsworn": "Ironsworn",
     "ose": "Old School Essentials",
     "rqg": "RuneQuest - Roleplaying in Glorantha",
     "traveller": "Traveller",
