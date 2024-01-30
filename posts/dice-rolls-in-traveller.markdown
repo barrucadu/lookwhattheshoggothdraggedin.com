@@ -21,7 +21,7 @@ there is no relevant skill, the player just adds their characteristic
 modifier: for example, forcing a door open would just be
 `2d6 + Strength Mod`.
 
-![Chance of success for a task check against a difficulty of 8.](files/dice-rolls-in-traveller/basic.png)
+![Chance of success for a task check against a difficulty of 8.](post/dice-rolls-in-traveller/basic.png)
 
 The average result for `2d6` is 7, but the usual
 difficulty target is 8.  The average characteristic modifier is 0, but
@@ -52,7 +52,7 @@ So the total modifier for a roll ranges from -10 to +10.
 Checks have eight difficulty levels, with the target number increasing
 by 2 every level from Simple (2+) to Impossible (16+).
 
-![Chance of success for a task check, showing all eight difficulties.](files/dice-rolls-in-traveller/difficulties.png)
+![Chance of success for a task check, showing all eight difficulties.](post/dice-rolls-in-traveller/difficulties.png)
 
 On the one hand, I like having different difficulty levels to pick
 from.  On the other hand, this feels like too many.  I'm a big fan of
@@ -142,7 +142,7 @@ Is that a useful way to look at the rules?  When actually playing,
 probably not.  But for this post, it means I don't have to draw eight
 separate difficulties in all of the graphs.
 
-![Chance of success for a task check, with target number normalised to zero.](files/dice-rolls-in-traveller/normalised-difficulties.png)
+![Chance of success for a task check, with target number normalised to zero.](post/dice-rolls-in-traveller/normalised-difficulties.png)
 
 So the range on the X axis of the graphs is now -26 (an unskilled
 character with a -3 characteristic modifier, with a -4 modifier from
@@ -153,7 +153,7 @@ modifier from other rules, attempting an easy task).
 But we can trim that range down to -13 to -2, as everything lower has
 a 0% chance and everything higher has a 100% chance:
 
-![Chance of success for a task check, with target number normalised to zero (trimmed).](files/dice-rolls-in-traveller/normalised-difficulties-trimmed.png)
+![Chance of success for a task check, with target number normalised to zero (trimmed).](post/dice-rolls-in-traveller/normalised-difficulties-trimmed.png)
 
 This is the formulation we'll use going forwards.
 
@@ -182,7 +182,7 @@ rolls.  Or the [abbr:gm] might say that success or failure is
 impossible given these additional situational factors, and so remove
 the roll entirely.
 
-![Chance of success for a task check with a boon or bane die, with target number normalised to zero.](files/dice-rolls-in-traveller/boon-bane.png)
+![Chance of success for a task check with a boon or bane die, with target number normalised to zero.](post/dice-rolls-in-traveller/boon-bane.png)
 
 Boon and bane dice cancel out and do not stack: a check with one boon
 and one bane is rolled normally; a check with two boons is rolled with
@@ -209,7 +209,7 @@ the chain.
 
 First, let's have a look at the chance each modifier has of coming up:
 
-![Chance of each task chain modifier.](files/dice-rolls-in-traveller/task-chain-dms.png)
+![Chance of each task chain modifier.](post/dice-rolls-in-traveller/task-chain-dms.png)
 
 I find this pleasantly asymmetric.
 
@@ -219,7 +219,7 @@ the task chain modifier from the first check (that's why this is a
 heatmap and not just a line chart).  The colour shows the chance of
 succeeding on the second check: lighter is better.
 
-![Chance of succeeding at the second task in a chain.](files/dice-rolls-in-traveller/task-chain-heat.png)
+![Chance of succeeding at the second task in a chain.](post/dice-rolls-in-traveller/task-chain-heat.png)
 
 An interesting thing to note here is that because the positive and
 negative modifiers from the first check are bounded, there are plenty
@@ -238,7 +238,7 @@ them a boon.
 Compare with what it would look like if the second check just used the
 effect of the first check as a modifier directly:
 
-![Chance of succeeding at the second task in a chain, when using the effect of the first check directly.](files/dice-rolls-in-traveller/task-chain-heat-unbound.png)
+![Chance of succeeding at the second task in a chain, when using the effect of the first check directly.](post/dice-rolls-in-traveller/task-chain-heat-unbound.png)
 
 Very different!
 
@@ -254,7 +254,7 @@ significantly worse consequences for failure) or a task chain (try
 again, but with a modifier based on how badly you failed) would work,
 and each probably makes more sense in different situations.
 
-![Chance of succeeding ehen trying a check again, with target number normalised to zero.](files/dice-rolls-in-traveller/try-again.png)
+![Chance of succeeding ehen trying a check again, with target number normalised to zero.](post/dice-rolls-in-traveller/try-again.png)
 
 Pushing a roll is always better than doing a task chain.  Because the
 first roll failed, the second roll in the chain will always have a
@@ -284,7 +284,7 @@ number.
 Here the colour shows the first character's chance of succeeding
 despite the second character's opposition: lighter is better.
 
-![Chance of succeeding at an opposed roll.](files/dice-rolls-in-traveller/opposed-heat.png)
+![Chance of succeeding at an opposed roll.](post/dice-rolls-in-traveller/opposed-heat.png)
 
 Opposed checks are used if two characters are directly competing with
 or opposing each other.  They're generally *not* used in combat
@@ -295,7 +295,7 @@ them seem pretty rare.
 
 If it did use the degrees of success, it would look like this:
 
-![Chance of succeeding at an opposed roll.](files/dice-rolls-in-traveller/opposed-heat-chain-dm.png)
+![Chance of succeeding at an opposed roll.](post/dice-rolls-in-traveller/opposed-heat-chain-dm.png)
 
 This looks like it could be an interesting mechanic to me!  The second
 character's ability to oppose is limited, and so the first character

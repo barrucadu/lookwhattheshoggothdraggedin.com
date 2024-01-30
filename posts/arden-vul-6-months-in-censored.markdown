@@ -543,7 +543,7 @@ wanted to retire their character.
 Not noticing that was a bit of a miss on my part.
 
 [OSRIC is free]: https://osricrpg.com/get.php
-[House Rules]: arden-vul-6-months-in/house-rules.pdf
+[House Rules]: post/arden-vul-6-months-in/house-rules.pdf
 [Carcass Crawler zines]: https://necroticgnome.com/collections/zines
 [Downtime in Zyan]: https://preview.drivethrurpg.com/en/product/417937/Downtime-in-Zyan
 
@@ -730,7 +730,7 @@ secrets, but a pretty light touch gets you months of fun.
 
 I thought I'd start this section with a screenshot of my set-up:
 
-![My set-up for Arden Vul (with details obscured).](arden-vul-6-months-in-censored/session-screenshot.png)
+![My set-up for Arden Vul (with details obscured).](post/arden-vul-6-months-in-censored/session-screenshot.png)
 
 That's right, *three* monitors.  Two monitors are clearly better than one, and
 you know what's even better than two?  Anyway, here's what I have open:
@@ -963,12 +963,12 @@ JSON for the [donjon Fantasy Calendar Generator][]:
 
 Here's the overall Miro board.  The red dotted lines are level connections:
 
-![A very zoomed-out look at our Miro board.](arden-vul-6-months-in/miro-full.jpg)
+![A very zoomed-out look at our Miro board.](post/arden-vul-6-months-in/miro-full.jpg)
 
 Here's a closer look at the roughly **[FRACTION]** of the Halls of Thoth that the
 party have explored:
 
-![The Halls of Thoth.](arden-vul-6-months-in/miro-level3.jpg)
+![The Halls of Thoth.](post/arden-vul-6-months-in/miro-level3.jpg)
 
 The Miro export doesn't show it, but there is a grid there.  We're mapping at
 5ft scale, as even though the Arden Vul map is at 10ft scale there are plenty of

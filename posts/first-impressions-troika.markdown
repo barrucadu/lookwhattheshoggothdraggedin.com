@@ -16,7 +16,7 @@ magic like *The Book of the New Sun* and *Dying Earth*, with hints of
 *Discworld*, than it is *Lord of the Rings*.  This isn't your typical
 fantasy roleplaying.
 
-![The Troika! rulebook.](files/first-impressions-troika/book-interior.jpg)
+![The Troika! rulebook.](post/first-impressions-troika/book-interior.jpg)
 
 The book itself is physically really nice.  Good thick paper, light
 coloured backgrounds with tables having a plain white background (so
@@ -82,7 +82,7 @@ the novelty budget gets spent on interesting mechanics:
   combat round, whereas things near the bottom need a whole turn to
   take out.
 
-![The Ranged Weapons damage table.](files/first-impressions-troika/damage-table.jpg)
+![The Ranged Weapons damage table.](post/first-impressions-troika/damage-table.jpg)
 
 
 ## Backgrounds
@@ -100,7 +100,7 @@ class).
 Contrast that with Troika, where each background is evocative
 and mechanically simple, and also just plain *weird*.  For example:
 
-![Fellow of The Sublime Society of Beef Steaks: Brawlers believe the application of might and a good beef steak is the universal truth.  Words have no power and can no more define the universe than they can build a house, lift a cup, or sear a steak. Might can!  Really, they have thought a lot about this.](files/first-impressions-troika/beef-steaks.jpg)
+![Fellow of The Sublime Society of Beef Steaks: Brawlers believe the application of might and a good beef steak is the universal truth.  Words have no power and can no more define the universe than they can build a house, lift a cup, or sear a steak. Might can!  Really, they have thought a lot about this.](post/first-impressions-troika/beef-steaks.jpg)
 
 There's a Grilling skill.  Why is there a Grilling skill?  What could
 it be useful for?  I don't know, but simply seeing it on the page has

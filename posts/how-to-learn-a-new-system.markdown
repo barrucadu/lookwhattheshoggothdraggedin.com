@@ -171,8 +171,8 @@ A single sheet of paper (two sides of content) is the ideal, but it's
 better to spill over onto a second piece of paper than miss out
 something you'll need to reference a lot.
 
-[the basic, non-spacecraft, rules]: files/how-to-learn-a-new-system/traveller.pdf
-[the rule changes in Pulp Cthulhu]: files/how-to-learn-a-new-system/pulp-cthulhu.pdf
+[the basic, non-spacecraft, rules]: post/how-to-learn-a-new-system/traveller.pdf
+[the rule changes in Pulp Cthulhu]: post/how-to-learn-a-new-system/pulp-cthulhu.pdf
 
 ## Step 7: Run a campaign
 

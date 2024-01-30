@@ -45,7 +45,7 @@ supplement reskinning Ironsworn for sci-fi.
 
 ## How it works
 
-![A flowchart showing the Ironsworn game loop](ironsworn/flowchart.png)
+![A flowchart showing the Ironsworn game loop](post/ironsworn/flowchart.png)
 
 Ironsworn supports three modes of play:
 
@@ -93,7 +93,7 @@ the level of the narrative), but in this case I think they work really well.
 Playing a solo game isn't like playing a regular game: you're still a player,
 but also something of a writer.
 
-![The "Face Danger" move](ironsworn/move.png)
+![The "Face Danger" move](post/ironsworn/move.png)
 
 But you've got a few
 ways to improve your odds of success.
@@ -142,7 +142,7 @@ How do you know when you've done enough to complete a vow?  Or when you've
 finished a long journey to an uncertain endpoint?  Or beaten an enemy into
 submission?  Progress trackers.
 
-![An empty progress tracker](ironsworn/progress.png)
+![An empty progress tracker](post/ironsworn/progress.png)
 
 A progress tracker has 10 boxes and a rank, ranging from "troublesome" (the
 least obstacle worth tracking) and "epic" (a campaign-defining foe), and every
@@ -205,7 +205,7 @@ straightjacket.
 Let's play a session of Ironsworn together.  Here's the state of my current
 game:
 
-![A screenshot of my Ironsworn Miro board](ironsworn/sabine.png)
+![A screenshot of my Ironsworn Miro board](post/ironsworn/sabine.png)
 
 I'm using Miro as a virtual tabletop.  Open the image in a new tab to make it
 bigger.
@@ -283,7 +283,7 @@ secrets of the druids:
     I think it's full night when they finally make it out of the grove, and
     there's also thick cloud cover.  It is really dark.
 
-    ![A post-it note summarising this bullet.](ironsworn/sabine-4.1.png)
+    ![A post-it note summarising this bullet.](post/ironsworn/sabine-4.1.png)
 
 - **Next, we need to find this rune.**  I don't even know what it is, I just
   called it a "rune of hate" because I was kind of going for a runic theme with
@@ -318,7 +318,7 @@ secrets of the druids:
     I didn't roll a miss, so neither Sabine nor Eleri are caught in the trap, but
     it is in their way.
 
-    ![A post-it note summarising this bullet.](ironsworn/sabine-4.2.png)
+    ![A post-it note summarising this bullet.](post/ironsworn/sabine-4.2.png)
 
 - **"Become a witch" is Sabine's background vow.**  She's obsessed with learning
   about magic.  She wants that rune-etched rock.  So she's going to instantly
@@ -336,7 +336,7 @@ secrets of the druids:
     difficulty at all!  She snags that rune, and marks one tick of progress (a
     quarter of a box) towards her background vow.  Now she's at +10 Momentum.
 
-    ![A post-it note summarising this bullet.](ironsworn/sabine-4.3.png)
+    ![A post-it note summarising this bullet.](post/ironsworn/sabine-4.3.png)
 
 - **That's definitely a complication.** Curse you, Eleri, for reminding me.  I
   think Sabine's first instinct is to keep the rune secret and lie to Bretana
@@ -367,7 +367,7 @@ secrets of the druids:
     asking, Eleri and Sabine have a very strong bond.  Perhaps more than a bond?
     We'll see.
 
-    ![A post-it note summarising this bullet.](ironsworn/sabine-4.4.png)
+    ![A post-it note summarising this bullet.](post/ironsworn/sabine-4.4.png)
 
 - **I think this is nicely approaching a conclusion** so I'm going to
   fast-forward some of the ending here.  Also, I have an idea for the next step
@@ -402,7 +402,7 @@ secrets of the druids:
     who are otherwise aloof and keep their distance from humanity.  Let's call
     it almost certain and ask the oracle: 56, absolutely!
 
-    ![A post-it note summarising this bullet.](ironsworn/sabine-4.5.png)
+    ![A post-it note summarising this bullet.](post/ironsworn/sabine-4.5.png)
 
 So, you see that while the rolls determine how well things are going, what
 *exactly* happens is still mostly up to the player.  Different moves have

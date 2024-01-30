@@ -24,7 +24,7 @@ using these.
 
 ## The Sheets
 
-**[Basics](traveller-cheatsheets/basics.pdf)**, covering:
+**[Basics](post/traveller-cheatsheets/basics.pdf)**, covering:
 
 - Checks (with the optional luck rule from the Traveller Companion)
 - Combat
@@ -36,9 +36,9 @@ using these.
 I know this more or less off by heart now, I don't need to look at it
 much.  But it's handy to have open just in case.
 
-And here is [a version without the house rules](traveller-cheatsheets/basics-no-houserules.pdf).
+And here is [a version without the house rules](post/traveller-cheatsheets/basics-no-houserules.pdf).
 
-**[Spacecraft](traveller-cheatsheets/spacecraft.pdf)**, covering:
+**[Spacecraft](post/traveller-cheatsheets/spacecraft.pdf)**, covering:
 
 - Common skill checks
 - Skimming fuel from gas giants
@@ -52,7 +52,7 @@ And here is [a version without the house rules](traveller-cheatsheets/basics-no-
 
 This one is three pages.  Not ideal, but I refer to it all frequently.
 
-**[Universal World Profile (UWP)](traveller-cheatsheets/uwp.pdf)**,
+**[Universal World Profile (UWP)](post/traveller-cheatsheets/uwp.pdf)**,
 covering:
 
 - How to read a UWP
@@ -67,7 +67,7 @@ myself.
 
 [travellermap.com]: https://www.travellermap.com
 
-**[Piracy](traveller-cheatsheets/piracy.pdf)**, a recent addition
+**[Piracy](post/traveller-cheatsheets/piracy.pdf)**, a recent addition
 based on the Pirates of Drinax books, covering:
 
 - Common skill checks

@@ -21,7 +21,7 @@ For example, a section on worldbuilding has this aside on why you
 should keep the "danger level" within each region more-or-less
 consistent:
 
-![Why Have Danger Level?](izirions-enchiridion/danger-level.jpg)
+![Why Have Danger Level?](post/izirions-enchiridion/danger-level.jpg)
 
 [Izirion's Enchiridion of the West Marches]: https://www.drivethrurpg.com/product/333956/Izirions-Enchiridion-of-the-West-Marches
 
@@ -71,7 +71,7 @@ fudging dice][]), how to create narrative through lore and encounters,
 and why a comprehensive [abbr:pc] backstory is actually a *hinderance*
 in a West Marches game.
 
-![Dice Rolls in Preparing vs. Running](izirions-enchiridion/dice-rolls.jpg)
+![Dice Rolls in Preparing vs. Running](post/izirions-enchiridion/dice-rolls.jpg)
 
 Often, players arrive at the game table for the very first session
 with an idea of who they want to play, and even with a backstory
@@ -112,7 +112,7 @@ lets my character see magic much like the *Detect Magic* spell) and
 magical weapons and armour, but magical clothes are just a step too
 far.
 
-![Boots of Cartography](izirions-enchiridion/boots-of-cartography.jpg)
+![Boots of Cartography](post/izirions-enchiridion/boots-of-cartography.jpg)
 
 In a setting where resource management is key, I feel that magic needs
 to be risky, limited, or both.  Not just something you get by putting
@@ -151,7 +151,7 @@ my eyes to how to make traipsing through the wilderness more
 interesting than just "you walk through the forest for three days and
 *roll* get lost."
 
-![The physical book: a hardback, with pages which don't lay flat](izirions-enchiridion/book.jpg)
+![The physical book: a hardback, with pages which don't lay flat](post/izirions-enchiridion/book.jpg)
 
 The book is a bit [abbr:dnd]-specific, but it would be unfair to
 criticise it for that because it didn't pretend to be otherwise.  In

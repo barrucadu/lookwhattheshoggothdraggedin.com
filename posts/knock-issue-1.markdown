@@ -28,7 +28,7 @@ There's some big names from the [abbr:osr] scene.  A few I recognised
 are [Emmy Allen][] (cavegirl), [Arnold K][] (Goblin Punch), [Ben
 Milton][] (Questing Beast), and [Gavin Norman][] (Necrotic Gnome).
 
-![Excerpts of art.](files/knock-issue-1/art.jpg)
+![Excerpts of art.](post/knock-issue-1/art.jpg)
 
 I've found immediate practical use from a few of the articles:
 
@@ -44,7 +44,7 @@ Checklist*:
 
 Such a fun image.
 
-![A photograph of Knock! open at the "Leaving Kansas" article.](files/knock-issue-1/leaving-kansas.jpg)
+![A photograph of Knock! open at the "Leaving Kansas" article.](post/knock-issue-1/leaving-kansas.jpg)
 
 There are a few more "theory" heavy articles, like [Leaving Kansas][],
 that I want to return to and think about some more.
@@ -75,7 +75,7 @@ Are very minor, really.  Certainly not show-stoppers.
 Firstly, the spine is printed upside down.  Look at it compared to
 some of my other RPG books:
 
-![Part of my RPG bookcase, showing the text on the spine of Knock! is oriented differently.](files/knock-issue-1/spine.jpg)
+![Part of my RPG bookcase, showing the text on the spine of Knock! is oriented differently.](post/knock-issue-1/spine.jpg)
 
 Apparently that might be a French thing.
 

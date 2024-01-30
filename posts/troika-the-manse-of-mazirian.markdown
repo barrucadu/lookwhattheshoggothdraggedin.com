@@ -123,7 +123,7 @@ Convert stats as follows:
 The Manse
 ---------
 
-![The manse of Mazirian](files/troika-the-manse-of-mazirian/manse.png)
+![The manse of Mazirian](post/troika-the-manse-of-mazirian/manse.png)
 
 - **Grey:** open walkways, verandas
 
