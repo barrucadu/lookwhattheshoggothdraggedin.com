@@ -2,96 +2,44 @@
 title: Resources
 ---
 
-## Blogs
+## Blogs I read
 
-- **[A Collection of Unmitigated Pedantry][]** is written by a historian and
-  looks at the depiction of history (including historic fantasy) in popular
-  culture, and talks about how it would *really* be done.  There is so much good
-  stuff here, start with the [Resources for World-Builders][acup-res] page.
+- [A Knight at the Opera](https://knightattheopera.blogspot.com/)
+- [The Adventuring Day](https://theadventuringday.wordpress.com/)
+- [ars lundi](https://arsludi.lamemage.com/)
+- [A Collection of Unmitigated Pedantry](https://acoup.blog/)
+- [The Alexandrian](https://thealexandrian.net/)
+- [The Great Dungeon of the North](https://greatdungeonnorth.blogspot.com/)
+- [Dice Goblin](https://dicegoblin.blog/)
+- [Goblin Punch](https://goblinpunch.blogspot.com/)
+- [Mazirian's Garden](http://maziriansgarden.blogspot.com/)
+- [Monsters and Manuals](http://monstersandmanuals.blogspot.com/)
+- [Prismatic Wasteland](https://www.prismaticwasteland.com/)
+- [The Wandering Gamist](http://wanderinggamist.blogspot.com/)
 
-- **[The Alexandrian][]** is a treasure trove of information, the article series
-  on [Node-Based Scenario Design][a-nodes-1] and [Advanced Node-Based
-  Design][a-nodes-2] have really helped me think about how to structure my
-  games, and the series on [Jacquaying the Dungeon][a-jaq] has made my dungeons
-  less boring.
+## Podcasts I listen to
 
-- **[The Angry GM][]** has a style which grates on a lot of people (and I'm not
-  a fan of it either), but if you can look past that there's a lot of good
-  advice here.
+- [Appendix N Book Club](https://appendixnbookclub.com/)
+- [Into the Megadungeon](https://podcasters.spotify.com/pod/show/benjamin-laurence)
+- [Modern Mythos with Jon & Seth](https://modernmythos.libsyn.com/)
 
-- **[ars lundi][]** is a game designer and creator of the legendary [West
-  Marches][al-wm] style of play.
+## Tools I use
 
-- **[Goblin Punch][]** is the home of the [Goblin Laws of Gaming][gp-glog], and
-  great creatures like the [False Hydra][gp-hydra].
+- [donjon](https://donjon.bin.sh/)
+- [The Fantasy Name Generator](https://www.fantasynamegenerators.com/)
+- [Miro](https://miro.com/) (not a gaming-specific tool, but the best VTT out there)
+- [Watabou's generators](https://watabou.itch.io/)
 
-- **[Mazirian's Garden][]** is a largely [glo:osr]-themed blog, and also home to
-  the [Into the Megadungeon][mg-itm] podcast and great house rules like
-  [Downtime in Zyan][mg-diz].
+## Youtube channels I watch
 
-- **[The Monsters Know What They're Doing][]** discusses monster tactics.  While
-  written for fifth edition [glo:dnd], the [Why These Tactics?][mk-why] page is
-  fairly widely applicable.
+### Actual plays
 
-- **[Prismatic Wasteland][]** is another font of [glo:osr] goodness.
+- [3d6 Down The Line](https://www.youtube.com/@3D6DTL)
+- [Me, Myself and Die!](https://www.youtube.com/@MeMyselfandDieRPG)
+- [The Glass Cannon Network](https://www.youtube.com/@TheGlassCannon)
 
-[A Collection of Unmitigated Pedantry]: https://acoup.blog/
-[acup-res]: https://acoup.blog/resources-for-world-builders/
-[The Alexandrian]: https://thealexandrian.net/
-[a-nodes-1]: https://thealexandrian.net/wordpress/7949/roleplaying-games/node-based-scenario-design-part-1-the-plotted-approach
-[a-nodes-2]: https://thealexandrian.net/wordpress/8171/roleplaying-games/advanced-node-based-design-part-1-moving-between-nodes
-[a-jaq]: https://thealexandrian.net/wordpress/13085/roleplaying-games/jaquaying-the-dungeon
-[The Angry GM]: https://theangrygm.com/
-[ars lundi]: http://arsludi.lamemage.com/
-[al-wm]: http://arsludi.lamemage.com/index.php/78/grand-experiments-west-marches/
-[Goblin Punch]: http://goblinpunch.blogspot.com/
-[gp-glog]: http://goblinpunch.blogspot.com/2016/05/the-glog.html
-[gp-hydra]: http://goblinpunch.blogspot.com/2014/09/false-hydra.html
-[Mazirian's Garden]: http://maziriansgarden.blogspot.com/
-[mg-itm]: http://maziriansgarden.blogspot.com/search/label/Into%20the%20Megadungeon
-[mg-diz]: https://throughultansdoor.bigcartel.com/product/downtime-in-zyan
-[The Monsters Know What They're Doing]: https://www.themonstersknow.com/
-[mk-why]: https://www.themonstersknow.com/why-these-tactics/
-[Prismatic Wasteland]: https://www.prismaticwasteland.com/
+### Miscellany
 
-## Tools
-
-- **[Dungeon Scrawl][]** is a simple browser-based mapping tool.  I often use
-  this to draw out the layout of a building, then export an image and continue
-  editing it in GIMP.
-
-- **[donjon][]** has a huge number of generators, for all sorts of things.
-
-- **[The Fantasy Name Generator][]** can be a bit stereotypical, but if you just
-  need a name *now* in one of dozens of different categories, it's got your
-  back.
-
-- **[Watabou's generators][]** aren't going to power your full campaign, but
-  they can be a great source of inspiration.
-
-[Dungeon Scrawl]: https://probabletrain.itch.io/dungeon-scrawl
-[donjon]: https://donjon.bin.sh/
-[The Fantasy Name Generator]: https://www.fantasynamegenerators.com/
-[Watabou's generators]: https://watabou.itch.io/
-
-## Youtube channels
-
-- **[3d6 Down The Line][]** has fantastic actual-plays of Dolmenwood and The
-  Halls of Arden Vul, both of which I've found inspiring and greatly useful.
-
-- [Matthew Colville][]'s **[Running the Game][mc-rtg]** series has been a great
-  help to me, even though I've never run D&D.  I particularly enjoyed the video
-  on [roleplaying][mc-rp].
-
-- **[Questing Beast][]** reviews a lot of great [glo:osr] books.
-
-- **[Seth Skorkowsky][]** reviews a lot of scenarios, makes great system
-  review/overviews (like this great multi-part [Call of Cthulhu intro][ss-coc]).
-
-[3d6 Down The Line]: https://www.youtube.com/@3D6DTL
-[Matthew Colville]: https://www.youtube.com/channel/UCkVdb9Yr8fc05_VbAVfskCA
-[mc-rtg]: https://www.youtube.com/playlist?list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_
-[mc-rp]: https://www.youtube.com/watch?v=7YCVHnItKuY
-[Questing Beast]: https://www.youtube.com/channel/UCvYwePdbWSEwUa-Pk02u3Zw
-[Seth Skorkowsky]: https://www.youtube.com/c/SethSkorkowskyAuthor
-[ss-coc]: https://www.youtube.com/playlist?list=PL25p5gPY6qKWQgHm7vGbIoeuuLdKtlVBj
+- [Matthew Colville](https://www.youtube.com/@mcolville)
+- [Questing Beast](https://www.youtube.com/@QuestingBeast)
+- [Seth Skorkowsky](https://www.youtube.com/@SSkorkowsky)
