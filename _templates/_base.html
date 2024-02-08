@@ -47,23 +47,23 @@
       <header>
         <img src="logo.png" alt="Well well well, look what the shoggoth dragged in.">
 
-        <nav class="top-navigation">
-          <a class="link link--no-underline top-navigation__link" href=""{% if link == "index.html" %} aria-current="page"{% endif %}>Articles</a>
-          <a class="link link--no-underline top-navigation__link" href="resources.html"{% if link == "resources.html" %} aria-current="page"{% endif %}>Resources</a>
+        <nav>
+          <a class="link--navbar" href=""{% if link == "index.html" %} aria-current="page"{% endif %}>Articles</a>
+          <a class="link--navbar" href="resources.html"{% if link == "resources.html" %} aria-current="page"{% endif %}>Resources</a>
         </nav>
       </header>
 
       <main>
-        <h1 class="heading heading--main">{{ title }}</h1>
+        <h1>{{ title }}</h1>
 
         {% block main %}{% endblock %}
       </main>
     </div>
 
-    <footer class="footer">
-      <p>Copyright <a class="link" href="https://www.barrucadu.co.uk">Michael Walker</a>, available under the terms of the <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><abbr title="Creative Commons">CC</abbr> <abbr title="Attribution-NonCommercial-ShareAlike 4.0 International">BY-NC-SA 4.0</abbr> license</a>.</p>
-      <p>The logo image uses fonts from the <a class="link" href="https://store.hplhs.org/products/hplhs-fonts"><abbr title="H. P. Lovecraft Historical Society">HPLHS</abbr> fonts collection</a>.</p>
-      <p>The body text uses the following fonts: <a class="link" href="https://fonts.google.com/specimen/Alegreya+Sans+SC">Alegreya Sans SC</a>, <a class="link" href="https://mbtype.com/fonts/triplicate/">Triplicate</a>, <a class="link" href="https://fonts.google.com/specimen/Noto+Sans">Noto Sans</a>, and <a class="link" href="https://fonts.google.com/specimen/Staatliches">Staatliches</a>.</p>
+    <footer>
+      <p>Copyright <a href="https://www.barrucadu.co.uk">Michael Walker</a>, available under the terms of the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><abbr title="Creative Commons">CC</abbr> <abbr title="Attribution-NonCommercial-ShareAlike 4.0 International">BY-NC-SA 4.0</abbr> license</a>.</p>
+      <p>The logo image uses fonts from the <a href="https://store.hplhs.org/products/hplhs-fonts"><abbr title="H. P. Lovecraft Historical Society">HPLHS</abbr> fonts collection</a>.</p>
+      <p>The body text uses the following fonts: <a href="https://fonts.google.com/specimen/Alegreya+Sans+SC">Alegreya Sans SC</a>, <a href="https://mbtype.com/fonts/triplicate/">Triplicate</a>, <a href="https://fonts.google.com/specimen/Noto+Sans">Noto Sans</a>, and <a href="https://fonts.google.com/specimen/Staatliches">Staatliches</a>.</p>
     </footer>
   </body>
 </html>
