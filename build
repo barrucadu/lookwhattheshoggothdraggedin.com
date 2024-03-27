@@ -37,17 +37,17 @@ JINJA2_ENV = jinja2.Environment(
 )
 
 ABBREVIATIONS = {
-    "adnd": { "display": "AD&D", "title": "Advanced Dungeons & Dragons" },
-    "bxdnd": { "display": "B/X D&D", "title": "Basic / Expert Dungeons & Dragons" },
-    "dnd": { "display": "D&D", "title": "Dungeons & Dragons" },
-    "gm": { "display": "GM", "title": "Game Master" },
-    "npc": { "display": "NPC", "title": "Non-player Character" },
-    "ose": { "display": "OSE", "title": "Old School Essentials" },
-    "osr": { "display": "OSR", "title": "Old School Renaissance" },
-    "pbta": { "display": "PbtA", "title": "Powered by the Apocalypse" },
-    "osric": { "display": "OSRIC", "title": "Old School Reference and Index Compilation" },
-    "pc": { "display": "PC", "title": "Player Character" },
-    "vtt": { "display": "VTT", "title": "Virtual Tabletop" },
+    "adnd": {"display": "AD&D", "title": "Advanced Dungeons & Dragons"},
+    "bxdnd": {"display": "B/X D&D", "title": "Basic / Expert Dungeons & Dragons"},
+    "dnd": {"display": "D&D", "title": "Dungeons & Dragons"},
+    "gm": {"display": "GM", "title": "Game Master"},
+    "npc": {"display": "NPC", "title": "Non-player Character"},
+    "ose": {"display": "OSE", "title": "Old School Essentials"},
+    "osr": {"display": "OSR", "title": "Old School Renaissance"},
+    "pbta": {"display": "PbtA", "title": "Powered by the Apocalypse"},
+    "osric": {"display": "OSRIC", "title": "Old School Reference and Index Compilation"},
+    "pc": {"display": "PC", "title": "Player Character"},
+    "vtt": {"display": "VTT", "title": "Virtual Tabletop"},
 }
 
 SYSTEMS = {

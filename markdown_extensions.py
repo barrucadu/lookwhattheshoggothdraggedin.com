@@ -185,16 +185,16 @@ class RollTableExtension(markdown.extensions.Extension):
 # #############################################################################
 # Tree Processors
 
+
 class MakeRelativeLinksAbsoluteProcessor(markdown.treeprocessors.Treeprocessor):
-    """Make relative links absolute.
-    """
+    """Make relative links absolute."""
 
     def __init__(self, base_href, md=None):
         super().__init__(md)
         self.base_href = base_href
 
     def run(self, root):
-        elements = { "a": "href", "img": "src" }
+        elements = {"a": "href", "img": "src"}
         for tag, attr in elements.items():
             for elem in root.iter(tag):
                 value = elem.get(attr)
