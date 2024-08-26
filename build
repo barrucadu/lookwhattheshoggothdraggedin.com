@@ -52,6 +52,7 @@ ABBREVIATIONS = {
 
 SYSTEMS = {
     "call-of-cthulhu": "Call of Cthulhu",
+    "dolmenwood": "Dolmenwood",
     "ironsworn": "Ironsworn",
     "ose": "Old School Essentials",
     "rqg": "RuneQuest - Roleplaying in Glorantha",
