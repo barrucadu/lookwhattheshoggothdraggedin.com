@@ -1,4 +1,10 @@
 {% extends "_base.html" %}
+{% block opengraph %}
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="{{ post.atom_published }}" />
+<meta property="article:modified_time" content="{{ post.atom_updated }}" />
+<meta property="article:author" content="https://www.barrucadu.co.uk/" />
+{% endblock %}
 {% block main %}
   <div class="markdown">
     {{ post.body | safe }}
