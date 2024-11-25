@@ -17,12 +17,12 @@ import hashlib
 import jinja2
 import json
 import markdown
-import os
+import shutil
 import sys
 import yaml
 
-from distutils import dir_util, file_util
 from docopt import docopt
+from pathlib import Path
 
 import markdown_extensions
 
@@ -45,7 +45,10 @@ ABBREVIATIONS = {
     "ose": {"display": "OSE", "title": "Old School Essentials"},
     "osr": {"display": "OSR", "title": "Old School Renaissance"},
     "pbta": {"display": "PbtA", "title": "Powered by the Apocalypse"},
-    "osric": {"display": "OSRIC", "title": "Old School Reference and Index Compilation"},
+    "osric": {
+        "display": "OSRIC",
+        "title": "Old School Reference and Index Compilation",
+    },
     "pc": {"display": "PC", "title": "Player Character"},
     "vtt": {"display": "VTT", "title": "Virtual Tabletop"},
 }
@@ -88,36 +91,40 @@ def do_markdown(text):
 
 def read_files_from(fdir, permalink_base_href=BASE_HREF, include_drafts=False):
     out = []
-    for fname in os.listdir(fdir):
-        fpath = os.path.join(fdir, fname)
-        if not os.path.isfile(fpath):
+    for fpath in Path(fdir).iterdir():
+        if not fpath.is_file():
             continue
 
-        with open(fpath, "r") as f:
-            lines = f.readlines()
-            metadata_end_idx = lines[1:].index("---\n") + 1
-            text_start_idx = metadata_end_idx + 1
-            metadata = yaml.load("".join(lines[1:metadata_end_idx]), Loader=yaml.SafeLoader)
-            if metadata.get("draft", False) and not include_drafts:
-                continue
-            metadata["text"] = "".join(lines[text_start_idx:])
-            metadata["body"] = do_markdown(metadata["text"])
-            if "slug" not in metadata:
-                metadata["slug"], _ = os.path.splitext(fname)
-            metadata["permalink"] = f"{permalink_base_href}{metadata['slug']}.html"
-            out.append(metadata)
+        lines = fpath.read_text().splitlines()
+        metadata_end_idx = lines[1:].index("---") + 1
+        text_start_idx = metadata_end_idx + 1
+        metadata = yaml.load(
+            "\n".join(lines[1:metadata_end_idx]), Loader=yaml.SafeLoader
+        )
+        if metadata.get("draft", False) and not include_drafts:
+            continue
+        metadata["text"] = "\n".join(lines[text_start_idx:])
+        metadata["body"] = do_markdown(metadata["text"])
+        if "slug" not in metadata:
+            metadata["slug"] = fpath.stem
+        metadata["permalink"] = f"{permalink_base_href}{metadata['slug']}.html"
+        out.append(metadata)
     return out
 
 
 ALL_PAGES = read_files_from("pages", include_drafts=DRAFT_MODE)
 
 ALL_POSTS = sorted(
-    read_files_from("posts", permalink_base_href=f"{BASE_HREF}post/", include_drafts=DRAFT_MODE),
+    read_files_from(
+        "posts", permalink_base_href=f"{BASE_HREF}post/", include_drafts=DRAFT_MODE
+    ),
     key=lambda post: post["date"],
     reverse=True,
 )
 
-ALL_POSTS_EXCLUDING_UNLISTED = [post for post in ALL_POSTS if not post.get("unlisted", False)]
+ALL_POSTS_EXCLUDING_UNLISTED = [
+    post for post in ALL_POSTS if not post.get("unlisted", False)
+]
 
 for post in ALL_POSTS:
     if post.get("topic") not in TOPICS:
@@ -138,34 +145,38 @@ for post in ALL_POSTS:
 
 YEARS = {post["year"]: post["year"] for post in ALL_POSTS_EXCLUDING_UNLISTED}
 
-dir_util.copy_tree("static", OUT_DIR)
-dir_util.mkpath(os.path.join(OUT_DIR, "post"))
-dir_util.mkpath(os.path.join(OUT_DIR, "system"))
-dir_util.mkpath(os.path.join(OUT_DIR, "topic"))
-dir_util.mkpath(os.path.join(OUT_DIR, "year"))
+###############################################################################
+# Here be effects
+
+shutil.rmtree(OUT_DIR, ignore_errors=True)
+shutil.copytree("static", OUT_DIR)
+Path(OUT_DIR, "post").mkdir(exist_ok=True)
+Path(OUT_DIR, "system").mkdir()
+Path(OUT_DIR, "topic").mkdir()
+Path(OUT_DIR, "year").mkdir()
 
 HASHED_LINKS = {}
-for fname in os.listdir("hashed-static"):
-    fpath = os.path.join("hashed-static", fname)
-    if not os.path.isfile(fpath):
+for fpath in Path("hashed-static").iterdir():
+    if not fpath.is_file():
         continue
 
     file_hash = hashlib.sha256()
-    with open(fpath, "rb") as f:
+    with fpath.open("rb") as f:
         while True:
             data = f.read(65536)
             if not data:
                 break
             file_hash.update(data)
-    base, ext = os.path.splitext(fname)
-    HASHED_LINKS[fname] = f"{base}-sha256-{file_hash.hexdigest()}{ext}"
-    file_util.copy_file(fpath, os.path.join(OUT_DIR, HASHED_LINKS[fname]))
+    HASHED_LINKS[fpath.name] = (
+        f"{fpath.stem}-sha256-{file_hash.hexdigest()}{fpath.suffix}"
+    )
+    shutil.copy(fpath, Path(OUT_DIR, HASHED_LINKS[fpath.name]))
 
 
 def find_file_by_slug(directory, slug, default=None):
     for ext in ["png", "jpg"]:
         fname = f"{slug}.{ext}"
-        if os.path.isfile(os.path.join("static", directory, fname)):
+        if Path("static", directory, fname).is_file():
             return f"{directory}/{fname}"
     return default
 
@@ -174,8 +185,8 @@ def render(link, template, **metadata):
     slug = link.split("/")[-1].split(".")[0]
     twitter_card = find_file_by_slug("twitter-cards", slug, default="twitter-card.jpg")
 
-    with open(os.path.join(OUT_DIR, link), "w") as f:
-        rendered = JINJA2_ENV.get_template(template).render(
+    Path(OUT_DIR, link).write_text(
+        JINJA2_ENV.get_template(template).render(
             base_href=BASE_HREF,
             topics=TOPICS,
             systems=SYSTEMS,
@@ -187,35 +198,36 @@ def render(link, template, **metadata):
             twitter_card=twitter_card,
             **metadata,
         )
-        print(rendered, file=f)
+    )
 
 
 def render_json_feed(link, title, posts):
-    with open(os.path.join(OUT_DIR, link), "w") as f:
-        feed = {
-            "version": "https://jsonfeed.org/version/1.1",
-            "title": title,
-            "home_page_url": BASE_HREF,
-            "feed_url": f"{BASE_HREF}{link}",
-            "authors": [
-                {
-                    "name": "Michael Walker",
-                    "email": "mike@barrucadu.co.uk",
-                },
-            ],
-            "items": [
-                {
-                    "id": post["permalink"],
-                    "url": post["permalink"],
-                    "content_html": post["body"],
-                    "date_published": post["atom_published"],
-                    "date_modified": post["atom_updated"],
-                }
-                for post in posts
-            ],
-        }
-
-        json.dump(feed, f)
+    Path(OUT_DIR, link).write_text(
+        json.dumps(
+            {
+                "version": "https://jsonfeed.org/version/1.1",
+                "title": title,
+                "home_page_url": BASE_HREF,
+                "feed_url": f"{BASE_HREF}{link}",
+                "authors": [
+                    {
+                        "name": "Michael Walker",
+                        "email": "mike@barrucadu.co.uk",
+                    },
+                ],
+                "items": [
+                    {
+                        "id": post["permalink"],
+                        "url": post["permalink"],
+                        "content_html": post["body"],
+                        "date_published": post["atom_published"],
+                        "date_modified": post["atom_updated"],
+                    }
+                    for post in posts
+                ],
+            }
+        )
+    )
 
 
 def render_feeds_for(link_without_format, title, posts):
@@ -243,7 +255,9 @@ render_feeds_for("feed", "Recent Posts", ALL_POSTS_EXCLUDING_UNLISTED)
 
 for field, entries in [("topic", TOPICS), ("system", SYSTEMS), ("year", YEARS)]:
     for slug, name in entries.items():
-        matching_posts = [post for post in ALL_POSTS_EXCLUDING_UNLISTED if post.get(field) == slug]
+        matching_posts = [
+            post for post in ALL_POSTS_EXCLUDING_UNLISTED if post.get(field) == slug
+        ]
 
         render(
             f"{field}/{slug}.html",
